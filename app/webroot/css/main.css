@@ -26,3 +26,7 @@ div.arrow-down {
   font-size:0px;
   line-height:0px;
 }
+.vote_count{
+	width:20px;
+	text-align:center;
+}
