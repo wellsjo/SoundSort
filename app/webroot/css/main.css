@@ -1,0 +1,28 @@
+#main_container{
+	margin-top: 50px;
+}
+.navbar-inner > .container {
+	width:800px;
+}
+#trend_container{
+	border: 1px solid lightgray;
+	padding:15px;
+}
+div.arrow-up {
+	width:0px;
+	height:0px;
+	border-left:10px solid transparent;
+	border-right:10px solid transparent;
+	border-bottom:18px solid lightgray;
+	font-size:0px;
+	line-height:0px;
+}
+div.arrow-down {
+  width:0px;
+  height:0px;
+  border-left:10px solid transparent;
+  border-right:10px solid transparent;
+  border-top:18px solid lightgray;
+  font-size:0px;
+  line-height:0px;
+}
