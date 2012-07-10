@@ -4,8 +4,7 @@ App::uses('CakeEmail', 'Network/Email');
 
 class RegisterController extends AppController {
 
-	var $uses = array('User');
-	var $components = 'Email';
+	var $uses = 'User';
 
 	function index() {
 		if (!empty($_POST)) {
@@ -26,7 +25,15 @@ class RegisterController extends AppController {
 		}
 	}
 
-	function sendEmailConfirmation($id, $user_email) {
+	function activated() {
+		$user_id = $this->params['id'];
+		$User = $this->User->findById($user_id);
+		$User['User']['activated'] = 1;
+		$this->set('user', $User);
+		$this->User->save($User);
+	}
+
+	private function sendEmailConfirmation($id, $user_email) {
 		$email = new CakeEmail('smtp');
 		$email->to($user_email);
 		$email->subject('SoundSort Authentication');

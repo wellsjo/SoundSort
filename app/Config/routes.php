@@ -33,6 +33,8 @@
 	Router::connect('/track/upvote/:id', array('controller' => 'track', 'action' => 'upvote'), array('id' => '[0-9]+'));
 	Router::connect('/track/downvote/:id', array('controller' => 'track', 'action' => 'downvote'), array('id' => '[0-9]+'));
 
+	Router::connect('/register/confirm/:id', array('controller' => 'register', 'action' => 'activated'), array('id' => '[A-Za-z0-9-]{36}'));
+
 /**
  * ...and connect the rest of 'Pages' controller's urls.
  */

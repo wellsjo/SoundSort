@@ -1,4 +1,4 @@
-<div class="navbar navbar-fixed-top">
+<div class="navbar navbar-fixed-top" style="display:none;">
 	<div class="navbar-inner">
 		<div class="container">
 			<div class="brand pull-left"><a href="/">SoundSort</a></div>

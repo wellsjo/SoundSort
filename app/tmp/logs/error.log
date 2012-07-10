@@ -592,3 +592,16 @@ Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
 #9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(RegisterController), Object(CakeRequest), Object(CakeResponse))
 #10 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #11 {main}
+2012-07-10 12:43:47 Error: [PrivateActionException] Private Action RegisterController::sendEmailConfirmation() is not directly accessible.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(RegisterController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-10 12:55:46 Error: Fatal Error (1): Call to undefined method RegisterController::findById() in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/RegisterController.php, line 30]
+2012-07-10 12:55:46 Error: [FatalErrorException] Call to undefined method RegisterController::findById()
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/wellsjoh...', 30)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/wellsjoh...', 30, Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/wellsjoh...', 30, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
