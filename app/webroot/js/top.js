@@ -10,7 +10,6 @@ $(document).ready(function() {
 		client_id: "4ca806233abc6f50dfbd8c124380277b",
 		redirect_uri: "http://wellsstuff.com/trending"
 	});
-	console.log(tracks);
 	for (var track_index in tracks) {
 		$('#trend_container').append('<span class=\'track_container\' data-track_id=\'' + tracks[track_index].id +
 			'\' data-dl_link=\'' + tracks[track_index].permalink_url + '/download' + '\' data-vote_count=\''
@@ -39,7 +38,7 @@ function render() {
 			'<span class=\'vote_container\'><div data-track_id=\'' + track_id + '\'class=\'arrow-up upvote\' ></div>'
 			+ '<div data-vote_count=\'' + vote_count + '\' class=\'vote_count\' >' + vote_count + '</div>'
 			+ '<div data-track_id=\'' + track_id + '\'class=\'arrow-down downvote\' ></div></span>'
-		);
+			);
 	});
 
 	afterRender();
@@ -49,14 +48,42 @@ function afterRender() {
 	$('.upvote').click(function(e) {
 		var track = $(e.currentTarget).data('track_id');
 		var count = $(e.currentTarget).parent().children('.vote_count').text();
-		$(e.currentTarget).parent().children('.vote_count').text(Number(count)+1);
-		$.post('/track/upvote/' + track);
+		if (!$(this).hasClass('upvoted')) {
+			$(this).addClass('upvoted');
+			if ($(this).parent().children('.downvote').hasClass('downvoted')) {
+				$(this).parent().children('.vote_count').text(Number(count)+2);
+				$(this).parent().children('.downvote').removeClass('downvoted');
+				$.post('/track/upvote/' + track);
+				$.post('/track/upvote/' + track);
+			}else{
+				$(this).parent().children('.vote_count').text(Number(count)+1);
+				$.post('/track/upvote/' + track);
+			}
+		}else{
+			$(this).removeClass('upvoted');
+			$(this).parent().children('.vote_count').text(Number(count)-1);
+			$.post('/track/downvote/' + track);
+		}
 	});
 
 	$('.downvote').click(function(e) {
 		var track = $(e.currentTarget).data('track_id');
 		var count = $(e.currentTarget).parent().children('.vote_count').text();
-		$(e.currentTarget).parent().children('.vote_count').text(Number(count)-1);
-		$.post('/track/downvote/' + track);
+		if (!$(this).hasClass('downvoted')) {
+			$(this).addClass('downvoted');
+			if ($(this).parent().children('.upvote').hasClass('upvoted')) {
+				$(this).parent().children('.vote_count').text(Number(count)-2);
+				$(this).parent().children('.upvote').removeClass('upvoted');
+				$.post('/track/downvote/' + track);
+				$.post('/track/downvote/' + track);
+			}else{
+				$(this).parent().children('.vote_count').text(Number(count)-1);
+				$.post('/track/downvote/' + track);
+			}
+		}else{
+			$(this).removeClass('downvoted');
+			$(this).parent().children('.vote_count').text(Number(count)+1);
+			$.post('/track/upvote/' + track);
+		}
 	});
 }

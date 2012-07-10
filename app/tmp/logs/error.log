@@ -294,3 +294,124 @@ Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 186
 Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
 [main] - APP/webroot/index.php, line 92
 
+2012-07-09 23:27:23 Warning: Warning (2): Invalid argument supplied for foreach() in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/TopController.php, line 27]
+Trace:
+TopController::top() - APP/Controller/TopController.php, line 27
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 485
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 186
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 92
+
+2012-07-09 23:28:11 Warning: Warning (2): Invalid argument supplied for foreach() in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/TopController.php, line 27]
+Trace:
+TopController::top() - APP/Controller/TopController.php, line 27
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 485
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 186
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 92
+
+2012-07-09 23:29:02 Warning: Warning (2): Invalid argument supplied for foreach() in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/TopController.php, line 27]
+Trace:
+TopController::top() - APP/Controller/TopController.php, line 27
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 485
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 186
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 92
+
+2012-07-09 23:29:51 Warning: Warning (2): Invalid argument supplied for foreach() in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/TopController.php, line 27]
+Trace:
+TopController::top() - APP/Controller/TopController.php, line 27
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 485
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 186
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 92
+
+2012-07-09 23:31:09 Warning: Warning (2): Invalid argument supplied for foreach() in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/TopController.php, line 27]
+Trace:
+TopController::top() - APP/Controller/TopController.php, line 27
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 485
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 186
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 92
+
+2012-07-09 23:40:37 Warning: Warning (2): Invalid argument supplied for foreach() in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/TopController.php, line 27]
+Trace:
+TopController::top() - APP/Controller/TopController.php, line 27
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 485
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 186
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 92
+
+2012-07-09 23:41:08 Warning: Warning (2): Invalid argument supplied for foreach() in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/TopController.php, line 27]
+Trace:
+TopController::top() - APP/Controller/TopController.php, line 27
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 485
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 186
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 92
+
+2012-07-09 23:42:00 Warning: Warning (2): Invalid argument supplied for foreach() in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/TopController.php, line 27]
+Trace:
+TopController::top() - APP/Controller/TopController.php, line 27
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 485
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 186
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 92
+
+2012-07-09 23:42:36 Warning: Warning (2): Invalid argument supplied for foreach() in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/TopController.php, line 27]
+Trace:
+TopController::top() - APP/Controller/TopController.php, line 27
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 485
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 186
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 92
+
+2012-07-09 23:43:00 Warning: Warning (2): Invalid argument supplied for foreach() in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/TopController.php, line 27]
+Trace:
+TopController::top() - APP/Controller/TopController.php, line 27
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 485
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 186
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 92
+
+2012-07-09 23:43:29 Warning: Warning (2): Invalid argument supplied for foreach() in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/TopController.php, line 27]
+Trace:
+TopController::top() - APP/Controller/TopController.php, line 27
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 485
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 186
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 92
+
+2012-07-09 23:43:49 Warning: Warning (2): Invalid argument supplied for foreach() in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/TopController.php, line 27]
+Trace:
+TopController::top() - APP/Controller/TopController.php, line 27
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 485
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 186
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 92
+
+2012-07-09 23:45:24 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `we...', Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(1009): DboSource->execute('INSERT INTO `we...')
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1730): DboSource->create(Object(Track), Array, Array)
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Model/Track.php(12): Model->save(Array)
+#5 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/TrackController.php(10): Track->upvote('0')
+#6 [internal function]: TrackController->upvote()
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(TrackController), Array)
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(TrackController), Object(CakeRequest), Object(CakeResponse))
+#10 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}

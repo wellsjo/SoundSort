@@ -17,6 +17,12 @@ div.arrow-up {
 	font-size:0px;
 	line-height:0px;
 }
+.upvoted{
+	border-bottom-color:#57A85D !important;
+}
+.downvoted{
+	border-top-color:red !important;
+}
 div.arrow-down {
   width:0px;
   height:0px;

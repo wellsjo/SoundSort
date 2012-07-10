@@ -50,6 +50,8 @@ class Track extends AppModel {
 		} catch (Services_Soundcloud_Invalid_Http_Response_Code_Exception $e) {
 			exit($e->getMessage());
 		}
+
+		return $tracks;
 	}
 
 }
