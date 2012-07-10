@@ -23,8 +23,8 @@ class Track extends AppModel {
 		$this->create();
 		$data = array( 'Track' => array(
 			'id' => $track['id'],
-			'content' => json_encode($track),
 			'created_at' => $track['created_at'],
+			'content' => json_encode($track),
 			'upvotes' => 1,
 			'downvotes' => 0
 		));
