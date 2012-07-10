@@ -12,7 +12,12 @@ Class TopController extends AppController {
 		$page = @$this->params['id'];
 		if (!empty($page)) {
 			$this->set('page', $page);
-			$this->set('display', 'Page ' . $page);
+			if ($page == 1) {
+				$this->set('display', 'Front Page');
+			}else{
+				$this->set('display', 'Page ' . $page);
+			}
+			
 		} else {
 			$this->redirect('/top/1');
 		}
@@ -44,11 +49,19 @@ Class TopController extends AppController {
 				$track['vote_count'] = $response['Track']['upvotes'] - $response['Track']['downvotes'];
 			}
 		}
+		
+		$this->Track->find('all', array('conditions' => array(
+			
+		)));
 
 		// find the tracks to return
 		$tracks = json_encode($tracks);
 		$this->set('tracks', $tracks);
 		$this->set('active', 'top');
+	}
+
+	function topSort($tracks) {
+		
 	}
 
 }

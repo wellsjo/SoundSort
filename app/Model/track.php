@@ -24,6 +24,7 @@ class Track extends AppModel {
 		$data = array( 'Track' => array(
 			'id' => $track['id'],
 			'content' => json_encode($track),
+			'created_at' => $track['created_at'],
 			'upvotes' => 1,
 			'downvotes' => 0
 		));

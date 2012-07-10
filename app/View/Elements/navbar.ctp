@@ -7,7 +7,7 @@
 					<a href="/top">top</a>
 				</li>
 			</ul>
-			<a href="/register" class="btn pull-right">Register</a>
+			<a href="/register" class="btn btn-success pull-right">Register</a>
 		</div>
 	</div>
 </div>

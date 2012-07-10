@@ -1,6 +1,6 @@
 .sc-player{
 	width: 785px;
-	height: 70px;
+	height: 90px;
 	position: relative;
 	margin-bottom: 20px;
 }
@@ -43,15 +43,15 @@
 
 .sc-player .download_track {
 	position: absolute;
-	top: -31px;
-	right: 51px;
+	top: -10px;
+	right: 4px;
 }
 
 .sc-player .sc-controls{
 	position: absolute;
 	width: 40px;
 	height: 40px;
-	top: 0px;
+	top: 11px;
 	left: 50px;
 
 }
@@ -79,33 +79,33 @@
 .sc-scrubber {
 	position: absolute;
 	left: 100px;
-	top: 0px;
-	height: 40px;
+	top: 20px;
+	height: 20px;
 	width: 680px;
 	display: block;
 }
 
 .sc-scrubber .sc-time-span{
-	height: 30px;
+	height: 10px;
 	margin: 5px;
 	position: relative;
 }
 
 .sc-scrubber .sc-time-span img {
-	height: 30px;
+	height: 10px;
 	width: 940px;
 }
 
 .sc-scrubber .sc-buffer, .sc-scrubber .sc-played{
-	height: 30px;
+	height: 10px;
 	position: absolute;
 	top: 0;
 }
 
 .sc-scrubber .sc-time-indicators{
 	position: absolute;
-	right: 0;
-	top: -30px;
+	right: 12px;
+	top: 25px;
 }
 
 /* tracks */
@@ -134,18 +134,29 @@
 
 .sc-player .sc-info{
 	position: absolute;
-	top: 10px;
-	left: -5000px;
-	width : 400px;
+	top: -10px;
+	/*	left: -5000px;*/
+	width : 605px;
 	padding: 5px;
 	height: 200px;
 	z-index: 500;
-	margin-left: -200px;
+	margin-left: 96px;
+}
+
+.sc-info h3{
+	white-space:nowrap;
+	text-overflow: ellipsis;
+	overflow:hidden;
 }
 
 .sc-player .sc-info.active{
 	left: 50%;
 	top: 12%;
+}
+
+.sc-info h4{
+	position:absolute;
+	top: 55px;
 }
 
 
@@ -164,6 +175,10 @@
 	position: absolute;
 	top: 10px;
 	right: 20px;
+}
+
+.sc-player .sc-info p{
+	display: none;
 }
 
 /* utilities */
