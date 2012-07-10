@@ -415,3 +415,180 @@ Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
 #9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(TrackController), Object(CakeRequest), Object(CakeResponse))
 #10 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #11 {main}
+2012-07-10 00:31:51 Error: [MissingViewException] View file "/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/View/Register/index.ctp" is missing.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(RegisterController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-07-10 00:31:59 Error: [MissingViewException] View file "/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/View/Register/index.ctp" is missing.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(RegisterController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-07-10 01:40:33 Error: [MissingControllerException] Controller class ConfirmController could not be found.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-10 01:41:02 Error: [MissingControllerException] Controller class ConfirmController could not be found.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-10 01:41:08 Error: [MissingViewException] View file "/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/View/Register/confirm.ctp" is missing.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(RegisterController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-07-10 01:43:08 Error: [MissingViewException] View file "/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/View/Register/confirm.ctp" is missing.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(RegisterController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-07-10 01:47:47 Error: [MissingViewException] View file "/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/View/Register/confirm.ctp" is missing.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(RegisterController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-07-10 01:48:37 Error: [MissingViewException] View file "/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/View/Register/confirm.ctp" is missing.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(RegisterController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-07-10 01:49:33 Error: [MissingViewException] View file "/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/View/Register/confirm.ctp" is missing.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(RegisterController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-07-10 01:49:35 Error: [MissingViewException] View file "/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/View/Register/confirm.ctp" is missing.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(RegisterController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-07-10 01:49:59 Error: [MissingViewException] View file "/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/View/Register/confirm.ctp" is missing.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(RegisterController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-07-10 02:08:51 Error: [MissingTableException] Table users for model User was not found in datasource default.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(3180): Model->setSource('users')
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1648): Model->getDataSource()
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Model/User.php(9): Model->save(Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/RegisterController.php(20): User->register(Array)
+#4 [internal function]: RegisterController->confirm()
+#5 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(RegisterController), Array)
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(RegisterController), Object(CakeRequest), Object(CakeResponse))
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2012-07-10 02:21:00 Error: [MissingControllerException] Controller class AssetsController could not be found.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-10 02:21:19 Error: [MissingControllerException] Controller class AssetsController could not be found.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-10 02:21:54 Error: [MissingControllerException] Controller class AssetsController could not be found.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-10 02:22:46 Error: [MissingControllerException] Controller class AssetsController could not be found.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-10 11:23:13 Warning: Warning (2): Invalid argument supplied for foreach() in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Utility/ObjectCollection.php, line 314]
+Trace:
+ObjectCollection::normalizeObjectArray() - CORE/Cake/Utility/ObjectCollection.php, line 314
+ComponentCollection::init() - CORE/Cake/Controller/ComponentCollection.php, line 50
+Controller::constructClasses() - CORE/Cake/Controller/Controller.php, line 635
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 182
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 92
+
+2012-07-10 11:23:25 Warning: Warning (2): Invalid argument supplied for foreach() in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Utility/ObjectCollection.php, line 314]
+Trace:
+ObjectCollection::normalizeObjectArray() - CORE/Cake/Utility/ObjectCollection.php, line 314
+ComponentCollection::init() - CORE/Cake/Controller/ComponentCollection.php, line 50
+Controller::constructClasses() - CORE/Cake/Controller/Controller.php, line 635
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 182
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 92
+
+2012-07-10 11:23:26 Error: Fatal Error (1): Call to a member function send() on a non-object in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/RegisterController.php, line 41]
+2012-07-10 11:23:26 Error: [InternalErrorException] Internal Server Error
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/wellsjoh...', 41)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/wellsjoh...', 41, Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/wellsjoh...', 41, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-10 11:29:53 Error: Fatal Error (1): Call to a member function send() on a non-object in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/RegisterController.php, line 41]
+2012-07-10 11:29:53 Error: [FatalErrorException] Call to a member function send() on a non-object
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/wellsjoh...', 41)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/wellsjoh...', 41, Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/wellsjoh...', 41, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-10 11:31:45 Error: Fatal Error (1): Call to a member function send() on a non-object in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/RegisterController.php, line 41]
+2012-07-10 11:31:45 Error: [FatalErrorException] Call to a member function send() on a non-object
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/wellsjoh...', 41)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/wellsjoh...', 41, Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/wellsjoh...', 41, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-10 11:42:27 Error: Fatal Error (1): Class 'CakeEmail' not found in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/RegisterController.php, line 28]
+2012-07-10 11:42:27 Error: [FatalErrorException] Class 'CakeEmail' not found
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Class 'CakeEmai...', '/Users/wellsjoh...', 28)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'CakeEmai...', '/Users/wellsjoh...', 28, Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'CakeEmai...', '/Users/wellsjoh...', 28, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-10 11:43:45 Error: [SocketException] Invalid email: ""
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Network/Email/CakeEmail.php(427): CakeEmail->_setEmail('_to', Object(CakeEmail), NULL)
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/RegisterController.php(31): CakeEmail->to(Object(CakeEmail))
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/RegisterController.php(25): RegisterController->sendEmailConfirmation('4ffc5bc0-e5fc-4...', 'wellsjohnston@g...')
+#3 [internal function]: RegisterController->confirm()
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(RegisterController), Array)
+#5 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(RegisterController), Object(CakeRequest), Object(CakeResponse))
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-07-10 11:47:13 Error: [SocketException] SMTP Error: 535 5.7.1 http://support.google.com/mail/bin/answer.py?answer=14257 x10sm23803322oeb.8
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Network/Email/SmtpTransport.php(132): SmtpTransport->_smtpSend('c2VjcmV0', '235')
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Network/Email/SmtpTransport.php(61): SmtpTransport->_auth()
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Network/Email/CakeEmail.php(1059): SmtpTransport->send(Object(CakeEmail))
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/RegisterController.php(33): CakeEmail->send('4ffc5c90-37fc-4...')
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/RegisterController.php(25): RegisterController->sendEmailConfirmation('4ffc5c90-37fc-4...', 'wellsjohnston@g...')
+#5 [internal function]: RegisterController->confirm()
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(RegisterController), Array)
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(RegisterController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-07-10 11:53:06 Error: [MissingViewException] View file "/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/View/Emails/text/email_confirm.ctp" is missing.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/View/View.php(472): View->_getViewFileName('email_confirm')
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Network/Email/CakeEmail.php(1551): View->render('email_confirm', 'default')
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Network/Email/CakeEmail.php(1418): CakeEmail->_renderTemplates('4ffc5df2-1ff0-4...')
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Network/Email/CakeEmail.php(1057): CakeEmail->_render(Array)
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/RegisterController.php(34): CakeEmail->send('4ffc5df2-1ff0-4...')
+#5 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/RegisterController.php(25): RegisterController->sendEmailConfirmation('4ffc5df2-1ff0-4...', 'wellsjohnston@g...')
+#6 [internal function]: RegisterController->confirm()
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(RegisterController), Array)
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(RegisterController), Object(CakeRequest), Object(CakeResponse))
+#10 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}

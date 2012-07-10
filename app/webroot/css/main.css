@@ -1,8 +1,11 @@
 #main_container{
 	margin-top: 50px;
 }
+.navbar-inner a{
+	text-decoration: none;
+}
 .navbar-inner > .container {
-	width:800px;
+	width:800px !important;
 }
 #trend_container{
 	border: 1px solid lightgray;

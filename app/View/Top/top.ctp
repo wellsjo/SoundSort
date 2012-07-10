@@ -8,7 +8,7 @@
 <script type="text/javascript">
 $(active_tab).addClass('active');
 </script>
-<script src="/js/top.js"></script>
+<script src="/js/main.js"></script>
 <div class="container" id="main_container">
 	<div class="row">
 		<div id="trend_container" class="span8 offset1">

@@ -104,7 +104,7 @@
 
 .sc-scrubber .sc-time-indicators{
 	position: absolute;
-	right: 12px;
+	right: 0px;
 	top: 25px;
 }
 
@@ -135,11 +135,9 @@
 .sc-player .sc-info{
 	position: absolute;
 	top: -10px;
-	/*	left: -5000px;*/
 	width : 605px;
 	padding: 5px;
 	height: 200px;
-	z-index: 500;
 	margin-left: 96px;
 }
 

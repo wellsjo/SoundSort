@@ -3,8 +3,7 @@
 class Track extends AppModel {
 
 	public $name = 'Track';
-	public $validate = array(
-	);
+	public $validate = array();
 
 	function upvote($id) {
 		$track = $this->findById($id);
@@ -27,6 +26,7 @@ class Track extends AppModel {
 				'created_at' => $date->format("Y-m-d H:m:s"),
 				'uri' => $track['uri'],
 				'permalink_url' => $track['permalink_url'],
+				'genre' => $track['genre'],
 				'upvotes' => 1,
 				'downvotes' => 0
 				));
