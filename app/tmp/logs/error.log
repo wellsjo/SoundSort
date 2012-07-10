@@ -1,0 +1,296 @@
+2012-07-09 20:41:37 Error: [MissingControllerException] Controller class RegisterController could not be found.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-09 21:25:03 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order = ('DESC')' at line 1
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Track`....', Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Track`....', Array, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Track`....', false)
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Track), Array)
+#5 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/TopController.php(57): Model->find('all', Array)
+#6 [internal function]: TopController->top()
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(TopController), Array)
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(TopController), Object(CakeRequest), Object(CakeResponse))
+#10 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-07-09 21:25:41 Error: Fatal Error (1): Call to undefined method TopController::find() in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/TopController.php, line 58]
+2012-07-09 21:25:41 Error: [InternalErrorException] Internal Server Error
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/wellsjoh...', 58)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/wellsjoh...', 58, Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/wellsjoh...', 58, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-09 21:26:37 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order = ('DESC')' at line 1
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Track`....', Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Track`....', Array, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Track`....', false)
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Track), Array)
+#5 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/TopController.php(57): Model->find('all', Array)
+#6 [internal function]: TopController->top()
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(TopController), Array)
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(TopController), Object(CakeRequest), Object(CakeResponse))
+#10 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-07-09 21:57:57 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '5' at line 1
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Track`....', Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Track`....', Array, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Track`....', false)
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Track), Array)
+#5 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/TopController.php(57): Model->find('all', Array)
+#6 [internal function]: TopController->top()
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(TopController), Array)
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(TopController), Object(CakeRequest), Object(CakeResponse))
+#10 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-07-09 21:58:40 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'limit' in 'where clause'
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Track`....', Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Track`....', Array, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Track`....', false)
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Track), Array)
+#5 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/TopController.php(57): Model->find('all', Array)
+#6 [internal function]: TopController->top()
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(TopController), Array)
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(TopController), Object(CakeRequest), Object(CakeResponse))
+#10 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-07-09 22:17:58 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'field list'
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `we...', Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(1009): DboSource->execute('INSERT INTO `we...')
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1730): DboSource->create(Object(Track), Array, Array)
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Model/Track.php(32): Model->save(Array)
+#5 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/TopController.php(45): Track->syncTrack(Array)
+#6 [internal function]: TopController->top()
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(TopController), Array)
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(TopController), Object(CakeRequest), Object(CakeResponse))
+#10 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-07-09 22:24:35 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Track.content' in 'field list'
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Track`....', Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Track`....', Array, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Track`....', false)
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Track), Array)
+#5 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(600): Model->find('first', Array)
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(784): DboSource->query('findById', Array, Object(Track))
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/TopController.php(43): Model->__call('findById', Array)
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/TopController.php(43): Track->findById(52001640)
+#9 [internal function]: TopController->top()
+#10 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(TopController), Array)
+#11 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(TopController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-07-09 22:25:12 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Track.content' in 'field list'
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Track`....', Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Track`....', Array, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Track`....', false)
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Track), Array)
+#5 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(600): Model->find('first', Array)
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(784): DboSource->query('findById', Array, Object(Track))
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/TopController.php(43): Model->__call('findById', Array)
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/TopController.php(43): Track->findById(52001640)
+#9 [internal function]: TopController->top()
+#10 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(TopController), Array)
+#11 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(TopController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-07-09 22:26:13 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Track.content' in 'field list'
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Track`....', Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Track`....', Array, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Track`....', false)
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Track), Array)
+#5 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(600): Model->find('first', Array)
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(784): DboSource->query('findById', Array, Object(Track))
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/TopController.php(43): Model->__call('findById', Array)
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/TopController.php(43): Track->findById(52001640)
+#9 [internal function]: TopController->top()
+#10 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(TopController), Array)
+#11 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(TopController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-07-09 22:28:40 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Track.content' in 'field list'
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Track`....', Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Track`....', Array, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Track`....', false)
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Track), Array)
+#5 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(600): Model->find('first', Array)
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(784): DboSource->query('findById', Array, Object(Track))
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/TopController.php(43): Model->__call('findById', Array)
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/TopController.php(43): Track->findById(52001640)
+#9 [internal function]: TopController->top()
+#10 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(TopController), Array)
+#11 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(TopController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-07-09 22:29:21 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Track.content' in 'field list'
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Track`....', Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Track`....', Array, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Track`....', false)
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Track), Array)
+#5 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(600): Model->find('first', Array)
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(784): DboSource->query('findById', Array, Object(Track))
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/TopController.php(44): Model->__call('findById', Array)
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/TopController.php(44): Track->findById(52001640)
+#9 [internal function]: TopController->top()
+#10 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(TopController), Array)
+#11 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(TopController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-07-09 22:32:43 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Track.content' in 'field list'
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Track`....', Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Track`....', Array, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Track`....', false)
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Track), Array)
+#5 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(600): Model->find('first', Array)
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(784): DboSource->query('findById', Array, Object(Track))
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/TopController.php(43): Model->__call('findById', Array)
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/TopController.php(43): Track->findById(52001640)
+#9 [internal function]: TopController->top()
+#10 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(TopController), Array)
+#11 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(TopController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-07-09 22:33:04 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Track.content' in 'field list'
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Track`....', Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Track`....', Array, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Track`....', false)
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Track), Array)
+#5 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(600): Model->find('first', Array)
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(784): DboSource->query('findById', Array, Object(Track))
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/TopController.php(44): Model->__call('findById', Array)
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/TopController.php(44): Track->findById(52001640)
+#9 [internal function]: TopController->top()
+#10 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(TopController), Array)
+#11 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(TopController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-07-09 22:33:27 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Track.content' in 'field list'
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Track`....', Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Track`....', Array, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Track`....', false)
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Track), Array)
+#5 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(600): Model->find('first', Array)
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(784): DboSource->query('findById', Array, Object(Track))
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/TopController.php(43): Model->__call('findById', Array)
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/TopController.php(43): Track->findById(52001640)
+#9 [internal function]: TopController->top()
+#10 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(TopController), Array)
+#11 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(TopController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-07-09 22:33:38 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Track.content' in 'field list'
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Track`....', Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Track`....', Array, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Track`....', false)
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Track), Array)
+#5 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(600): Model->find('first', Array)
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(784): DboSource->query('findById', Array, Object(Track))
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/TopController.php(43): Model->__call('findById', Array)
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/TopController.php(43): Track->findById(52001640)
+#9 [internal function]: TopController->top()
+#10 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(TopController), Array)
+#11 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(TopController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-07-09 22:34:45 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Track.content' in 'field list'
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Track`....', Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Track`....', Array, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Track`....', false)
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Track), Array)
+#5 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/TopController.php(53): Model->find('all', Array)
+#6 [internal function]: TopController->top()
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(TopController), Array)
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(TopController), Object(CakeRequest), Object(CakeResponse))
+#10 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-07-09 22:50:28 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Log/Engine/FileLog.php, line 87]
+2012-07-09 22:50:28 Error: [InternalErrorException] Internal Server Error
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Maximum executi...', '/Users/wellsjoh...', 87)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', '/Users/wellsjoh...', 87, Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', '/Users/wellsjoh...', 87, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-09 22:51:47 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Utility/Debugger.php, line 545]
+2012-07-09 22:51:47 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Maximum executi...', '/Users/wellsjoh...', 545)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', '/Users/wellsjoh...', 545, Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', '/Users/wellsjoh...', 545, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-09 22:52:57 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Utility/String.php, line 247]
+2012-07-09 22:52:57 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Maximum executi...', '/Users/wellsjoh...', 247)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', '/Users/wellsjoh...', 247, Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', '/Users/wellsjoh...', 247, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-09 23:09:12 Warning: Warning (2): Invalid argument supplied for foreach() in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/TopController.php, line 43]
+Trace:
+TopController::top() - APP/Controller/TopController.php, line 43
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 485
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 186
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 92
+
+2012-07-09 23:12:31 Warning: Warning (2): Invalid argument supplied for foreach() in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/TopController.php, line 43]
+Trace:
+TopController::top() - APP/Controller/TopController.php, line 43
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 485
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 186
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 92
+
+2012-07-09 23:14:22 Warning: Warning (2): Invalid argument supplied for foreach() in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/TopController.php, line 43]
+Trace:
+TopController::top() - APP/Controller/TopController.php, line 43
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 485
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 186
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 92
+
+2012-07-09 23:17:15 Error: [MissingControllerException] Controller class RegisterController could not be found.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-09 23:17:27 Warning: Warning (2): Invalid argument supplied for foreach() in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/TopController.php, line 43]
+Trace:
+TopController::top() - APP/Controller/TopController.php, line 43
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 485
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 186
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 92
+

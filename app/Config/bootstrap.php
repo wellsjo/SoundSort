@@ -179,3 +179,8 @@ CakeLog::config('error', array(
 	'types' => array('warning', 'error', 'critical', 'alert', 'emergency'),
 	'file' => 'error',
 ));
+
+
+function pre_var_dump($object) {
+	echo '<pre>'.var_dump($object).'</pre>';
+}

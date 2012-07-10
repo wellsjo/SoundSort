@@ -10,10 +10,11 @@ $(document).ready(function() {
 		client_id: "4ca806233abc6f50dfbd8c124380277b",
 		redirect_uri: "http://wellsstuff.com/trending"
 	});
+	console.log(tracks);
 	for (var track_index in tracks) {
 		$('#trend_container').append('<span class=\'track_container\' data-track_id=\'' + tracks[track_index].id +
 			'\' data-dl_link=\'' + tracks[track_index].permalink_url + '/download' + '\' data-vote_count=\''
-			+ tracks[track_index].vote_count + '\' ><div id=\'track' + track_index + '\' </div></span>');
+			+ (tracks[track_index].upvotes - tracks[track_index].downvotes) + '\' ><div id=\'track' + track_index + '\' </div></span>');
 		$('#track' + track_index).scPlayer({
 			links: [{
 				url: tracks[track_index].uri,
