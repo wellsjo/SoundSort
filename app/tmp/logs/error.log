@@ -605,3 +605,143 @@ Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
 #3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(899): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2012-07-10 13:59:43 Error: Fatal Error (1): Call to undefined method LoginController::findByNameAndPassword() in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/LoginController.php, line 18]
+2012-07-10 13:59:43 Error: [FatalErrorException] Call to undefined method LoginController::findByNameAndPassword()
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/wellsjoh...', 18)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/wellsjoh...', 18, Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/wellsjoh...', 18, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-10 14:01:00 Error: Fatal Error (1): Call to undefined method LoginController::findByNameAndPassword() in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/LoginController.php, line 18]
+2012-07-10 14:01:00 Error: [FatalErrorException] Call to undefined method LoginController::findByNameAndPassword()
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/wellsjoh...', 18)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/wellsjoh...', 18, Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/wellsjoh...', 18, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-10 14:03:36 Error: Fatal Error (1): Call to undefined function is_email() in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/LoginController.php, line 14]
+2012-07-10 14:03:36 Error: [FatalErrorException] Call to undefined function is_email()
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/wellsjoh...', 14)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/wellsjoh...', 14, Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/wellsjoh...', 14, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-10 14:04:59 Error: Fatal Error (1): Call to undefined method LoginController::findByEmailAndPassword() in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/LoginController.php, line 15]
+2012-07-10 14:04:59 Error: [FatalErrorException] Call to undefined method LoginController::findByEmailAndPassword()
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/wellsjoh...', 15)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/wellsjoh...', 15, Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/wellsjoh...', 15, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-10 14:06:00 Error: [MissingViewException] View file "/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/View/Login/index.ctp" is missing.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-07-10 14:11:23 Error: [MissingViewException] View file "/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/View/Login/index.ctp" is missing.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-07-10 14:27:00 Error: Fatal Error (1): Call to a member function addParams() on a non-object in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php, line 219]
+2012-07-10 14:27:00 Error: [FatalErrorException] Call to a member function addParams() on a non-object
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/wellsjoh...', 219)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/wellsjoh...', 219, Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/wellsjoh...', 219, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-10 14:28:02 Error: Fatal Error (1): Call to a member function addParams() on a non-object in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php, line 219]
+2012-07-10 14:28:02 Error: [FatalErrorException] Call to a member function addParams() on a non-object
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/wellsjoh...', 219)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/wellsjoh...', 219, Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/wellsjoh...', 219, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-10 14:29:19 Error: Fatal Error (1): Call to a member function addParams() on a non-object in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php, line 219]
+2012-07-10 14:29:19 Error: [FatalErrorException] Call to a member function addParams() on a non-object
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/wellsjoh...', 219)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/wellsjoh...', 219, Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/wellsjoh...', 219, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-10 14:44:04 Error: [MissingViewException] View file "/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/View/Login/index.ctp" is missing.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-07-10 14:45:01 Error: [MissingViewException] View file "/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/View/Login/index.ctp" is missing.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-07-10 15:01:07 Error: Fatal Error (1): Call to a member function getSoundCloudTracks() on a non-object in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/TopController.php, line 27]
+2012-07-10 15:01:07 Error: [FatalErrorException] Call to a member function getSoundCloudTracks() on a non-object
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/wellsjoh...', 27)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/wellsjoh...', 27, Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/wellsjoh...', 27, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-10 15:02:34 Error: Fatal Error (1): Call to a member function getSoundCloudTracks() on a non-object in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/TopController.php, line 27]
+2012-07-10 15:02:34 Error: [FatalErrorException] Call to a member function getSoundCloudTracks() on a non-object
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/wellsjoh...', 27)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/wellsjoh...', 27, Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/wellsjoh...', 27, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-10 15:04:37 Error: Fatal Error (1): Call to undefined method TopController::element() in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/TopController.php, line 14]
+2012-07-10 15:04:37 Error: [FatalErrorException] Call to undefined method TopController::element()
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/wellsjoh...', 14)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/wellsjoh...', 14, Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/wellsjoh...', 14, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-10 15:06:39 Error: Fatal Error (1): Call to a member function getSoundCloudTracks() on a non-object in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/TopController.php, line 28]
+2012-07-10 15:06:39 Error: [FatalErrorException] Call to a member function getSoundCloudTracks() on a non-object
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/wellsjoh...', 28)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/wellsjoh...', 28, Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/wellsjoh...', 28, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-10 15:07:18 Error: Fatal Error (1): Call to a member function getSoundCloudTracks() on a non-object in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/TopController.php, line 29]
+2012-07-10 15:07:18 Error: [FatalErrorException] Call to a member function getSoundCloudTracks() on a non-object
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/wellsjoh...', 29)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/wellsjoh...', 29, Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/wellsjoh...', 29, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-10 15:07:23 Error: Fatal Error (1): Call to a member function getSoundCloudTracks() on a non-object in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/TopController.php, line 29]
+2012-07-10 15:07:23 Error: [FatalErrorException] Call to a member function getSoundCloudTracks() on a non-object
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/wellsjoh...', 29)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/wellsjoh...', 29, Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/wellsjoh...', 29, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-10 15:09:32 Error: Fatal Error (1): Call to a member function findById() on a non-object in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/AppController.php, line 43]
+2012-07-10 15:09:32 Error: [FatalErrorException] Call to a member function findById() on a non-object
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/wellsjoh...', 43)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/wellsjoh...', 43, Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/wellsjoh...', 43, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

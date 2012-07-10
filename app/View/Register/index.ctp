@@ -1,7 +1,7 @@
 <div class="container" id="main_container">
 	<div class="row">
 		<div class="span6 offset2">
-			<div class="alert alert-success">
+			<div class="alert alert-success hidden">
 				Get ready to discover new music
 			</div>
 			<form class="form-horizontal" id="registerHere" method='post' action='/register/confirm'>

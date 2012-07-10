@@ -27,14 +27,6 @@ $(document).ready(function() {
 });
 
 function render() {
-	$('#sign_in').click(function(e) {
-		e.preventDefault();
-		$.post('/user/login', {
-			user_name: $('#user_name'),
-			password: $('#pwd')
-		});
-	});
-
 	$('.sc-play').click(function() {
 		$(this).parent().children('.sc-pause').removeClass('hidden');
 	});

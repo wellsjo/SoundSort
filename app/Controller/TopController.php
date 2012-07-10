@@ -4,11 +4,18 @@ Class TopController extends AppController {
 
 	var $uses = array('Track');
 
+	function beforeRender() {
+		
+	}
+
 	function index() {
 		$this->redirect('/top');
 	}
 
 	function top() {
+		$Auth = $this->auth();
+		$this->set('auth_for_layout', $Auth);
+
 		$page = @$this->params['id'];
 		if (!empty($page)) {
 			$this->set('page', $page);

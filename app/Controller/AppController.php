@@ -32,4 +32,16 @@ App::uses('Controller', 'Controller');
  * @link http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
+
+	function auth() {
+		$this->loadModel('User');
+		$logged_in = $this->Session->read('logged_in');
+		if ($logged_in != 'true') {
+			return false;
+		}
+		$user_id = $this->Session->read('user_id');
+		$User = $this->User->findById($user_id);
+		return $User;
+	}
+
 }
