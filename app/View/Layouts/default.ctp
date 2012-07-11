@@ -29,6 +29,7 @@
 		<?php
 		echo $this->element('navbar');
 		echo $this->fetch('content');
+		echo $this->element('sql_dump');
 		?>
 	</body>
 </html>

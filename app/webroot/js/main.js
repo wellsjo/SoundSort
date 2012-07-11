@@ -54,11 +54,14 @@ function afterRender() {
 				if ($(this).parent().children('.downvote').hasClass('downvoted')) {
 					$(this).parent().children('.vote_count').text(Number(count)+2);
 					$(this).parent().children('.downvote').removeClass('downvoted');
-					$.post('/track/upvote/' + track);
-					$.post('/track/upvote/' + track);
+					$.post('/vote/upvote/' + track);
+					$.post('/vote/upvote/' + track);
+//					$.post('/track/upvote/' + track);
+//					$.post('/track/upvote/' + track);
 				}else{
 					$(this).parent().children('.vote_count').text(Number(count)+1);
-					$.post('/track/upvote/' + track);
+					$.post('/vote/upvote/' + track);
+//					$.post('/track/upvote/' + track);
 				}
 			}else{
 				$(this).removeClass('upvoted');

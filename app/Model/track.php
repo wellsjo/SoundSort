@@ -1,19 +1,37 @@
 <?php
 
+App::import('Model', 'Vote');
+
 class Track extends AppModel {
 
-	public $name = 'Track';
-	public $validate = array();
+	var $name = 'Track';
 
-	function upvote($id) {
+	function upvote($id, $user_id) {
 		$track = $this->findById($id);
 		$track['Track']['upvotes'] += 1;
 		$this->save($track);
+
+		$VoteObject = array('Vote' => array(
+			'user_id' => $user_id,
+			'track_id' => $id,
+			'upvote' => 1,
+			'downvote' => 0
+		));
+		$vote = new Vote();
+		$vote->create();
+		$vote->save($VoteObject);
 	}
 
-	function downvote($id) {
+	function downvote($id, $user_id) {
 		$track = $this->findById($id);
 		$track['Track']['downvotes'] += 1;
+		$Vote = array('Vote' => array(
+			'user_id' => $user_id,
+			'track_id' => $id,
+			'upvote' => 0,
+			'downvote' => 1
+		));
+		$this->Vote->save($Vote);
 		$this->save($track);
 	}
 

@@ -758,3 +758,505 @@ Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
 #3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(899): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2012-07-10 21:58:24 Error: Fatal Error (1): Call to a member function save() on a non-object in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Model/Track.php, line 18]
+2012-07-10 21:58:24 Error: [FatalErrorException] Call to a member function save() on a non-object
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/wellsjoh...', 18)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/wellsjoh...', 18, Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/wellsjoh...', 18, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-10 21:59:18 Error: Fatal Error (1): Call to a member function save() on a non-object in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Model/Track.php, line 18]
+2012-07-10 21:59:18 Error: [FatalErrorException] Call to a member function save() on a non-object
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/wellsjoh...', 18)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/wellsjoh...', 18, Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/wellsjoh...', 18, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-10 22:01:04 Error: Fatal Error (1): Call to a member function save() on a non-object in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Model/Track.php, line 18]
+2012-07-10 22:01:04 Error: [FatalErrorException] Call to a member function save() on a non-object
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/wellsjoh...', 18)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/wellsjoh...', 18, Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/wellsjoh...', 18, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-10 22:02:56 Error: Fatal Error (1): Call to a member function create() on a non-object in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Model/Track.php, line 17]
+2012-07-10 22:02:56 Error: [FatalErrorException] Call to a member function create() on a non-object
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/wellsjoh...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/wellsjoh...', 17, Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/wellsjoh...', 17, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-10 22:05:34 Error: [MissingTableException] Table votes for model Vote was not found in datasource default.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(3180): Model->setSource('votes')
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1476): Model->schema()
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Model/Track.php(19): Model->create()
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/TrackController.php(14): Track->upvote('51506867', '4ffceb76-ec90-4...')
+#5 [internal function]: TrackController->upvote()
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(TrackController), Array)
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(TrackController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-07-10 22:07:30 Error: [MissingTableException] Table votes for model Vote was not found in datasource default.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(3180): Model->setSource('votes')
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1476): Model->schema()
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Model/Track.php(19): Model->create()
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/TrackController.php(14): Track->upvote('51794546', '4ffceb76-ec90-4...')
+#5 [internal function]: TrackController->upvote()
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(TrackController), Array)
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(TrackController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-07-10 22:10:12 Error: [MissingTableException] Table votes for model Vote was not found in datasource default.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(3180): Model->setSource('votes')
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1476): Model->schema()
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Model/Track.php(19): Model->create()
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/TrackController.php(14): Track->upvote('51506867', '4ffceb76-ec90-4...')
+#5 [internal function]: TrackController->upvote()
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(TrackController), Array)
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(TrackController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-07-10 22:17:59 Error: [MissingTableException] Table votes for model Vote was not found in datasource default.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(3180): Model->setSource('votes')
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1476): Model->schema()
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Model/Track.php(19): Model->create()
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/TrackController.php(14): Track->upvote('51506867', '4ffceb76-ec90-4...')
+#5 [internal function]: TrackController->upvote()
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(TrackController), Array)
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(TrackController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-07-10 22:23:37 Error: [MissingTableException] Table votes for model Vote was not found in datasource default.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(3180): Model->setSource('votes')
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1476): Model->schema()
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Model/Track.php(19): Model->create()
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/TrackController.php(14): Track->upvote('51506867', '4ffceb76-ec90-4...')
+#5 [internal function]: TrackController->upvote()
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(TrackController), Array)
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(TrackController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-07-10 22:25:10 Error: [MissingTableException] Table votes for model Vote was not found in datasource default.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(3180): Model->setSource('votes')
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1476): Model->schema()
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Model/Track.php(19): Model->create()
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/TrackController.php(14): Track->upvote('51794546', '4ffceb76-ec90-4...')
+#5 [internal function]: TrackController->upvote()
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(TrackController), Array)
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(TrackController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-07-10 22:26:36 Error: [MissingTableException] Table votes for model Vote was not found in datasource default.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(3180): Model->setSource('votes')
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1476): Model->schema()
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Model/Track.php(19): Model->create()
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/TrackController.php(14): Track->upvote('51794546', '4ffceb76-ec90-4...')
+#5 [internal function]: TrackController->upvote()
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(TrackController), Array)
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(TrackController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-07-10 22:33:43 Error: [MissingTableException] Table votes for model Vote was not found in datasource default.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(3180): Model->setSource('votes')
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1476): Model->schema()
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Model/Track.php(19): Model->create()
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/TrackController.php(14): Track->upvote('51506867', '4ffceb76-ec90-4...')
+#5 [internal function]: TrackController->upvote()
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(TrackController), Array)
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(TrackController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-07-10 22:41:22 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'loadModel' at line 1
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('loadModel', Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('loadModel', Array, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(613): DboSource->fetchAll('loadModel', Array, Array)
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(784): DboSource->query('loadModel', Array, Object(Track))
+#5 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Model/Track.php(19): Model->__call('loadModel', Array)
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Model/Track.php(19): Track->loadModel('Vote')
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/TrackController.php(14): Track->upvote('51506867', '4ffceb76-ec90-4...')
+#8 [internal function]: TrackController->upvote()
+#9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(TrackController), Array)
+#10 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(TrackController), Object(CakeRequest), Object(CakeResponse))
+#12 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2012-07-10 22:44:23 Error: Fatal Error (1): Call to a member function create() on a non-object in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Model/Track.php, line 20]
+2012-07-10 22:44:23 Error: [FatalErrorException] Call to a member function create() on a non-object
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/wellsjoh...', 20)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/wellsjoh...', 20, Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/wellsjoh...', 20, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-10 22:46:52 Error: Fatal Error (1): Call to a member function save() on a non-object in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Model/Track.php, line 34]
+2012-07-10 22:46:52 Error: [FatalErrorException] Call to a member function save() on a non-object
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/wellsjoh...', 34)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/wellsjoh...', 34, Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/wellsjoh...', 34, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-10 22:46:56 Error: [MissingTableException] Table votes for model Vote was not found in datasource default.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(3180): Model->setSource('votes')
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1476): Model->schema()
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Model/Track.php(21): Model->create()
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/TrackController.php(14): Track->upvote('51794546', '4ffceb76-ec90-4...')
+#5 [internal function]: TrackController->upvote()
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(TrackController), Array)
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(TrackController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-07-10 22:47:04 Error: [MissingTableException] Table votes for model Vote was not found in datasource default.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(3180): Model->setSource('votes')
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1476): Model->schema()
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Model/Track.php(21): Model->create()
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/TrackController.php(14): Track->upvote('51794546', '4ffceb76-ec90-4...')
+#5 [internal function]: TrackController->upvote()
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(TrackController), Array)
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(TrackController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-07-10 22:55:35 Error: [MissingTableException] Table votes for model Vote was not found in datasource default.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(3180): Model->setSource('votes')
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1476): Model->schema()
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Model/Track.php(21): Model->create()
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/TrackController.php(14): Track->upvote('51506867', '4ffceb76-ec90-4...')
+#5 [internal function]: TrackController->upvote()
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(TrackController), Array)
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(TrackController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-07-10 22:58:16 Error: [MissingTableException] Table votes for model Vote was not found in datasource default.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(3180): Model->setSource('votes')
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1476): Model->schema()
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Model/Track.php(21): Model->create()
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/TrackController.php(14): Track->upvote('51817661', '4ffceb76-ec90-4...')
+#5 [internal function]: TrackController->upvote()
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(TrackController), Array)
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(TrackController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-07-10 23:00:55 Error: [MissingTableException] Table votes for model Vote was not found in datasource default.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(3180): Model->setSource('votes')
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1476): Model->schema()
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Model/Track.php(21): Model->create()
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/TrackController.php(14): Track->upvote('51817661', '4ffceb76-ec90-4...')
+#5 [internal function]: TrackController->upvote()
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(TrackController), Array)
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(TrackController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-07-10 23:01:34 Error: [MissingTableException] Table votes for model Vote was not found in datasource default.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(3180): Model->setSource('votes')
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1476): Model->schema()
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Model/Track.php(21): Model->create()
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/TrackController.php(14): Track->upvote('51128803', '4ffceb76-ec90-4...')
+#5 [internal function]: TrackController->upvote()
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(TrackController), Array)
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(TrackController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-07-10 23:11:52 Error: [MissingTableException] Table votes for model Vote was not found in datasource default.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(3180): Model->setSource('votes')
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1648): Model->getDataSource()
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Model/Vote.php(14): Model->save(Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/VoteController.php(14): Vote->upvote('51506867', '4ffceb76-ec90-4...')
+#4 [internal function]: VoteController->upvote()
+#5 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(VoteController), Array)
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(VoteController), Object(CakeRequest), Object(CakeResponse))
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2012-07-10 23:15:48 Error: [MissingTableException] Table votes for model Vote was not found in datasource default.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(3180): Model->setSource('votes')
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1648): Model->getDataSource()
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Model/Vote.php(14): Model->save(Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/VoteController.php(14): Vote->upvote('51506867', '4ffceb76-ec90-4...')
+#4 [internal function]: VoteController->upvote()
+#5 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(VoteController), Array)
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(VoteController), Object(CakeRequest), Object(CakeResponse))
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2012-07-10 23:17:54 Error: [MissingControllerException] Controller class VoteController could not be found.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-10 23:18:49 Error: [MissingControllerException] Controller class VoteController could not be found.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-10 23:19:19 Error: [MissingControllerException] Controller class MothController could not be found.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-10 23:27:24 Error: [MissingTableException] Table moths for model Moth was not found in datasource default.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(3180): Model->setSource('moths')
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1476): Model->schema()
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Model/Moth.php(8): Model->create()
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/MothController.php(15): Moth->upvote('51794546', '4ffceb76-ec90-4...')
+#5 [internal function]: MothController->upvote()
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(MothController), Array)
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(MothController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-07-10 23:38:43 Error: [MissingTableException] Table moths for model Moth was not found in datasource default.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(3180): Model->setSource('moths')
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1648): Model->getDataSource()
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Model/Moth.php(14): Model->save(Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/MothController.php(15): Moth->upvote('51506867', '4ffceb76-ec90-4...')
+#4 [internal function]: MothController->upvote()
+#5 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(MothController), Array)
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(MothController), Object(CakeRequest), Object(CakeResponse))
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2012-07-10 23:47:31 Error: [MissingTableException] Table moths for model Moth was not found in datasource default.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(3180): Model->setSource('moths')
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1476): Model->schema()
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Model/Moth.php(14): Model->create()
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/MothController.php(15): Moth->upvote('51506867', '4ffceb76-ec90-4...')
+#5 [internal function]: MothController->upvote()
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(MothController), Array)
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(MothController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-07-11 00:04:58 Error: [MissingTableException] Table moths for model Moth was not found in datasource default.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(3180): Model->setSource('moths')
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1476): Model->schema()
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Model/Moth.php(14): Model->create()
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/MothController.php(15): Moth->upvote('51794546', '4ffceb76-ec90-4...')
+#5 [internal function]: MothController->upvote()
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(MothController), Array)
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(MothController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-07-11 08:48:12 Error: [MissingTableException] Table votes for model Vote was not found in datasource default.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(3180): Model->setSource('votes')
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1476): Model->schema()
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Model/Vote.php(14): Model->create()
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/VoteController.php(15): Vote->upvote('51506867', '4ffceb76-ec90-4...')
+#5 [internal function]: VoteController->upvote()
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(VoteController), Array)
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(VoteController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-07-11 08:48:43 Error: Fatal Error (1): Call to a member function save() on a non-object in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Model/Track.php, line 34]
+2012-07-11 08:48:43 Error: [FatalErrorException] Call to a member function save() on a non-object
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/wellsjoh...', 34)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/wellsjoh...', 34, Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/wellsjoh...', 34, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-11 08:48:50 Error: [MissingTableException] Table votes for model Vote was not found in datasource default.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(3180): Model->setSource('votes')
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1476): Model->schema()
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Model/Vote.php(14): Model->create()
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/VoteController.php(15): Vote->upvote('51506867', '4ffceb76-ec90-4...')
+#5 [internal function]: VoteController->upvote()
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(VoteController), Array)
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(VoteController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-07-11 08:49:38 Error: [MissingTableException] Table votes for model Vote was not found in datasource default.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(3180): Model->setSource('votes')
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1476): Model->schema()
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Model/Vote.php(14): Model->create()
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/VoteController.php(14): Vote->upvote('51506867', '4ffceb76-ec90-4...')
+#5 [internal function]: VoteController->upvote()
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(VoteController), Array)
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(VoteController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-07-11 08:50:12 Error: [MissingTableException] Table votes for model Vote was not found in datasource default.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(3180): Model->setSource('votes')
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1476): Model->schema()
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Model/Vote.php(14): Model->create()
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/VoteController.php(14): Vote->upvote('51794546', '4ffceb76-ec90-4...')
+#5 [internal function]: VoteController->upvote()
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(VoteController), Array)
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(VoteController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-07-11 08:50:49 Error: [MissingTableException] Table votes for model Vote was not found in datasource default.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(3180): Model->setSource('votes')
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1476): Model->schema()
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Model/Vote.php(14): Model->create()
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/VoteController.php(14): Vote->upvote('51817661', '4ffceb76-ec90-4...')
+#5 [internal function]: VoteController->upvote()
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(VoteController), Array)
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(VoteController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-07-11 08:52:37 Error: [MissingTableException] Table votes for model Vote was not found in datasource default.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(3180): Model->setSource('votes')
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1476): Model->schema()
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Model/Vote.php(14): Model->create()
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/VoteController.php(14): Vote->upvote('51506867', '4ffceb76-ec90-4...')
+#5 [internal function]: VoteController->upvote()
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(VoteController), Array)
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(VoteController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-07-11 08:55:39 Error: [MissingTableException] Table votes for model Vote was not found in datasource default.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(3180): Model->setSource('votes')
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1476): Model->schema()
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Model/Vote.php(14): Model->create()
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/VoteController.php(14): Vote->upvote('51794546', '4ffceb76-ec90-4...')
+#5 [internal function]: VoteController->upvote()
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(VoteController), Array)
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(VoteController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-07-11 08:58:37 Error: [MissingTableException] Table votes for model Vote was not found in datasource default.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(3180): Model->setSource('votes')
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1476): Model->schema()
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Model/Vote.php(15): Model->create()
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/VoteController.php(12): Vote->upvote('51817661', '4ffceb76-ec90-4...')
+#5 [internal function]: VoteController->upvote()
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(VoteController), Array)
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(VoteController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-07-11 08:59:17 Error: [MissingTableException] Table votes for model Vote was not found in datasource default.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(3180): Model->setSource('votes')
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1476): Model->schema()
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Model/Vote.php(14): Model->create()
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/VoteController.php(12): Vote->upvote('51128803', '4ffceb76-ec90-4...')
+#5 [internal function]: VoteController->upvote()
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(VoteController), Array)
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(VoteController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-07-11 09:00:05 Error: [MissingTableException] Table votes for model Vote was not found in datasource default.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(3180): Model->setSource('votes')
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1648): Model->getDataSource()
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Model/Vote.php(21): Model->save(Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/VoteController.php(12): Vote->upvote('51368009', '4ffceb76-ec90-4...')
+#4 [internal function]: VoteController->upvote()
+#5 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(VoteController), Array)
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(VoteController), Object(CakeRequest), Object(CakeResponse))
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2012-07-11 09:02:11 Error: [MissingTableException] Table votes for model Vote was not found in datasource default.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(3180): Model->setSource('votes')
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1648): Model->getDataSource()
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Model/Vote.php(21): Model->save(Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/VoteController.php(12): Vote->upvote('51358020', '4ffceb76-ec90-4...')
+#4 [internal function]: VoteController->upvote()
+#5 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(VoteController), Array)
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(VoteController), Object(CakeRequest), Object(CakeResponse))
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2012-07-11 09:04:14 Error: [MissingTableException] Table votes for model Vote was not found in datasource default.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(3180): Model->setSource('votes')
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1648): Model->getDataSource()
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Model/Vote.php(20): Model->save(Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/VoteController.php(12): Vote->upvote('52001640', '4ffceb76-ec90-4...')
+#4 [internal function]: VoteController->upvote()
+#5 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(VoteController), Array)
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(VoteController), Object(CakeRequest), Object(CakeResponse))
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2012-07-11 09:10:55 Error: [MissingTableException] Table votes for model Vote was not found in datasource default.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(3180): Model->setSource('votes')
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1648): Model->getDataSource()
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Model/Vote.php(20): Model->save(Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/VoteController.php(12): Vote->upvote('51451875', '4ffceb76-ec90-4...')
+#4 [internal function]: VoteController->upvote()
+#5 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(VoteController), Array)
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(VoteController), Object(CakeRequest), Object(CakeResponse))
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2012-07-11 09:11:52 Error: [MissingTableException] Table votes for model Vote was not found in datasource default.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(3180): Model->setSource('votes')
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1648): Model->getDataSource()
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Model/Vote.php(20): Model->save(Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/VoteController.php(12): Vote->upvote('51680371', '4ffceb76-ec90-4...')
+#4 [internal function]: VoteController->upvote()
+#5 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(VoteController), Array)
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(VoteController), Object(CakeRequest), Object(CakeResponse))
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2012-07-11 09:15:31 Error: [MissingTableException] Table votes for model Vote was not found in datasource default.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(3180): Model->setSource('votes')
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1648): Model->getDataSource()
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Model/Vote.php(20): Model->save(Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/VoteController.php(12): Vote->upvote('51451875', '4ffceb76-ec90-4...')
+#4 [internal function]: VoteController->upvote()
+#5 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(VoteController), Array)
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(VoteController), Object(CakeRequest), Object(CakeResponse))
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2012-07-11 09:56:34 Error: [MissingTableException] Table votes for model Vote was not found in datasource default.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(3180): Model->setSource('votes')
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1648): Model->getDataSource()
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Model/Vote.php(20): Model->save(Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/VoteController.php(12): Vote->upvote('52070140', '4ffceb76-ec90-4...')
+#4 [internal function]: VoteController->upvote()
+#5 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(VoteController), Array)
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(VoteController), Object(CakeRequest), Object(CakeResponse))
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}

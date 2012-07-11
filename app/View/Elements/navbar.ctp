@@ -74,8 +74,8 @@ $Url = json_encode($Url);
 				if (response) {
 					response = JSON.parse(response);
 					if (response.error) {
-						$('.alert-error').removeClass('hidden');
-						$('.alert-error').text(response.error);
+						$('.navbar .alert-error').removeClass('hidden');
+						$('.navbar .alert-error').text(response.error);
 					}
 				}else{
 					window.location = url;

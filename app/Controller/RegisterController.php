@@ -7,12 +7,16 @@ class RegisterController extends AppController {
 	var $uses = 'User';
 
 	function index() {
+		$Auth = $this->auth();
+		$this->set('auth_for_layout', $Auth);
 		if (!empty($_POST)) {
 			$this->redirect('/register/confirm');
 		}
 	}
 
 	function confirm() {
+		$Auth = $this->auth();
+		$this->set('auth_for_layout', $Auth);
 		if (!empty($_POST)) {
 			$NewUser = array('User' => array(
 					'name' => @$_POST['user_name'],
@@ -26,6 +30,8 @@ class RegisterController extends AppController {
 	}
 
 	function activated() {
+		$Auth = $this->auth();
+		$this->set('auth_for_layout', $Auth);
 		$user_id = $this->params['id'];
 		$User = $this->User->findById($user_id);
 		$User['User']['activated'] = 1;

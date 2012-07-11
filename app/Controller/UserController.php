@@ -21,6 +21,9 @@ class UserController extends AppController {
 		if (empty($User)) {
 			return json_encode(array("error" => "Invalid user/password combination."));
 		}
+		if ($User['User']['activated'] == 0) {
+			return json_encode(array("error" => "You must first verify your account"));
+		}
 
 		$this->Cookie->write('logged_in', 'true', 3600);
 		$this->Cookie->write('user_id', $User['User']['id'], 3600);
