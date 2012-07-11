@@ -41,50 +41,69 @@ function render() {
 			+ '<div data-track_id=\'' + track_id + '\'class=\'arrow-down downvote\' ></div></span>'
 			);
 	});
-
 	afterRender();
 }
 
 function afterRender() {
 	$('.upvote').click(function(e) {
-		var track = $(e.currentTarget).data('track_id');
-		var count = $(e.currentTarget).parent().children('.vote_count').text();
-		if (!$(this).hasClass('upvoted')) {
-			$(this).addClass('upvoted');
-			if ($(this).parent().children('.downvote').hasClass('downvoted')) {
-				$(this).parent().children('.vote_count').text(Number(count)+2);
-				$(this).parent().children('.downvote').removeClass('downvoted');
-				$.post('/track/upvote/' + track);
-				$.post('/track/upvote/' + track);
+		if (readCookie('logged_in')){
+			var track = $(e.currentTarget).data('track_id');
+			var count = $(e.currentTarget).parent().children('.vote_count').text();
+			if (!$(this).hasClass('upvoted')) {
+				$(this).addClass('upvoted');
+				if ($(this).parent().children('.downvote').hasClass('downvoted')) {
+					$(this).parent().children('.vote_count').text(Number(count)+2);
+					$(this).parent().children('.downvote').removeClass('downvoted');
+					$.post('/track/upvote/' + track);
+					$.post('/track/upvote/' + track);
+				}else{
+					$(this).parent().children('.vote_count').text(Number(count)+1);
+					$.post('/track/upvote/' + track);
+				}
 			}else{
-				$(this).parent().children('.vote_count').text(Number(count)+1);
-				$.post('/track/upvote/' + track);
-			}
-		}else{
-			$(this).removeClass('upvoted');
-			$(this).parent().children('.vote_count').text(Number(count)-1);
-			$.post('/track/downvote/' + track);
-		}
-	});
-
-	$('.downvote').click(function(e) {
-		var track = $(e.currentTarget).data('track_id');
-		var count = $(e.currentTarget).parent().children('.vote_count').text();
-		if (!$(this).hasClass('downvoted')) {
-			$(this).addClass('downvoted');
-			if ($(this).parent().children('.upvote').hasClass('upvoted')) {
-				$(this).parent().children('.vote_count').text(Number(count)-2);
-				$(this).parent().children('.upvote').removeClass('upvoted');
-				$.post('/track/downvote/' + track);
-				$.post('/track/downvote/' + track);
-			}else{
+				$(this).removeClass('upvoted');
 				$(this).parent().children('.vote_count').text(Number(count)-1);
 				$.post('/track/downvote/' + track);
 			}
 		}else{
-			$(this).removeClass('downvoted');
-			$(this).parent().children('.vote_count').text(Number(count)+1);
-			$.post('/track/upvote/' + track);
+			$('#error_message').text('You must log in to vote or comment!').removeClass('hidden');
+			window.scrollTo(0, 0);
 		}
 	});
+
+	$('.downvote').click(function(e) {
+		if (readCookie('logged_in')){
+			var track = $(e.currentTarget).data('track_id');
+			var count = $(e.currentTarget).parent().children('.vote_count').text();
+			if (!$(this).hasClass('downvoted')) {
+				$(this).addClass('downvoted');
+				if ($(this).parent().children('.upvote').hasClass('upvoted')) {
+					$(this).parent().children('.vote_count').text(Number(count)-2);
+					$(this).parent().children('.upvote').removeClass('upvoted');
+					$.post('/track/downvote/' + track);
+					$.post('/track/downvote/' + track);
+				}else{
+					$(this).parent().children('.vote_count').text(Number(count)-1);
+					$.post('/track/downvote/' + track);
+				}
+			}else{
+				$(this).removeClass('downvoted');
+				$(this).parent().children('.vote_count').text(Number(count)+1);
+				$.post('/track/upvote/' + track);
+			}
+		}else{
+			$('#error_message').text('You must log in to vote or comment!').removeClass('hidden');
+			window.scrollTo(0, 0);
+		}
+	});
+}
+
+function readCookie(cookieName) {
+	var theCookie=" "+document.cookie;
+	var ind=theCookie.indexOf("["+cookieName+"]=");
+	if (ind==-1) ind=theCookie.indexOf(";"+cookieName+"=");
+	if (ind==-1 || cookieName=="") return "";
+	var ind1=theCookie.indexOf(";",ind+1);
+	if (ind1==-1) ind1=theCookie.length;
+	return unescape(theCookie.substring(ind+cookieName.length+3,ind1));
 }

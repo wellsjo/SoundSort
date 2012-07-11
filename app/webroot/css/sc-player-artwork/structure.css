@@ -1,8 +1,10 @@
 .sc-player{
-	width: 785px;
+	width: 800px;
 	height: 90px;
 	position: relative;
 	margin-bottom: 20px;
+	border-bottom: 1px solid lightgray;
+	left: -15px;
 }
 
 .sc-player ol, .sc-player li{
@@ -81,7 +83,7 @@
 	left: 100px;
 	top: 20px;
 	height: 20px;
-	width: 680px;
+	width: 696px;
 	display: block;
 }
 
@@ -157,6 +159,9 @@
 	top: 55px;
 }
 
+.sc-info h4 a{
+	color: navy;
+}
 
 .sc-player .sc-info-toggle{
 	position: absolute;

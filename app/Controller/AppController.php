@@ -33,13 +33,15 @@ App::uses('Controller', 'Controller');
  */
 class AppController extends Controller {
 
+	var $components = array('Cookie');
+
 	function auth() {
 		$this->loadModel('User');
-		$logged_in = $this->Session->read('logged_in');
+		$logged_in = $this->Cookie->read('logged_in');
 		if ($logged_in != 'true') {
 			return false;
 		}
-		$user_id = $this->Session->read('user_id');
+		$user_id = $this->Cookie->read('user_id');
 		$User = $this->User->findById($user_id);
 		return $User;
 	}

@@ -31,6 +31,7 @@ class Track extends AppModel {
 				'downvotes' => 0
 				));
 		$this->save($data);
+		return $data;
 	}
 
 	function getSoundCloudTracks($page) {

@@ -4,10 +4,6 @@ Class TopController extends AppController {
 
 	var $uses = array('Track');
 
-	function beforeRender() {
-		
-	}
-
 	function index() {
 		$this->redirect('/top');
 	}
@@ -30,11 +26,13 @@ Class TopController extends AppController {
 
 		$tracks = $this->Track->getSoundCloudTracks($page);
 		$tracks = json_decode($tracks, true);
+		$SCTracks = array();
 		foreach ($tracks as &$track) {
 			$response = $this->Track->findById($track['id']);
 			if (empty($response)) {
-				$this->Track->syncTrack($track);
-			} 
+				$response = $this->Track->syncTrack($track);
+			}
+			$SCTracks[] = $response;
 		}
 
 		$TrackList = $this->Track->find('all', array(
@@ -47,7 +45,11 @@ Class TopController extends AppController {
 		$return_list = array();
 		$offset = (--$page) * 10;
 		for ($off_start = $offset; $off_start < ($offset+10); $off_start++) {
-			$return_list[] = $TrackList[$off_start]['Track'];
+			if (isset($TrackList[$off_start])) {
+				$return_list[] = $TrackList[$off_start]['Track'];
+			}else{
+				$return_list[] = $SCTracks[$off_start - $offset]['Track'];
+			}
 		}
 		
 		$return_list = json_encode($return_list);

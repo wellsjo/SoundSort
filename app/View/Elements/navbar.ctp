@@ -20,8 +20,19 @@
 				<?php
 				if ($auth_for_layout['User']) {
 					?>
-				<li style="margin-top:10px;">Welcome, <?php echo $auth_for_layout['User']['name']; ?></li>
-				<?php
+					<li id="logout_dropdown" class="dropdown pull-right">
+						<a class = "dropdown-toggle" href = "#" data-toggle = "dropdown" data-bypass>
+							Welcome, <?php echo $auth_for_layout['User']['name']; ?>
+							<b class = "caret"></b>
+						</a>
+						<ul class="dropdown-menu">
+							<li class="dropdown" style="text-align:center;">
+								<a href="/user/logout">Log Out</a>
+							</li>
+						</ul>
+						
+					</li>
+					<?php
 				} else {
 					?>
 					<li id = "login_dropdown" class = "dropdown pull-right">
@@ -32,7 +43,7 @@
 						<div class = "dropdown-menu" style = "width:221px;padding: 5px;">
 							<input type = "text" name = "user[email]" placeholder = "Email" id = "login_user_name" value = "wellsjohnston@gmail.com" />
 							<input type = "password" name = "user[password]" placeholder = "********" id = "login_user_password" value = "password" />
-							<input id = "sign_in" class = "btn btn-primary span3" style = "width: 100px;float: right;" name = "commit" value = "Sign In" />
+							<button id ="sign_in" class = "btn btn-primary span3" style = "width: 100px;float: right;" name = "commit" value = "Sign In">Sign In</button>
 						</div>
 					</li>
 					<?php
@@ -43,16 +54,20 @@
 		</div>
 	</div>
 </div>
-<?php $Url = Router::url(array('controller' => 'top', 'action' => 'top'), true); ?>
+<?php
+$Url = Router::url(array('controller' => 'top', 'action' => 'top'), true); 
+$Url = json_encode($Url);
+?>
 <script type="text/javascript">
 	$(document).ready(function() {
+		<?php echo "url=" . $Url . ";";?>
 		$('.dropdown-menu input, .dropdown-menu label').click(function(e) {
 			e.stopPropagation();
 		});
 		
 		$('#sign_in').click(function(e) {
 			e.preventDefault();
-			$.post('/login', {
+			$.post('/user/login', {
 				user_name: $('#login_user_name').val(),
 				password: $('#login_user_password').val()
 			}, function(response) {
@@ -63,9 +78,6 @@
 						$('.alert-error').text(response.error);
 					}
 				}else{
-<?php $Url = json_encode($Url);
-echo "url=" . $Url . ";";
-?>
 					window.location = url;
 				}
 			});

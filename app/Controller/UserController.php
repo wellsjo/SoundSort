@@ -1,10 +1,10 @@
 <?php
 
-class LoginController extends AppController {
+class UserController extends AppController {
 
-	var $uses = 'User';
+	var $components = array('Cookie');
 
-	function index() {
+	function login() {
 		$this->autoRender = false;
 		$username = @$_POST['user_name'];
 		$password = @$_POST['password'];
@@ -22,8 +22,15 @@ class LoginController extends AppController {
 			return json_encode(array("error" => "Invalid user/password combination."));
 		}
 
-		$this->Session->write('logged_in', 'true');
-		$this->Session->write('user_id', $User['User']['id']);
+		$this->Cookie->write('logged_in', 'true', 3600);
+		$this->Cookie->write('user_id', $User['User']['id'], 3600);
+	}
+
+	function logout() {
+		$this->autoRender = false;
+		$this->Cookie->delete('user_id');
+		$this->Cookie->delete('logged_in');
+		$this->redirect('/top/1');
 	}
 
 }
