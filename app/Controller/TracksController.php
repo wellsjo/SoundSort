@@ -1,6 +1,6 @@
 <?php
 
-Class TrackController extends AppController {
+Class TracksController extends AppController {
 
 	var $uses = array('Track', 'Vote');
 

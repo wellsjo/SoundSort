@@ -2,8 +2,8 @@
 
 class User extends AppModel {
 
-	public $name = 'User';
-	public $validate = array();
+	var $name = 'User';
+	var $hasMany = array('Comment', 'Vote');
 
 	function register($user) {
 		$result = $this->save($user);

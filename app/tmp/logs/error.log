@@ -1686,3 +1686,20 @@ Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
 #6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(RegisterController), Object(CakeRequest), Object(CakeResponse))
 #7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #8 {main}
+2012-07-12 01:09:58 Error: [MissingActionException] Action CommentsController::51794546() could not be found.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CommentsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-12 01:13:34 Error: [MissingActionException] Action CommentsController::51358020() could not be found.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CommentsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-12 01:15:50 Error: [MissingViewException] View file "/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/View/Comments/index.ctp" is missing.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CommentsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}

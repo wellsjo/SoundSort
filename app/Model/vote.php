@@ -2,7 +2,7 @@
 
 class Vote extends AppModel {
 
-	var $belongsTo = 'Track';
+	var $belongsTo = array('Track', 'User');
 
 }
 

@@ -34,11 +34,15 @@ function render() {
 	$('.sc-player').each(function() {
 		var track_id = $(this).parent().data('track_id');
 		var vote_count = $(this).parent().data('vote_count');
-		$(this).append('<a href=\'' + $(this).parent().data('dl_link') + '/download' + '\' class=\'download_track btn btn-small\'>Download</a>');
-		$(this).append(
+		$(this)
+			.append('<a href=\'' + $(this).parent().data('dl_link') + '/download'
+				+ '\' class=\'download_track btn btn-small\'>Download</a>'
+			).append(
 			'<span class=\'vote_container\'><div data-track_id=\'' + track_id + '\'class=\'arrow-up upvote\' ></div>'
 			+ '<div data-vote_count=\'' + vote_count + '\' class=\'vote_count\' >' + vote_count + '</div>'
 			+ '<div data-track_id=\'' + track_id + '\'class=\'arrow-down downvote\' ></div></span>'
+			).append(
+			'<a class = \'comment_link\' href=\'/comments/' + track_id + '\'>Comments</a>'
 			);
 	});
 	for (var track_index in tracks) {

@@ -28,13 +28,13 @@ div.arrow-up {
 	border-top-color:red !important;
 }
 div.arrow-down {
-  width:0px;
-  height:0px;
-  border-left:10px solid transparent;
-  border-right:10px solid transparent;
-  border-top:18px solid lightgray;
-  font-size:0px;
-  line-height:0px;
+	width:0px;
+	height:0px;
+	border-left:10px solid transparent;
+	border-right:10px solid transparent;
+	border-top:18px solid lightgray;
+	font-size:0px;
+	line-height:0px;
 }
 .vote_count{
 	width:20px;
@@ -44,4 +44,9 @@ div.arrow-down {
 	position:absolute;
 	top: 3px;
 	left: 8px;
+}
+.comment_link{
+	position: absolute;
+	top: 47px;
+	right: 85px;
 }
