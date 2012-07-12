@@ -47,6 +47,24 @@ div.arrow-down {
 }
 .comment_link{
 	position: absolute;
-	top: 47px;
-	right: 85px;
+	top: 46px;
+	right: 109px;
+	color: #08C !important;
+	font-size:13px;
+}
+#track_container{
+	margin-top:20px;
+}
+#comment_container{
+	position:relative;
+}
+#comment_container textarea{
+	width: 317px;
+	margin: 0px 0px 9px;
+	height: 49px;
+}
+#submit_comment{
+	position: absolute;
+	bottom: 21px;
+	right: 23px;
 }

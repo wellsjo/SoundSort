@@ -14,11 +14,11 @@ class Track extends AppModel {
 		$this->save($track);
 
 		$VoteObject = array('Vote' => array(
-			'user_id' => $user_id,
-			'track_id' => $id,
-			'upvote' => 1,
-			'downvote' => 0
-		));
+				'user_id' => $user_id,
+				'track_id' => $id,
+				'upvote' => 1,
+				'downvote' => 0
+				));
 		$vote = new Vote();
 		$vote->create();
 		$vote->save($VoteObject);
@@ -28,11 +28,11 @@ class Track extends AppModel {
 		$track = $this->findById($id);
 		$track['Track']['downvotes'] += 1;
 		$Vote = array('Vote' => array(
-			'user_id' => $user_id,
-			'track_id' => $id,
-			'upvote' => 0,
-			'downvote' => 1
-		));
+				'user_id' => $user_id,
+				'track_id' => $id,
+				'upvote' => 0,
+				'downvote' => 1
+				));
 		$this->Vote->save($Vote);
 		$this->save($track);
 	}
@@ -73,6 +73,17 @@ class Track extends AppModel {
 		}
 
 		return $tracks;
+	}
+
+	function getScore($track_record) {
+		$score = 1;
+		if (count($track_record['Vote']) == 0) return $score;
+		foreach ($track_record['Vote'] as $vote) {
+			$score += $vote['upvote'];
+			$score -= $vote['downvote'];
+			return $score;
+		}
+		return $score;
 	}
 
 }

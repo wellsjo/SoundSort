@@ -72,7 +72,7 @@ Class TopController extends AppController {
 
 	function topSort($tracks) {
 		foreach ($tracks as &$track) {
-			$score = $this->getScore($track);
+			$score = $this->Track->getScore($track);
 			$track['Track']['score'] = $score;
 			$order = log(max(abs($score), 1), 10);
 			if ($score > 0) {
@@ -99,17 +99,6 @@ Class TopController extends AppController {
 
 		usort($tracks, "cmp");
 		return $tracks;
-	}
-
-	function getScore($track_record) {
-		$score = 1;
-		if (count($track_record['Vote']) == 0) return $score;
-		foreach ($track_record['Vote'] as $vote) {
-			$score += $vote['upvote'];
-			$score -= $vote['downvote'];
-			return $score;
-		}
-		return $score;
 	}
 
 }

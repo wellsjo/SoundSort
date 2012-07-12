@@ -96,6 +96,10 @@
 	margin-left: 5px;
 }
 
+.sc-duration{
+	color:darkred;
+}
+
 /* Track info*/
 
 .sc-player .sc-info{

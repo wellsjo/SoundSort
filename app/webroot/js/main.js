@@ -1,10 +1,3 @@
-/*
- *      globals
- * _page : current page
- * tracks : tracks passed through from server
- *
- * */
-
 $(document).ready(function() {
 	SC.initialize({
 		client_id: "4ca806233abc6f50dfbd8c124380277b",
@@ -23,7 +16,6 @@ $(document).ready(function() {
 		});
 	}
 	render();
-	
 });
 
 function render() {
