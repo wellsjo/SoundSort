@@ -13,7 +13,7 @@ $(document).ready(function() {
 	for (var track_index in tracks) {
 		$('#trend_container').append('<span class=\'track_container\' data-track_id=\'' + tracks[track_index].id +
 			'\' data-dl_link=\'' + tracks[track_index].permalink_url + '/download' + '\' data-vote_count=\''
-			+ (tracks[track_index].upvotes - tracks[track_index].downvotes) + '\''
+			+ (tracks[track_index].score) + '\''
 			+ 'data-genre=\'' + tracks[track_index].genre + '\'><div id=\'track' + track_index + '\' </div></span>');
 		$('#track' + track_index).scPlayer({
 			links: [{
@@ -41,6 +41,13 @@ function render() {
 			+ '<div data-track_id=\'' + track_id + '\'class=\'arrow-down downvote\' ></div></span>'
 			);
 	});
+	for (var track_index in tracks) {
+		if (tracks[track_index].upvoted == true) {
+			$('.upvote[data-track_id="' + tracks[track_index].id + '"]').addClass('upvoted');
+		}else if (tracks[track_index].downvoted == true) {
+			$('.downvote[data-track_id="' + tracks[track_index].id + '"]').addClass('downvoted');
+		}
+	}
 	afterRender();
 }
 
@@ -54,19 +61,15 @@ function afterRender() {
 				if ($(this).parent().children('.downvote').hasClass('downvoted')) {
 					$(this).parent().children('.vote_count').text(Number(count)+2);
 					$(this).parent().children('.downvote').removeClass('downvoted');
-					$.post('/vote/upvote/' + track);
-					$.post('/vote/upvote/' + track);
-//					$.post('/track/upvote/' + track);
-//					$.post('/track/upvote/' + track);
+					$.post('/votes/upvote/2/' + track);
 				}else{
 					$(this).parent().children('.vote_count').text(Number(count)+1);
-					$.post('/vote/upvote/' + track);
-//					$.post('/track/upvote/' + track);
+					$.post('/votes/upvote/1/' + track);
 				}
 			}else{
 				$(this).removeClass('upvoted');
 				$(this).parent().children('.vote_count').text(Number(count)-1);
-				$.post('/track/downvote/' + track);
+				$.post('/votes/upvote/0/' + track);
 			}
 		}else{
 			$('#error_message').text('You must log in to vote or comment!').removeClass('hidden');
@@ -83,16 +86,15 @@ function afterRender() {
 				if ($(this).parent().children('.upvote').hasClass('upvoted')) {
 					$(this).parent().children('.vote_count').text(Number(count)-2);
 					$(this).parent().children('.upvote').removeClass('upvoted');
-					$.post('/track/downvote/' + track);
-					$.post('/track/downvote/' + track);
+					$.post('/votes/downvote/2/' + track);
 				}else{
 					$(this).parent().children('.vote_count').text(Number(count)-1);
-					$.post('/track/downvote/' + track);
+					$.post('/votes/downvote/1/' + track);
 				}
 			}else{
 				$(this).removeClass('downvoted');
 				$(this).parent().children('.vote_count').text(Number(count)+1);
-				$.post('/track/upvote/' + track);
+				$.post('/votes/downvote/0/' + track);
 			}
 		}else{
 			$('#error_message').text('You must log in to vote or comment!').removeClass('hidden');

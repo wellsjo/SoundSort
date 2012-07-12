@@ -4,6 +4,7 @@ App::import('Model', 'Vote');
 
 class Track extends AppModel {
 
+	var $hasMany = 'Vote';
 	var $name = 'Track';
 
 	function upvote($id, $user_id) {

@@ -30,12 +30,6 @@
 	Router::connect('/top', array('controller' => 'top', 'action' => 'top'));
 	Router::connect('/top/:id', array('controller' => 'top', 'action' => 'top'), array('id' => '[0-9]+'));
 
-	Router::connect('/track/upvote/:id', array('controller' => 'track', 'action' => 'upvote'), array('id' => '[0-9]+'));
-	Router::connect('/track/downvote/:id', array('controller' => 'track', 'action' => 'downvote'), array('id' => '[0-9]+'));
-
-	Router::connect('/vote/upvote/:id', array('controller' => 'vote', 'action' => 'upvote'), array('id' => '[0-9]+'));
-	Router::connect('/vote/downvote/:id', array('controller' => 'vote', 'action' => 'downvote'), array('id' => '[0-9]+'));
-
 	Router::connect('/register/confirm/:id', array('controller' => 'register', 'action' => 'activated'), array('id' => '[A-Za-z0-9-]{36}'));
 
 /**

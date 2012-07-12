@@ -9,8 +9,8 @@ Class TopController extends AppController {
 	}
 
 	function top() {
-		$Auth = $this->auth();
-		$this->set('auth_for_layout', $Auth);
+		$User = $this->auth();
+		$this->set('auth_for_layout', $User);
 
 		$page = @$this->params['id'];
 		if (!empty($page)) {
@@ -39,19 +39,32 @@ Class TopController extends AppController {
 			'limit' => 200,
 			'order' => array(
 				'created_at' => 'DESC'
-			)));
-
+				)));
 		$TrackList = $this->topSort($TrackList);
+
+		foreach ($TrackList as &$track) {
+			foreach ($track['Vote'] as $vote) {
+				if ($vote['user_id'] == $User['User']['id']) {
+					if ($vote['upvote'] == 1) {
+						$track['Track']['upvoted'] = true;
+					}else if ($vote['downvote'] == 1){
+						$track['Track']['downvoted'] = true;
+					}
+
+				}
+			}
+		}
+
 		$return_list = array();
 		$offset = (--$page) * 10;
-		for ($off_start = $offset; $off_start < ($offset+10); $off_start++) {
+		for ($off_start = $offset; $off_start < ($offset + 10); $off_start++) {
 			if (isset($TrackList[$off_start])) {
 				$return_list[] = $TrackList[$off_start]['Track'];
-			}else{
+			} else {
 				$return_list[] = $SCTracks[$off_start - $offset]['Track'];
 			}
 		}
-		
+
 		$return_list = json_encode($return_list);
 		$this->set('tracks', $return_list);
 		$this->set('active', 'top');
@@ -59,7 +72,8 @@ Class TopController extends AppController {
 
 	function topSort($tracks) {
 		foreach ($tracks as &$track) {
-			$score = $track['Track']['upvotes'] - $track['Track']['downvotes'];
+			$score = $this->getScore($track);
+			$track['Track']['score'] = $score;
 			$order = log(max(abs($score), 1), 10);
 			if ($score > 0) {
 				$sign = 1;
@@ -69,14 +83,14 @@ Class TopController extends AppController {
 				$sign = 0;
 			}
 			$seconds = floor(strtotime($track['Track']['created_at'])) - 1134028003;
-			$track['hotness'] = round(($order + (($sign * $seconds) / 45000)), 7);
+			$track['Track']['hotness'] = round(($order + (($sign * $seconds) / 45000)), 7);
 		}
 
 		// function used to sort the posts
 		function cmp($a, $b) {
-			if ($a['hotness'] < $b['hotness']) {
+			if ($a['Track']['hotness'] < $b['Track']['hotness']) {
 				return 1;
-			} else if ($a['hotness'] > $b['hotness']) {
+			} else if ($a['Track']['hotness'] > $b['Track']['hotness']) {
 				return -1;
 			} else {
 				return 0;
@@ -85,6 +99,17 @@ Class TopController extends AppController {
 
 		usort($tracks, "cmp");
 		return $tracks;
+	}
+
+	function getScore($track_record) {
+		$score = 1;
+		if (count($track_record['Vote']) == 0) return $score;
+		foreach ($track_record['Vote'] as $vote) {
+			$score += $vote['upvote'];
+			$score -= $vote['downvote'];
+			return $score;
+		}
+		return $score;
 	}
 
 }
