@@ -46,19 +46,22 @@ div.arrow-down {
 	left: 8px;
 }
 .comment_link{
+	top: 52px;
+	left: 200px;
+	color: green !important;
+	font-size: 12px;
 	position: absolute;
-	top: 46px;
-	right: 109px;
-	color: #08C !important;
-	font-size:13px;
+}
+.comment_link:hover{
+	color: lightgreen !important;
 }
 #track_container{
 	margin-top:20px;
 }
-#comment_container{
+#add_comment_container{
 	position:relative;
 }
-#comment_container textarea{
+#add_comment_container textarea{
 	width: 317px;
 	margin: 0px 0px 9px;
 	height: 49px;
@@ -67,4 +70,7 @@ div.arrow-down {
 	position: absolute;
 	bottom: 21px;
 	right: 23px;
+}
+#comment_container{
+
 }

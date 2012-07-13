@@ -2,7 +2,7 @@
 
 Class CommentsController extends AppController {
 
-	var $uses = 'Track';
+	var $uses = array('Track', 'Comment');
 
 	function index() {
 		$track_id = $this->params['id'];
@@ -20,7 +20,22 @@ Class CommentsController extends AppController {
 				}
 			}
 		}
-		$this->set('Track', json_encode($Track));
+		$this->set('Track', $Track);
+	}
+
+	function post() {
+		$this->autoRender = false;
+		$track_id = @$this->params['id'];
+		$parent_id = @$this->params['parent'];
+		$User = $this->auth();
+		$this->Comment->create();
+		$comment = array('Comment' => array(
+			'user_id' => $User['User']['id'],
+			'track_id' => $track_id,
+			'comment' => $_POST['comment'],
+			'parent_id' => $parent_id
+		));
+		$this->Comment->save($comment);
 	}
 
 }

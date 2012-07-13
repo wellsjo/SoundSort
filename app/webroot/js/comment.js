@@ -13,6 +13,19 @@ $(document).ready(function() {
 			title: track.Track.title
 		}]
 	});
+
+	$('#submit_comment').click(function() {
+		if (readCookie('logged_in')){
+			var parent_id = $(this).parent().data('parent_id');
+			$.post('/comments/post/' + parent_id + '/' + track.Track.id, {
+				comment: $(this).parent().children('textarea').val()
+			});
+		}else{
+			$('#error_message').text('You must log in to vote or comment!').removeClass('hidden');
+			window.scrollTo(0, 0);
+		}
+	});
+
 	render();
 });
 
@@ -38,4 +51,67 @@ function render() {
 	}else if (track.Track.downvoted == true) {
 		$('.downvote[data-track_id="' + track.Track.id + '"]').addClass('downvoted');
 	}
+	afterRender();
+}
+
+function afterRender() {
+	$('.upvote').click(function(e) {
+		if (readCookie('logged_in')){
+			var track = $(e.currentTarget).data('track_id');
+			var count = $(e.currentTarget).parent().children('.vote_count').text();
+			if (!$(this).hasClass('upvoted')) {
+				$(this).addClass('upvoted');
+				if ($(this).parent().children('.downvote').hasClass('downvoted')) {
+					$(this).parent().children('.vote_count').text(Number(count)+2);
+					$(this).parent().children('.downvote').removeClass('downvoted');
+					$.post('/votes/upvote/2/' + track);
+				}else{
+					$(this).parent().children('.vote_count').text(Number(count)+1);
+					$.post('/votes/upvote/1/' + track);
+				}
+			}else{
+				$(this).removeClass('upvoted');
+				$(this).parent().children('.vote_count').text(Number(count)-1);
+				$.post('/votes/upvote/0/' + track);
+			}
+		}else{
+			$('#error_message').text('You must log in to vote or comment!').removeClass('hidden');
+			window.scrollTo(0, 0);
+		}
+	});
+
+	$('.downvote').click(function(e) {
+		if (readCookie('logged_in')){
+			var track = $(e.currentTarget).data('track_id');
+			var count = $(e.currentTarget).parent().children('.vote_count').text();
+			if (!$(this).hasClass('downvoted')) {
+				$(this).addClass('downvoted');
+				if ($(this).parent().children('.upvote').hasClass('upvoted')) {
+					$(this).parent().children('.vote_count').text(Number(count)-2);
+					$(this).parent().children('.upvote').removeClass('upvoted');
+					$.post('/votes/downvote/2/' + track);
+				}else{
+					$(this).parent().children('.vote_count').text(Number(count)-1);
+					$.post('/votes/downvote/1/' + track);
+				}
+			}else{
+				$(this).removeClass('downvoted');
+				$(this).parent().children('.vote_count').text(Number(count)+1);
+				$.post('/votes/downvote/0/' + track);
+			}
+		}else{
+			$('#error_message').text('You must log in to vote or comment!').removeClass('hidden');
+			window.scrollTo(0, 0);
+		}
+	});
+}
+
+function readCookie(cookieName) {
+	var theCookie=" "+document.cookie;
+	var ind=theCookie.indexOf("["+cookieName+"]=");
+	if (ind==-1) ind=theCookie.indexOf(";"+cookieName+"=");
+	if (ind==-1 || cookieName=="") return "";
+	var ind1=theCookie.indexOf(";",ind+1);
+	if (ind1==-1) ind1=theCookie.length;
+	return unescape(theCookie.substring(ind+cookieName.length+3,ind1));
 }

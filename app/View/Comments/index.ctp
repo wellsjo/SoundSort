@@ -1,8 +1,7 @@
 <script type="text/javascript">
 <?php
-echo 'track=' . $Track . ';';
+echo 'track=' . json_encode($Track) . ';';
 ?>
-	console.log(track);
 </script>
 <script src="/js/comment.js"></script>
 <div class="container" id="main_container">
@@ -13,11 +12,18 @@ echo 'track=' . $Track . ';';
 		<div id="track_container" class="span8 offset1">
 
 		</div>
-		<div id="comment_container" class="span4 offset3">
-			<form class="well">
-				<textarea placeholder="Add a comment..."></textarea>
+		<div id="add_comment_container" class="span4 offset3">
+			<div class="well" data-parent_id="0">
+				<textarea name ="comment" placeholder="Add a comment..."></textarea>
 				<button id="submit_comment" type="submit" class="btn pull-right">Submit</button>
-			</form>
+			</div>
+		</div>
+		<div id="comment_container" class="span8 offset1">
+			<?php
+			foreach ($Track['Comment'] as $comment) {
+				echo $comment['comment'] . '<br/>';
+			}
+					?>
 		</div>
 	</div>
 </div>
