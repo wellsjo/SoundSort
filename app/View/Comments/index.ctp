@@ -13,17 +13,34 @@ echo 'track=' . json_encode($Track) . ';';
 
 		</div>
 		<div id="add_comment_container" class="span4 offset3">
-			<div class="well" data-parent_id="0">
-				<textarea name ="comment" placeholder="Add a comment..."></textarea>
-				<button id="submit_comment" type="submit" class="btn pull-right">Submit</button>
+			<div class="well" >
+				<textarea name ="comment" class="root_comment_box" placeholder="Add a comment..."></textarea>
+				<button data-parent_id="0" type="submit" class="btn btn-success pull-right comment_reply_submit">Submit</button>
 			</div>
 		</div>
 		<div id="comment_container" class="span8 offset1">
 			<?php
 			foreach ($Track['Comment'] as $comment) {
-				echo $comment['comment'] . '<br/>';
+				?>
+
+				<div class="comment">
+					<span class="vote_container">
+						<div data-track_id="<?php echo $Track['Track']['id']; ?>" class="arrow-up upvote"></div>
+						<div data-vote_count="<?php echo $Track['Track']['score']; ?>" class="vote_count"></div>
+						<div data-track_id="<?php echo $Track['Track']['id']; ?>" class="arrow-down downvote"></div>
+					</span>
+					<?php echo $comment['comment']; ?>
+					<div class="reply">+reply</div>
+					<hr/>
+					<div class="top_comment_area" style="display:none;">
+						<pre><textarea class="root_comment_box" name="root_comment_box"></textarea></pre>
+						<div data-parent_id="<?php echo $comment['id'];?>" class="btn btn-success pull-right comment_reply_submit">post</div>
+					</div>
+				</div>
+
+				<?php
 			}
-					?>
+			?>
 		</div>
 	</div>
 </div>

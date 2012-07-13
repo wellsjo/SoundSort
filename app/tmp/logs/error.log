@@ -1932,3 +1932,147 @@ Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
 #11 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(TopController), Object(CakeRequest), Object(CakeResponse))
 #12 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #13 {main}
+2012-07-12 23:12:54 Error: [MissingControllerException] Controller class UserController could not be found.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-12 23:12:58 Error: [MissingControllerException] Controller class UserController could not be found.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-12 23:13:17 Error: [MissingControllerException] Controller class UserController could not be found.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-12 23:14:14 Error: [MissingControllerException] Controller class UserController could not be found.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-12 23:17:51 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'track_id' cannot be null
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `we...', Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(1009): DboSource->execute('INSERT INTO `we...')
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1730): DboSource->create(Object(Comment), Array, Array)
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/CommentsController.php(38): Model->save(Array)
+#5 [internal function]: CommentsController->post('undefined', '52288437')
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CommentsController), Array)
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CommentsController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-07-12 23:21:42 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'track_id' cannot be null
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `we...', Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(1009): DboSource->execute('INSERT INTO `we...')
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1730): DboSource->create(Object(Comment), Array, Array)
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/CommentsController.php(38): Model->save(Array)
+#5 [internal function]: CommentsController->post('4fff0787-2440-4...', '52288437')
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CommentsController), Array)
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CommentsController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-07-12 23:25:56 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'track_id' cannot be null
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `we...', Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(1009): DboSource->execute('INSERT INTO `we...')
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1730): DboSource->create(Object(Comment), Array, Array)
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/CommentsController.php(38): Model->save(Array)
+#5 [internal function]: CommentsController->post('0', '52288437')
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CommentsController), Array)
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CommentsController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-07-12 23:26:16 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'track_id' cannot be null
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `we...', Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(1009): DboSource->execute('INSERT INTO `we...')
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1730): DboSource->create(Object(Comment), Array, Array)
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/CommentsController.php(38): Model->save(Array)
+#5 [internal function]: CommentsController->post('0', '52288437')
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CommentsController), Array)
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CommentsController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-07-12 23:29:02 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'track_id' cannot be null
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `we...', Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(1009): DboSource->execute('INSERT INTO `we...')
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1730): DboSource->create(Object(Comment), Array, Array)
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/CommentsController.php(38): Model->save(Array)
+#5 [internal function]: CommentsController->post('4fff0787-2440-4...', '52288437')
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CommentsController), Array)
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CommentsController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-07-12 23:29:53 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'track_id' cannot be null
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `we...', Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(1009): DboSource->execute('INSERT INTO `we...')
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1730): DboSource->create(Object(Comment), Array, Array)
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/CommentsController.php(38): Model->save(Array)
+#5 [internal function]: CommentsController->post('0', '52288437')
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CommentsController), Array)
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CommentsController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-07-12 23:32:02 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'track_id' cannot be null
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `we...', Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(1009): DboSource->execute('INSERT INTO `we...')
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1730): DboSource->create(Object(Comment), Array, Array)
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/CommentsController.php(38): Model->save(Array)
+#5 [internal function]: CommentsController->post('0', '52288437')
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CommentsController), Array)
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CommentsController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-07-12 23:34:18 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'track_id' cannot be null
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `we...', Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(1009): DboSource->execute('INSERT INTO `we...')
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1730): DboSource->create(Object(Comment), Array, Array)
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/CommentsController.php(38): Model->save(Array)
+#5 [internal function]: CommentsController->post('0', '52288437')
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CommentsController), Array)
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CommentsController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-07-12 23:34:41 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'track_id' cannot be null
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `we...', Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(1009): DboSource->execute('INSERT INTO `we...')
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1730): DboSource->create(Object(Comment), Array, Array)
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/CommentsController.php(38): Model->save(Array)
+#5 [internal function]: CommentsController->post('0', '52288437')
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CommentsController), Array)
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CommentsController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-07-12 23:36:30 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'track_id' cannot be null
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `we...', Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(1009): DboSource->execute('INSERT INTO `we...')
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1730): DboSource->create(Object(Comment), Array, Array)
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/CommentsController.php(38): Model->save(Array)
+#5 [internal function]: CommentsController->post('0', '52288437')
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CommentsController), Array)
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CommentsController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-07-12 23:36:46 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'track_id' cannot be null
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `we...', Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(1009): DboSource->execute('INSERT INTO `we...')
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1730): DboSource->create(Object(Comment), Array, Array)
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/CommentsController.php(38): Model->save(Array)
+#5 [internal function]: CommentsController->post('0', '52288437')
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CommentsController), Array)
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CommentsController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}

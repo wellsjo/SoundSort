@@ -14,18 +14,22 @@ $(document).ready(function() {
 		}]
 	});
 
-	$('#submit_comment').click(function() {
+	$('.comment_reply_submit').click(function() {
+		var self = this;
 		if (readCookie('logged_in')){
-			var parent_id = $(this).parent().data('parent_id');
+			var parent_id = $(this).data('parent_id');
 			$.post('/comments/post/' + parent_id + '/' + track.Track.id, {
-				comment: $(this).parent().children('textarea').val()
+				comment: $(self).siblings('.root_comment_box').val()
 			});
 		}else{
 			$('#error_message').text('You must log in to vote or comment!').removeClass('hidden');
 			window.scrollTo(0, 0);
 		}
 	});
-
+	$('.reply').click(function(){
+		$(this).siblings('.top_comment_area').show('fast');
+		$(this).hide();
+	});
 	render();
 });
 

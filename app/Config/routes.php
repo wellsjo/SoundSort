@@ -31,7 +31,7 @@
 	Router::connect('/top/:id', array('controller' => 'top', 'action' => 'top'), array('id' => '[0-9]+'));
 
 	Router::connect('/comments/:id', array('controller' => 'comments', 'action' => 'index'), array('id' => '[0-9]+'));
-	Router::connect('/comments/post/:parent/:id', array('controller' => 'comments', 'action' => 'post'), array('parent' => '[0-9]+', 'id' => '[0-9]+'));
+//	Router::connect('/comments/post/:parent/:id', array('controller' => 'comments', 'action' => 'post'), array('parent' => '[A-Za-z0-9-]{36}', 'id' => '[A-Za-z0-9-]{36}'));
 
 	Router::connect('/register/confirm/:id', array('controller' => 'register', 'action' => 'activated'), array('id' => '[A-Za-z0-9-]{36}'));
 

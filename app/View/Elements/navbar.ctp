@@ -67,7 +67,7 @@ $Url = json_encode($Url);
 		
 		$('#sign_in').click(function(e) {
 			e.preventDefault();
-			$.post('/user/login', {
+			$.post('/users/login', {
 				user_name: $('#login_user_name').val(),
 				password: $('#login_user_password').val()
 			}, function(response) {

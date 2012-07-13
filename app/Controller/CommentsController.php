@@ -23,10 +23,8 @@ Class CommentsController extends AppController {
 		$this->set('Track', $Track);
 	}
 
-	function post() {
+	function post($parent_id, $track_id) {
 		$this->autoRender = false;
-		$track_id = @$this->params['id'];
-		$parent_id = @$this->params['parent'];
 		$User = $this->auth();
 		$this->Comment->create();
 		$comment = array('Comment' => array(

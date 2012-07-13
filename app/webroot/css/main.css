@@ -38,6 +38,7 @@ div.arrow-down {
 }
 .vote_count{
 	width:20px;
+	height:20px;
 	text-align:center;
 }
 .vote_container{
@@ -58,6 +59,9 @@ div.arrow-down {
 #track_container{
 	margin-top:20px;
 }
+
+/* ------- Comments ------- */
+
 #add_comment_container{
 	position:relative;
 }
@@ -66,11 +70,36 @@ div.arrow-down {
 	margin: 0px 0px 9px;
 	height: 49px;
 }
-#submit_comment{
-	position: absolute;
-	bottom: 21px;
-	right: 23px;
-}
 #comment_container{
 
+}
+.comment{
+	position: relative;
+	width: 90%;
+	margin-top: 10px;
+	border: 1px solid lightgray;
+	padding: 45px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.top_comment_area{
+	position: relative;
+	height: 150px;
+	width: 100%;
+}
+.top_comment_area > pre > textarea{
+	width: 98%;
+	height: 100px;
+}
+.reply{
+	position: absolute;
+	bottom: 6px;
+	left: 44px;
+	color:gray;
+}
+.comment_reply_submit{
+	
+}
+.reply:hover{
+	color:navy;
 }
