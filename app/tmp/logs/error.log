@@ -2076,3 +2076,419 @@ Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
 #8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CommentsController), Object(CakeRequest), Object(CakeResponse))
 #9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #10 {main}
+2012-07-13 00:41:43 Error: [MissingControllerException] Controller class UserController could not be found.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-13 00:42:00 Error: [MissingControllerException] Controller class UserController could not be found.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-13 09:34:36 Error: Fatal Error (1): Call to undefined method UsersController::referrer() in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/UsersController.php, line 31]
+2012-07-13 09:34:36 Error: [FatalErrorException] Call to undefined method UsersController::referrer()
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/wellsjoh...', 31)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/wellsjoh...', 31, Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/wellsjoh...', 31, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-13 10:21:58 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'comment' cannot be null
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `we...', Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(1009): DboSource->execute('INSERT INTO `we...')
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1730): DboSource->create(Object(Comment), Array, Array)
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/CommentsController.php(36): Model->save(Array)
+#5 [internal function]: CommentsController->post('500036fb-94e4-4...', '52512863')
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CommentsController), Array)
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CommentsController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-07-13 10:22:36 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'comment' cannot be null
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `we...', Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(1009): DboSource->execute('INSERT INTO `we...')
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1730): DboSource->create(Object(Comment), Array, Array)
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/CommentsController.php(36): Model->save(Array)
+#5 [internal function]: CommentsController->post('50003792-b1c0-4...', '52512863')
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CommentsController), Array)
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CommentsController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-07-13 10:26:17 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'comment' cannot be null
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `we...', Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(1009): DboSource->execute('INSERT INTO `we...')
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(1730): DboSource->create(Object(Comment), Array, Array)
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/CommentsController.php(36): Model->save(Array)
+#5 [internal function]: CommentsController->post('50003792-b1c0-4...', '52512863')
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CommentsController), Array)
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CommentsController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-07-14 18:54:37 Error: Fatal Error (1): Call to a member function save() on a non-object in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/CvotesController.php, line 46]
+2012-07-14 18:54:37 Error: [FatalErrorException] Call to a member function save() on a non-object
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/wellsjoh...', 46)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/wellsjoh...', 46, Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/wellsjoh...', 46, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-14 18:56:04 Error: Fatal Error (1): Call to a member function save() on a non-object in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/CvotesController.php, line 23]
+2012-07-14 18:56:04 Error: [FatalErrorException] Call to a member function save() on a non-object
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/wellsjoh...', 23)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/wellsjoh...', 23, Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/wellsjoh...', 23, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-14 18:56:31 Error: Fatal Error (1): Call to a member function deleteAll() on a non-object in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/CvotesController.php, line 11]
+2012-07-14 18:56:31 Error: [FatalErrorException] Call to a member function deleteAll() on a non-object
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/wellsjoh...', 11)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/wellsjoh...', 11, Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/wellsjoh...', 11, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-14 18:56:33 Error: Fatal Error (1): Call to a member function save() on a non-object in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/CvotesController.php, line 46]
+2012-07-14 18:56:33 Error: [FatalErrorException] Call to a member function save() on a non-object
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/wellsjoh...', 46)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/wellsjoh...', 46, Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/wellsjoh...', 46, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-14 18:57:32 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'track_id' in where clause is ambiguous
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Cvote`....', Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Cvote`....', Array, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Cvote`....', false)
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Cvote), Array)
+#5 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(2490): Model->find('all', Array)
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/CvotesController.php(14): Model->deleteAll(Array)
+#7 [internal function]: CvotesController->upvote('0', '52036442')
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CvotesController), Array)
+#9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CvotesController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-07-14 18:57:50 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'track_id' in where clause is ambiguous
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Cvote`....', Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Cvote`....', Array, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Cvote`....', false)
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(2631): DboSource->read(Object(Cvote), Array)
+#5 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(2490): Model->find('all', Array)
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/CvotesController.php(14): Model->deleteAll(Array)
+#7 [internal function]: CvotesController->upvote('0', '52036442')
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CvotesController), Array)
+#9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CvotesController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-07-14 19:01:08 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'track_id' in where clause is ambiguous
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('DELETE `Cvote` ...', Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/Database/Mysql.php(397): DboSource->execute('DELETE `Cvote` ...')
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(2485): Mysql->delete(Object(Cvote), Array)
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/CvotesController.php(14): Model->deleteAll(Array, false)
+#5 [internal function]: CvotesController->upvote('0', '52036442')
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CvotesController), Array)
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CvotesController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-07-14 19:03:57 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'track_id' in where clause is ambiguous
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('DELETE `Cvote` ...', Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/Database/Mysql.php(397): DboSource->execute('DELETE `Cvote` ...')
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(2485): Mysql->delete(Object(Cvote), Array)
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/CvotesController.php(37): Model->deleteAll(Array, false, false)
+#5 [internal function]: CvotesController->downvote('0', '52036442')
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CvotesController), Array)
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CvotesController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-07-14 19:05:32 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM cvotes WHERE user_id=4 AND track_id=52036442' at line 1
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('DELETE * FROM c...', Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('DELETE * FROM c...', Array, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(540): DboSource->fetchAll('DELETE * FROM c...')
+#4 [internal function]: DboSource->query('DELETE * FROM c...')
+#5 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(2997): call_user_func_array(Array, Array)
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/CvotesController.php(34): Model->query('DELETE * FROM c...')
+#7 [internal function]: CvotesController->downvote('0', '52036442')
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CvotesController), Array)
+#9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CvotesController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-07-14 19:06:36 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'track_id' in where clause is ambiguous
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('DELETE `Cvote` ...', Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/Database/Mysql.php(397): DboSource->execute('DELETE `Cvote` ...')
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(2485): Mysql->delete(Object(Cvote), Array)
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/CvotesController.php(14): Model->deleteAll(Array, false, false)
+#5 [internal function]: CvotesController->upvote('0', '52036442')
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CvotesController), Array)
+#7 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CvotesController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-07-14 19:07:25 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('DELETE FROM cvo...', Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('DELETE FROM cvo...', Array, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(540): DboSource->fetchAll('DELETE FROM cvo...')
+#4 [internal function]: DboSource->query('DELETE FROM cvo...')
+#5 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(2997): call_user_func_array(Array, Array)
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/CvotesController.php(11): Model->query('DELETE FROM cvo...')
+#7 [internal function]: CvotesController->upvote('0', '52036442')
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CvotesController), Array)
+#9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CvotesController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-07-14 19:07:46 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('DELETE FROM cvo...', Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('DELETE FROM cvo...', Array, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(540): DboSource->fetchAll('DELETE FROM cvo...')
+#4 [internal function]: DboSource->query('DELETE FROM cvo...')
+#5 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(2997): call_user_func_array(Array, Array)
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/CvotesController.php(11): Model->query('DELETE FROM cvo...')
+#7 [internal function]: CvotesController->upvote('0', '52036442')
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CvotesController), Array)
+#9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CvotesController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-07-15 09:49:23 Error: Fatal Error (1): Call to undefined function print_comment() in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/View/Comments/index.ctp, line 24]
+2012-07-15 09:49:23 Error: [FatalErrorException] Call to undefined function print_comment()
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/wellsjoh...', 24)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/wellsjoh...', 24, Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/wellsjoh...', 24, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-15 09:59:20 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Utility/Debugger.php, line 307]
+2012-07-15 09:59:20 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Maximum executi...', '/Users/wellsjoh...', 307)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', '/Users/wellsjoh...', 307, Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', '/Users/wellsjoh...', 307, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-15 10:44:26 Error: Fatal Error (1): Cannot redeclare cmp() (previously declared in /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/View/Comments/index.ctp:27) in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/View/Comments/index.ctp, line 27]
+2012-07-15 10:44:26 Error: [FatalErrorException] Cannot redeclare cmp() (previously declared in /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/View/Comments/index.ctp:27)
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Cannot redeclar...', '/Users/wellsjoh...', 27)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot redeclar...', '/Users/wellsjoh...', 27, Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Cannot redeclar...', '/Users/wellsjoh...', 27, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-15 10:45:24 Error: Fatal Error (1): Cannot redeclare cmp() (previously declared in /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/View/Comments/index.ctp:27) in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/View/Comments/index.ctp, line 27]
+2012-07-15 10:45:24 Error: [FatalErrorException] Cannot redeclare cmp() (previously declared in /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/View/Comments/index.ctp:27)
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Cannot redeclar...', '/Users/wellsjoh...', 27)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot redeclar...', '/Users/wellsjoh...', 27, Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Cannot redeclar...', '/Users/wellsjoh...', 27, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-15 10:45:29 Error: Fatal Error (1): Cannot redeclare cmp() (previously declared in /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/View/Comments/index.ctp:27) in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/View/Comments/index.ctp, line 27]
+2012-07-15 10:45:29 Error: [FatalErrorException] Cannot redeclare cmp() (previously declared in /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/View/Comments/index.ctp:27)
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Cannot redeclar...', '/Users/wellsjoh...', 27)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot redeclar...', '/Users/wellsjoh...', 27, Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Cannot redeclar...', '/Users/wellsjoh...', 27, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-15 10:46:50 Error: Fatal Error (1): Cannot redeclare comp() (previously declared in /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/View/Comments/index.ctp:27) in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/View/Comments/index.ctp, line 27]
+2012-07-15 10:46:50 Error: [FatalErrorException] Cannot redeclare comp() (previously declared in /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/View/Comments/index.ctp:27)
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Cannot redeclar...', '/Users/wellsjoh...', 27)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot redeclar...', '/Users/wellsjoh...', 27, Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Cannot redeclar...', '/Users/wellsjoh...', 27, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-15 11:07:05 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('DELETE FROM cvo...', Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('DELETE FROM cvo...', Array, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(540): DboSource->fetchAll('DELETE FROM cvo...')
+#4 [internal function]: DboSource->query('DELETE FROM cvo...')
+#5 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(2997): call_user_func_array(Array, Array)
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/CvotesController.php(11): Model->query('DELETE FROM cvo...')
+#7 [internal function]: CvotesController->upvote('0', '6')
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CvotesController), Array)
+#9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CvotesController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-07-15 11:30:31 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('DELETE FROM cvo...', Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('DELETE FROM cvo...', Array, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(540): DboSource->fetchAll('DELETE FROM cvo...')
+#4 [internal function]: DboSource->query('DELETE FROM cvo...')
+#5 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(2997): call_user_func_array(Array, Array)
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/CvotesController.php(11): Model->query('DELETE FROM cvo...')
+#7 [internal function]: CvotesController->upvote('0', '11')
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CvotesController), Array)
+#9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CvotesController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-07-15 12:20:41 Error: Fatal Error (1): Call to a member function save() on a non-object in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/CvotesController.php, line 25]
+2012-07-15 12:20:41 Error: [FatalErrorException] Call to a member function save() on a non-object
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/wellsjoh...', 25)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/wellsjoh...', 25, Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/wellsjoh...', 25, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-15 12:20:42 Error: Fatal Error (1): Call to a member function query() on a non-object in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/CvotesController.php, line 16]
+2012-07-15 12:20:42 Error: [FatalErrorException] Call to a member function query() on a non-object
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/wellsjoh...', 16)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/wellsjoh...', 16, Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/wellsjoh...', 16, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-15 12:25:46 Error: Fatal Error (1): Call to a member function save() on a non-object in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/CvotesController.php, line 46]
+2012-07-15 12:25:46 Error: [FatalErrorException] Call to a member function save() on a non-object
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/wellsjoh...', 46)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/wellsjoh...', 46, Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/wellsjoh...', 46, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-15 12:29:22 Error: Fatal Error (1): Call to a member function save() on a non-object in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/CvotesController.php, line 46]
+2012-07-15 12:29:22 Error: [FatalErrorException] Call to a member function save() on a non-object
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/wellsjoh...', 46)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/wellsjoh...', 46, Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/wellsjoh...', 46, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-15 12:29:52 Error: Fatal Error (1): Call to a member function query() on a non-object in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/CvotesController.php, line 37]
+2012-07-15 12:29:52 Error: [FatalErrorException] Call to a member function query() on a non-object
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/wellsjoh...', 37)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/wellsjoh...', 37, Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/wellsjoh...', 37, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-15 12:30:04 Error: Fatal Error (1): Call to a member function save() on a non-object in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/CvotesController.php, line 46]
+2012-07-15 12:30:04 Error: [FatalErrorException] Call to a member function save() on a non-object
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/wellsjoh...', 46)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/wellsjoh...', 46, Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/wellsjoh...', 46, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-15 12:30:24 Error: Fatal Error (1): Call to a member function save() on a non-object in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/CvotesController.php, line 25]
+2012-07-15 12:30:24 Error: [FatalErrorException] Call to a member function save() on a non-object
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/wellsjoh...', 25)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/wellsjoh...', 25, Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/wellsjoh...', 25, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-15 13:59:56 Error: Fatal Error (1): Call to a member function save() on a non-object in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/CvotesController.php, line 46]
+2012-07-15 13:59:56 Error: [FatalErrorException] Call to a member function save() on a non-object
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/wellsjoh...', 46)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/wellsjoh...', 46, Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/wellsjoh...', 46, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-15 14:00:15 Error: Fatal Error (1): Call to a member function save() on a non-object in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/CvotesController.php, line 25]
+2012-07-15 14:00:15 Error: [FatalErrorException] Call to a member function save() on a non-object
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/wellsjoh...', 25)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/wellsjoh...', 25, Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/wellsjoh...', 25, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-15 14:00:33 Error: Fatal Error (1): Call to a member function save() on a non-object in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/CvotesController.php, line 25]
+2012-07-15 14:00:33 Error: [FatalErrorException] Call to a member function save() on a non-object
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/wellsjoh...', 25)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/wellsjoh...', 25, Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/wellsjoh...', 25, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-15 14:06:00 Error: Fatal Error (1): Call to a member function save() on a non-object in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/CvotesController.php, line 46]
+2012-07-15 14:06:00 Error: [FatalErrorException] Call to a member function save() on a non-object
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/wellsjoh...', 46)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/wellsjoh...', 46, Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/wellsjoh...', 46, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-15 14:06:19 Error: Fatal Error (1): Call to a member function save() on a non-object in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/CvotesController.php, line 46]
+2012-07-15 14:06:19 Error: [FatalErrorException] Call to a member function save() on a non-object
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/wellsjoh...', 46)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/wellsjoh...', 46, Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/wellsjoh...', 46, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-15 14:07:15 Error: Fatal Error (1): Call to a member function save() on a non-object in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/CvotesController.php, line 25]
+2012-07-15 14:07:16 Error: [FatalErrorException] Call to a member function save() on a non-object
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/wellsjoh...', 25)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/wellsjoh...', 25, Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/wellsjoh...', 25, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-15 14:08:26 Error: Fatal Error (1): Call to a member function save() on a non-object in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/CvotesController.php, line 26]
+2012-07-15 14:08:26 Error: [FatalErrorException] Call to a member function save() on a non-object
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/wellsjoh...', 26)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/wellsjoh...', 26, Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/wellsjoh...', 26, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-15 14:09:48 Error: Fatal Error (1): Call to a member function save() on a non-object in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/CvotesController.php, line 27]
+2012-07-15 14:09:48 Error: [FatalErrorException] Call to a member function save() on a non-object
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/wellsjoh...', 27)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/wellsjoh...', 27, Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/wellsjoh...', 27, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-15 14:48:47 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-15 14:54:09 Error: Fatal Error (4): syntax error, unexpected T_INC in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/View/Comments/index.ctp, line 46]
+2012-07-15 14:54:09 Error: [FatalErrorException] syntax error, unexpected T_INC
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/wellsjoh...', 46)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/wellsjoh...', 46, Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/wellsjoh...', 46, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-15 15:33:05 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-15 15:34:01 Error: [MissingControllerException] Controller class Sc-player-artworkController could not be found.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-15 15:34:43 Error: [MissingControllerException] Controller class Sc-player-artworkController could not be found.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-15 15:35:16 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-15 15:35:51 Error: [MissingControllerException] Controller class WebrootController could not be found.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-15 15:38:10 Error: [MissingControllerException] Controller class WebrootController could not be found.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-15 15:43:39 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

@@ -2,7 +2,7 @@
 
 Class CommentsController extends AppController {
 
-	var $uses = array('Track', 'Comment');
+	var $uses = array('Track', 'Comment', 'Cvote');
 
 	function index() {
 		$track_id = $this->params['id'];
@@ -11,6 +11,18 @@ Class CommentsController extends AppController {
 		$Track = $this->Track->findById($track_id);
 		$score = $this->Track->getScore($Track);
 		$Track['Track']['score'] = $score;
+		foreach ($Track['Comment'] as &$comment) {
+			$comment['score'] = $this->Comment->getScore($comment);
+			$vote = $this->Cvote->findByUserIdAndCommentId($User['User']['id'], $comment['id']);
+			if ($vote) {
+				if ($vote['Cvote']['downvote'] == 1) {
+					$comment['downvoted'] = true;
+				} else if ($vote['Cvote']['upvote'] == 1) {
+					$comment['upvoted'] = true;
+				}
+			}
+		}
+
 		foreach ($Track['Vote'] as $vote) {
 			if ($vote['user_id'] == $User['User']['id']) {
 				if ($vote['upvote'] == 1) {
@@ -20,6 +32,9 @@ Class CommentsController extends AppController {
 				}
 			}
 		}
+
+
+
 		$this->set('Track', $Track);
 	}
 
@@ -28,12 +43,19 @@ Class CommentsController extends AppController {
 		$User = $this->auth();
 		$this->Comment->create();
 		$comment = array('Comment' => array(
-			'user_id' => $User['User']['id'],
-			'track_id' => $track_id,
-			'comment' => $_POST['comment'],
-			'parent_id' => $parent_id
-		));
-		$this->Comment->save($comment);
+				'user_id' => $User['User']['id'],
+				'track_id' => $track_id,
+				'comment' => $_POST['comment'],
+				'parent_id' => $parent_id
+				));
+		$Comment = $this->Comment->save($comment);
+		$CVoteObject = array('Cvote' => array(
+				'user_id' => $User['User']['id'],
+				'comment_id' => $Comment['Comment']['id'],
+				'upvote' => 1,
+				'downvote' => 0
+				));
+		$this->Cvote->save($CVoteObject);
 	}
 
 }

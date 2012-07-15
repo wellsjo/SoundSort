@@ -43,6 +43,7 @@ Class TopController extends AppController {
 		$TrackList = $this->topSort($TrackList);
 
 		foreach ($TrackList as &$track) {
+			$track['Track']['comment_count'] = count($track['Comment']);
 			foreach ($track['Vote'] as $vote) {
 				if ($vote['user_id'] == $User['User']['id']) {
 					if ($vote['upvote'] == 1) {

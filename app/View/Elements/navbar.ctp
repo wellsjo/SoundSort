@@ -1,14 +1,18 @@
 <div class="navbar navbar-fixed-top">
 	<div class="navbar-inner">
-		<div class="container">
+		<div class="container" style="position:relative;">
 			<div class="brand pull-left"><a href="/">SoundSort</a></div>
 			<ul class="nav">
 				<li id="top_tab">
 					<a href="/top">top</a>
 				</li>
 			</ul>
+			<div id="play-all">
+
+			</div>
+
 			<?php
-			if (isset($active) && $active == 'top' && !$auth_for_layout['User']) {
+			if (!$auth_for_layout['User']) {
 				?>
 				<a href="/register" class="btn btn-success pull-right">Register</a>
 				<?php
@@ -27,10 +31,10 @@
 						</a>
 						<ul class="dropdown-menu">
 							<li class="dropdown" style="text-align:center;">
-								<a href="/user/logout">Log Out</a>
+								<a href="/users/logout">Log Out</a>
 							</li>
 						</ul>
-						
+
 					</li>
 					<?php
 				} else {
@@ -55,15 +59,21 @@
 	</div>
 </div>
 <?php
-$Url = Router::url(array('controller' => 'top', 'action' => 'top'), true); 
-$Url = json_encode($Url);
 ?>
 <script type="text/javascript">
 	$(document).ready(function() {
-		<?php echo "url=" . $Url . ";";?>
 		$('.dropdown-menu input, .dropdown-menu label').click(function(e) {
 			e.stopPropagation();
 		});
+
+		$('#play-all').click(function() {
+			if ($(this).hasClass('playing-all')) {
+				$(this).removeClass('playing-all');
+			}else{
+				$('#play-all').addClass('playing-all');
+			}
+			$('.sc-player').first().children('.sc-controls').children('.sc-play').click();
+		})
 		
 		$('#sign_in').click(function(e) {
 			e.preventDefault();
@@ -71,14 +81,17 @@ $Url = json_encode($Url);
 				user_name: $('#login_user_name').val(),
 				password: $('#login_user_password').val()
 			}, function(response) {
+				console.log(response);
 				if (response) {
+					// error handling
 					response = JSON.parse(response);
 					if (response.error) {
 						$('.navbar .alert-error').removeClass('hidden');
 						$('.navbar .alert-error').text(response.error);
 					}
 				}else{
-					window.location = url;
+					// redirect back to location to update navbar
+					window.location.reload(true);
 				}
 			});
 		});

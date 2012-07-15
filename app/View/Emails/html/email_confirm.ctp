@@ -1,3 +1,3 @@
 <p>
-	<a href="http://local.soundsort.com/register/confirm/<?php echo $content; ?>">Click To Verify Your Account</a>
+	<a href="http://local.soundsort.com/register/activated/<?php echo $content; ?>">Click To Verify Your Account</a>
 </p>

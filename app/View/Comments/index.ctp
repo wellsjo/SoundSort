@@ -13,32 +13,53 @@ echo 'track=' . json_encode($Track) . ';';
 
 		</div>
 		<div id="add_comment_container" class="span4 offset3">
-			<div class="well" >
+			<div class="well" style="height:75px;" >
 				<textarea name ="comment" class="root_comment_box" placeholder="Add a comment..."></textarea>
-				<button data-parent_id="0" type="submit" class="btn btn-success pull-right comment_reply_submit">Submit</button>
+				<button data-parent_id="0" type="submit" class="btn btn-success pull-right comment_reply_submit">Post</button>
 			</div>
 		</div>
 		<div id="comment_container" class="span8 offset1">
 			<?php
-			foreach ($Track['Comment'] as $comment) {
-				?>
+			print_comments($Track, 0);
 
-				<div class="comment">
-					<span class="vote_container">
-						<div data-track_id="<?php echo $Track['Track']['id']; ?>" class="arrow-up upvote"></div>
-						<div data-vote_count="<?php echo $Track['Track']['score']; ?>" class="vote_count"></div>
-						<div data-track_id="<?php echo $Track['Track']['id']; ?>" class="arrow-down downvote"></div>
-					</span>
-					<?php echo $comment['comment']; ?>
-					<div class="reply">+reply</div>
-					<hr/>
-					<div class="top_comment_area" style="display:none;">
-						<pre><textarea class="root_comment_box" name="root_comment_box"></textarea></pre>
-						<div data-parent_id="<?php echo $comment['id'];?>" class="btn btn-success pull-right comment_reply_submit">post</div>
+			function comp($a, $b) {
+				if ($a['score'] < $b['score']) {
+					return 1;
+				} else if ($a['score'] > $b['score']) {
+					return -1;
+				} else {
+					return 0;
+				}
+			}
+			function print_comments($Track, $parent_id) {
+				$cur_level_comments = array();
+				foreach ($Track['Comment'] as $comment) {
+					if ($comment['parent_id'] == $parent_id) {
+						$cur_level_comments[] = $comment;
+					}
+				}
+				usort($cur_level_comments, 'comp');
+				$count = 1;
+				foreach ($cur_level_comments as $comment) {
+					?>
+					<div class="comment" data-comment_score="<?php echo $comment['score']; ?>" data-comment_id="<?php echo $comment['id']; ?>" data-comment_parent_id="<?php echo $comment['parent_id']; ?>">
+						<div class="comment_count"><?php echo $count; $count++; ?></div>
+						<span class="vote_container">
+							<div data-comment_id="<?php echo $comment['id']; ?>" class="arrow-up cupvote <?php if($comment['upvoted']) echo "upvoted"; ?>"></div>
+							<div data-vote_count="<?php echo $comment['score']; ?>" class="vote_count"><?php echo $comment['score']; ?></div>
+							<div data-comment_id="<?php echo $comment['id']; ?>" class="arrow-down cdownvote <?php if ($comment['downvoted']) echo 'downvoted';?>"></div>
+						</span>
+		<?php echo $comment['comment']; ?>
+						<hr/>
+						<div class="reply">+reply</div>
+						<div class="top_comment_area" style="display:none;">
+							<textarea class="root_comment_box" name="root_comment_box"></textarea>
+							<div data-parent_id="<?php echo $comment['id']; ?>" class="btn btn-success pull-right comment_reply_submit">post</div>
+						</div>
+					<?php print_comments($Track, $comment['id']); ?>
 					</div>
-				</div>
-
-				<?php
+					<?php
+				}
 			}
 			?>
 		</div>

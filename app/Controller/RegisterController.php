@@ -29,10 +29,10 @@ class RegisterController extends AppController {
 		}
 	}
 
-	function activated() {
+	function activated($id) {
 		$Auth = $this->auth();
 		$this->set('auth_for_layout', $Auth);
-		$user_id = $this->params['id'];
+		$user_id = $id;
 		$User = $this->User->findById($user_id);
 		$User['User']['activated'] = 1;
 		$this->set('user', $User);

@@ -6,7 +6,7 @@ $(document).ready(function() {
 	$('#track_container').append('<span class=\'track_container\' data-track_id=\'' + track.Track.id +
 		'\' data-dl_link=\'' + track.Track.permalink_url + '/download' + '\' data-vote_count=\''
 		+ track.Track.score + '\''
-		+ 'data-genre=\'' + track.Track.genre + '\'><div id=\'track' + track.Track.id + '\' </div></span>');
+		+ 'data-genre=\'' + track.Track.genre + '\'><div id=\'track' + track.Track.id + '\'> </div></span>');
 	$('#track' + track.Track.id).scPlayer({
 		links: [{
 			url: track.Track.uri,
@@ -16,10 +16,13 @@ $(document).ready(function() {
 
 	$('.comment_reply_submit').click(function() {
 		var self = this;
+		$(self).parent().hide();
 		if (readCookie('logged_in')){
 			var parent_id = $(this).data('parent_id');
+			var comment = $(self).siblings('.root_comment_box').val();
+			addComment(comment, parent_id);
 			$.post('/comments/post/' + parent_id + '/' + track.Track.id, {
-				comment: $(self).siblings('.root_comment_box').val()
+				comment: comment
 			});
 		}else{
 			$('#error_message').text('You must log in to vote or comment!').removeClass('hidden');
@@ -108,6 +111,56 @@ function afterRender() {
 			window.scrollTo(0, 0);
 		}
 	});
+	// comment votes
+	$('.cupvote').click(function(e) {
+		if (readCookie('logged_in')){
+			var comment = $(e.currentTarget).data('comment_id');
+			var count = $(e.currentTarget).parent().children('.vote_count').text();
+			if (!$(this).hasClass('upvoted')) {
+				$(this).addClass('upvoted');
+				if ($(this).parent().children('.cdownvote').hasClass('downvoted')) {
+					$(this).parent().children('.vote_count').text(Number(count)+2);
+					$(this).parent().children('.cdownvote').removeClass('downvoted');
+					$.post('/cvotes/upvote/2/' + comment);
+				}else{
+					$(this).parent().children('.vote_count').text(Number(count)+1);
+					$.post('/cvotes/upvote/1/' + comment);
+				}
+			}else{
+				$(this).removeClass('upvoted');
+				$(this).parent().children('.vote_count').text(Number(count)-1);
+				$.post('/cvotes/upvote/0/' + comment);
+			}
+		}else{
+			$('#error_message').text('You must log in to vote or comment!').removeClass('hidden');
+			window.scrollTo(0, 0);
+		}
+	});
+
+	$('.cdownvote').click(function(e) {
+		if (readCookie('logged_in')){
+			var comment = $(e.currentTarget).data('comment_id');
+			var count = $(e.currentTarget).parent().children('.vote_count').text();
+			if (!$(this).hasClass('downvoted')) {
+				$(this).addClass('downvoted');
+				if ($(this).parent().children('.cupvote').hasClass('upvoted')) {
+					$(this).parent().children('.vote_count').text(Number(count)-2);
+					$(this).parent().children('.cupvote').removeClass('upvoted');
+					$.post('/cvotes/downvote/2/' + comment);
+				}else{
+					$(this).parent().children('.vote_count').text(Number(count)-1);
+					$.post('/cvotes/downvote/1/' + comment);
+				}
+			}else{
+				$(this).removeClass('downvoted');
+				$(this).parent().children('.vote_count').text(Number(count)+1);
+				$.post('/cvotes/downvote/0/' + comment);
+			}
+		}else{
+			$('#error_message').text('You must log in to vote or comment!').removeClass('hidden');
+			window.scrollTo(0, 0);
+		}
+	});
 }
 
 function readCookie(cookieName) {
@@ -118,4 +171,23 @@ function readCookie(cookieName) {
 	var ind1=theCookie.indexOf(";",ind+1);
 	if (ind1==-1) ind1=theCookie.length;
 	return unescape(theCookie.substring(ind+cookieName.length+3,ind1));
+}
+
+function addComment(comment, parent_id) {
+	var comment_html =
+	'<div class=\"comment\">'
+	+'<span class=\"vote_container\">'
+	+'<div data-comment_id=\'\' class=\"arrow-up upvote upvoted\"></div>'
+	+'<div data-vote_count=\'\' class=\"vote_count\">1</div>'
+	+'<div data-comment_id=\'\' class=\"arrow-down downvote\"></div>'
+	+'</span>'
+	+comment
+	+'<hr>'
+	+'</div>';
+	$('.root_comment_box').val('');
+	if (parent_id == 0) {
+		$('#comment_container').prepend(comment_html);
+	}else {
+		$('.comment_reply_submit[data-parent_id="' + parent_id + '"]').parent().parent().append(comment_html);
+	}
 }

@@ -80,7 +80,6 @@ class Track extends AppModel {
 		foreach ($track_record['Vote'] as $vote) {
 			$score += $vote['upvote'];
 			$score -= $vote['downvote'];
-			return $score;
 		}
 		return $score;
 	}

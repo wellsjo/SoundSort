@@ -46,6 +46,11 @@ div.arrow-down {
 	top: 3px;
 	left: 8px;
 }
+.comment > .vote_container{
+	top: 15px;
+	left: 18px;
+	color: gray;
+}
 .comment_link{
 	top: 52px;
 	left: 200px;
@@ -54,10 +59,21 @@ div.arrow-down {
 	position: absolute;
 }
 .comment_link:hover{
-	color: lightgreen !important;
+	color: darkgreen !important;
 }
 #track_container{
 	margin-top:20px;
+}
+#play-all{
+	background: url('/img/play-all.png');
+	position:absolute;
+	top: 0px;
+	left: 160px;
+	width:40px;
+	height:40px;
+}
+.playing-all{
+	background: url('/img/pause.png') !important;
 }
 
 /* ------- Comments ------- */
@@ -75,6 +91,7 @@ div.arrow-down {
 }
 .comment{
 	position: relative;
+	height:auto;
 	width: 90%;
 	margin-top: 10px;
 	border: 1px solid lightgray;
@@ -85,21 +102,28 @@ div.arrow-down {
 .top_comment_area{
 	position: relative;
 	height: 150px;
-	width: 100%;
+	width: 53%;
 }
-.top_comment_area > pre > textarea{
-	width: 98%;
-	height: 100px;
+.top_comment_area > textarea{
+	width: 353px;
+	height: 65px;
 }
 .reply{
-	position: absolute;
-	bottom: 6px;
-	left: 44px;
 	color:gray;
 }
 .comment_reply_submit{
-	
+	position: relative;
+	bottom: 5px;
+	right: 3px;
 }
 .reply:hover{
 	color:navy;
+}
+.comment_count{
+	position:absolute;
+	top:0px;
+	left:0px;
+	border-right: 1px solid lightgray;
+	border-bottom: 1px solid lightgray;
+	padding: 2px;
 }

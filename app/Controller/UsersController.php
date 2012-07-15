@@ -6,18 +6,18 @@ class UsersController extends AppController {
 
 	function login() {
 		$this->autoRender = false;
+
 		$username = @$_POST['user_name'];
 		$password = @$_POST['password'];
+
 		if (empty($username) || empty($password)) {
 			return json_encode(array('error' => 'You must supply your email (or username) and password'));
 		}
-
 		if (eregi("^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$", $username)) {
 			$User = $this->User->findByEmailAndPassword($username, md5($password));
 		} else {
 			$User = $this->User->findByNameAndPassword($username, md5($password));
 		}
-
 		if (empty($User)) {
 			return json_encode(array("error" => "Invalid user/password combination."));
 		}
@@ -33,7 +33,8 @@ class UsersController extends AppController {
 		$this->autoRender = false;
 		$this->Cookie->delete('user_id');
 		$this->Cookie->delete('logged_in');
-		$this->redirect('/top/1');
+		// need a redirect because it's a link not ajax
+		$this->redirect($this->referer());
 	}
 
 }

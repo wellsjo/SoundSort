@@ -14,7 +14,9 @@ $(active_tab).addClass('active');
 		<div id="error_message" class="span8 offset1 alert alert-error hidden">
 			
 		</div>
-		<div class="span8 offset1"><h3><?php echo $display; ?></h3></div>
+		<div class="span8 offset1" style="height:45px;position:relative;">
+			<h3 style="margin-top:7px;"><?php echo $display; ?></h3>
+		</div>
 		<div id="trend_container" class="span8 offset1">
 			
 		</div>

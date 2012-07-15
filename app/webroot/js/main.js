@@ -3,8 +3,10 @@ $(document).ready(function() {
 		client_id: "4ca806233abc6f50dfbd8c124380277b",
 		redirect_uri: "http://wellsstuff.com/trending"
 	});
+
 	for (var track_index in tracks) {
-		$('#trend_container').append('<span class=\'track_container\' data-track_id=\'' + tracks[track_index].id +
+		$('#trend_container').append('<span class=\'track_container\' data-comment_count=\'' + tracks[track_index].comment_count +
+			'\' data-track_id=\'' + tracks[track_index].id +
 			'\' data-dl_link=\'' + tracks[track_index].permalink_url + '/download' + '\' data-vote_count=\''
 			+ (tracks[track_index].score) + '\''
 			+ 'data-genre=\'' + tracks[track_index].genre + '\'><div id=\'track' + track_index + '\' </div></span>');
@@ -26,15 +28,16 @@ function render() {
 	$('.sc-player').each(function() {
 		var track_id = $(this).parent().data('track_id');
 		var vote_count = $(this).parent().data('vote_count');
+		var comment_count = $(this).parent().data('comment_count');
 		$(this)
-			.append('<a href=\'' + $(this).parent().data('dl_link') + '/download'
-				+ '\' class=\'download_track btn btn-small\'>Download</a>'
+		.append('<a href=\'' + $(this).parent().data('dl_link') + '/download'
+			+ '\' class=\'download_track btn btn-small\'>Download</a>'
 			).append(
 			'<span class=\'vote_container\'><div data-track_id=\'' + track_id + '\'class=\'arrow-up upvote\' ></div>'
 			+ '<div data-vote_count=\'' + vote_count + '\' class=\'vote_count\' >' + vote_count + '</div>'
 			+ '<div data-track_id=\'' + track_id + '\'class=\'arrow-down downvote\' ></div></span>'
 			).append(
-			'<a class = \'comment_link\' href=\'/comments/' + track_id + '\'>Comments</a>'
+			'<a class = \'comment_link\' href=\'/comments/' + track_id + '\'>Comments (' + comment_count + ')</a>'
 			);
 	});
 	for (var track_index in tracks) {
