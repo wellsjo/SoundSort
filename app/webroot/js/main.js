@@ -4,12 +4,13 @@ $(document).ready(function() {
 		redirect_uri: "http://wellsstuff.com/trending"
 	});
 
+	
 	for (var track_index in tracks) {
 		$('#trend_container').append('<span class=\'track_container\' data-comment_count=\'' + tracks[track_index].comment_count +
 			'\' data-track_id=\'' + tracks[track_index].id +
 			'\' data-dl_link=\'' + tracks[track_index].permalink_url + '/download' + '\' data-vote_count=\''
 			+ (tracks[track_index].score) + '\''
-			+ 'data-genre=\'' + tracks[track_index].genre + '\'><div id=\'track' + track_index + '\' </div></span>');
+			+ 'data-genre=\'' + tracks[track_index].genre + '\'><div id=\'track' + track_index + '\' ></div></span>');
 		$('#track' + track_index).scPlayer({
 			links: [{
 				url: tracks[track_index].uri,
@@ -24,13 +25,13 @@ function render() {
 	$('.sc-play').click(function() {
 		$(this).parent().children('.sc-pause').removeClass('hidden');
 	});
-
+	var count = 1;
 	$('.sc-player').each(function() {
 		var track_id = $(this).parent().data('track_id');
 		var vote_count = $(this).parent().data('vote_count');
 		var comment_count = $(this).parent().data('comment_count');
 		$(this)
-		.append('<a href=\'' + $(this).parent().data('dl_link') + '/download'
+		.append('<div class="comment_count">'+ count + '</div><a href=\'' + $(this).parent().data('dl_link') + '/download'
 			+ '\' class=\'download_track btn btn-small\'>Download</a>'
 			).append(
 			'<span class=\'vote_container\'><div data-track_id=\'' + track_id + '\'class=\'arrow-up upvote\' ></div>'
@@ -39,6 +40,7 @@ function render() {
 			).append(
 			'<a class = \'comment_link\' href=\'/comments/' + track_id + '\'>Comments (' + comment_count + ')</a>'
 			);
+		count++;
 	});
 	for (var track_index in tracks) {
 		if (tracks[track_index].upvoted == true) {
@@ -51,6 +53,22 @@ function render() {
 }
 
 function afterRender() {
+
+	$('.track_container').first().children('.sc-player').children('.sc-controls').children('.sc-play, .sc-pause').addClass('player-active');
+	$('.track_container').first().children('.sc-player').addClass('player-active');
+
+	$('.sc-controls').click(function() {
+		$('.player-active').removeClass('player-active');
+		$(this).children('.sc-play, .sc-pause').addClass('player-active');
+		$(this).parents().addClass('player-active');
+	});
+	$('.sc-play').click(function(){
+		$('#play-all').addClass('playing-all');
+	})
+	$('.sc-pause').click(function() {
+		$('#play-all').removeClass('playing-all');
+	})
+
 	$('.upvote').click(function(e) {
 		if (readCookie('logged_in')){
 			var track = $(e.currentTarget).data('track_id');

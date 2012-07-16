@@ -51,10 +51,12 @@ echo 'track=' . json_encode($Track) . ';';
 						</span>
 		<?php echo $comment['comment']; ?>
 						<hr/>
+						<div class="hide_children">-hide children</div>
 						<div class="reply">+reply</div>
 						<div class="top_comment_area" style="display:none;">
 							<textarea class="root_comment_box" name="root_comment_box"></textarea>
 							<div data-parent_id="<?php echo $comment['id']; ?>" class="btn btn-success pull-right comment_reply_submit">post</div>
+							<div class="cancel_reply btn btn-danger pull-right">cancel</div>
 						</div>
 					<?php print_comments($Track, $comment['id']); ?>
 					</div>

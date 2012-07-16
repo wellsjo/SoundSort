@@ -10,7 +10,7 @@
 #trend_container{
 	border-top: 1px solid lightgray;
 	padding:15px;
-	padding-top:25px;
+	padding-top:21px;
 }
 div.arrow-up {
 	width:0px;
@@ -49,7 +49,6 @@ div.arrow-down {
 .comment > .vote_container{
 	top: 15px;
 	left: 18px;
-	color: gray;
 }
 .comment_link{
 	top: 52px;
@@ -75,6 +74,9 @@ div.arrow-down {
 .playing-all{
 	background: url('/img/pause.png') !important;
 }
+.player-active{
+	
+}
 
 /* ------- Comments ------- */
 
@@ -93,7 +95,7 @@ div.arrow-down {
 	position: relative;
 	height:auto;
 	width: 90%;
-	margin-top: 10px;
+	margin-top: 27px;
 	border: 1px solid lightgray;
 	padding: 45px;
 	padding-top: 30px;
@@ -101,29 +103,34 @@ div.arrow-down {
 }
 .top_comment_area{
 	position: relative;
-	height: 150px;
-	width: 53%;
+	height: 80px;
+	width:353px;
 }
 .top_comment_area > textarea{
 	width: 353px;
 	height: 65px;
 }
-.reply{
+.reply, .hide_children{
 	color:gray;
+	display:inline-block;
 }
-.comment_reply_submit{
+.comment_reply_submit, .cancel_reply{
 	position: relative;
 	bottom: 5px;
 	right: 3px;
 }
-.reply:hover{
+.reply:hover, .hide_children:hover{
 	color:navy;
 }
 .comment_count{
+	color:gray;
 	position:absolute;
 	top:0px;
 	left:0px;
 	border-right: 1px solid lightgray;
 	border-bottom: 1px solid lightgray;
 	padding: 2px;
+}
+#trend_container > .track_container > .sc-player > .comment_count {
+	top: -20px !important;
 }

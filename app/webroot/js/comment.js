@@ -33,6 +33,24 @@ $(document).ready(function() {
 		$(this).siblings('.top_comment_area').show('fast');
 		$(this).hide();
 	});
+	$('.cancel_reply').click(function() {
+		$(this).parent().hide('fast');
+		$(this).parent().siblings('.reply').show();
+	});
+	$('.hide_children').click(function() {
+		if($(this).text() == '-hide children'){
+			$(this).parent().children('.comment').hide('fast');
+			$(this).text('+show children');
+		}else{
+			$(this).parent().children('.comment').show('fast')
+			$(this).text('-hide children');
+		}
+	});
+	$('.comment').each(function() {
+		if($(this).children('.comment').length == 0) {
+			$(this).children('.hide_children').hide();
+		}
+	})
 	render();
 });
 

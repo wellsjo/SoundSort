@@ -400,14 +400,7 @@
       onSkip = function(player) {
         var $player = $(player);
         // continue playing through all players
-        log('track finished get the next one');
-		console.log(player);
-        $nextItem = $('.sc-trackslist li.active', $player).next('li');
-        // try to find the next track in other player
-        if(!$nextItem.length){
-          $nextItem = $player.nextAll('div.sc-player:first').find('.sc-trackslist li.active');
-        }
-        $nextItem.click();
+		$('.player-active').next('.track_container').children('.sc-player').children('.sc-controls').children('.sc-play').click()
       },
       soundVolume = function() {
         var vol = 80,

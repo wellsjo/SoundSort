@@ -67,12 +67,11 @@
 		});
 
 		$('#play-all').click(function() {
-			if ($(this).hasClass('playing-all')) {
-				$(this).removeClass('playing-all');
+			if ($('.player-active').parent().parent().hasClass('playing')){
+				$('.player-active').parent().children('.sc-pause').click();
 			}else{
-				$('#play-all').addClass('playing-all');
+				$('.player-active').parent().children('.sc-play').click();
 			}
-			$('.sc-player').first().children('.sc-controls').children('.sc-play').click();
 		})
 		
 		$('#sign_in').click(function(e) {
@@ -81,7 +80,6 @@
 				user_name: $('#login_user_name').val(),
 				password: $('#login_user_password').val()
 			}, function(response) {
-				console.log(response);
 				if (response) {
 					// error handling
 					response = JSON.parse(response);
