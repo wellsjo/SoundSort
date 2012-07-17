@@ -5,6 +5,7 @@ Class CommentsController extends AppController {
 	var $uses = array('Track', 'Comment', 'Cvote');
 
 	function index() {
+		$this->set('page_for_layout', 'comments');
 		$track_id = $this->params['id'];
 		$User = $this->auth();
 		$this->set('auth_for_layout', $User);

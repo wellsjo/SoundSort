@@ -64,18 +64,43 @@ div.arrow-down {
 	margin-top:20px;
 }
 #play-all{
-	background: url('/img/play-all.png');
+	position: absolute;
+	top: 7px;
+	left: 386px;
+}
+#play-next-before{
+	position: absolute;
+	border-right-color: black;
+	left: 452px;
+	top: 10px;
+
+	z-index: 100;
+}
+#play-prev-before{
+	position: absolute;
+	border-left-color: black;
+	left: 363px;
+	top: 10px;
+	z-index: 100;
+}
+#play-next-before:hover, #play-prev-before:hover{
+	color:blue;
+}
+#play-next{
+	position: absolute;
+	left: 430px;
+	top: 7px;
+}
+#play-prev{
 	position:absolute;
-	top: 0px;
-	left: 160px;
-	width:40px;
-	height:40px;
+	left: 341px;
+	top: 7px;
 }
 .playing-all{
-	background: url('/img/pause.png') !important;
+/*	background: url('/img/pause.png') !important;*/
 }
 .player-active{
-	
+
 }
 
 /* ------- Comments ------- */

@@ -11,6 +11,7 @@ Class TopController extends AppController {
 	function top() {
 		$User = $this->auth();
 		$this->set('auth_for_layout', $User);
+		$this->set('page_for_layout', 'top');
 
 		$page = @$this->params['id'];
 		if (!empty($page)) {

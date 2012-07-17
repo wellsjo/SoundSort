@@ -7,9 +7,22 @@
 					<a href="/top">top</a>
 				</li>
 			</ul>
-			<div id="play-all">
+			<?php
+			if ($page_for_layout == 'top') {
+				?>
+				<div id = "play-all" class="btn">
+					<i class="icon-play icon-black"></i>
+				</div>
+				<div id = "play-next" class="btn top_arrow_next">
+					<i class="icon-forward icon-black"></i>
+				</div>
+				<div id = "play-prev" class="btn top_arrow_prev">
+					<i class="icon-backward icon-black"></i>
+				</div>
+				<?php
+			}
+			?>
 
-			</div>
 
 			<?php
 			if (!$auth_for_layout['User']) {
@@ -68,11 +81,21 @@
 
 		$('#play-all').click(function() {
 			if ($('.player-active').parent().parent().hasClass('playing')){
+				$(this).children('i').removeClass('icon-pause');
 				$('.player-active').parent().children('.sc-pause').click();
 			}else{
+				$(this).children('i').addClass('icon-pause');
 				$('.player-active').parent().children('.sc-play').click();
 			}
-		})
+		});
+
+		$('.top_arrow_next').click(function() {
+			$('.player-active').parent().parent().parent().next('.track_container').children('.sc-player').children('.sc-controls').children('.sc-play').click();
+		});
+		
+		$('.top_arrow_prev').click(function() {
+			$('.player-active').parent().parent().parent().prev('.track_container').children('.sc-player').children('.sc-controls').children('.sc-play').click();
+		});
 		
 		$('#sign_in').click(function(e) {
 			e.preventDefault();

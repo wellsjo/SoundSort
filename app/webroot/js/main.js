@@ -32,7 +32,7 @@ function render() {
 		var comment_count = $(this).parent().data('comment_count');
 		$(this)
 		.append('<div class="comment_count">'+ count + '</div><a href=\'' + $(this).parent().data('dl_link') + '/download'
-			+ '\' class=\'download_track btn btn-small\'>Download</a>'
+			+ '\' class=\'download_track btn btn-small\'>Download <i class=\'icon-download\'></i></a>'
 			).append(
 			'<span class=\'vote_container\'><div data-track_id=\'' + track_id + '\'class=\'arrow-up upvote\' ></div>'
 			+ '<div data-vote_count=\'' + vote_count + '\' class=\'vote_count\' >' + vote_count + '</div>'

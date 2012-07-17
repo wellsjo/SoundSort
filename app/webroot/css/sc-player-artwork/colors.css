@@ -57,11 +57,11 @@
 }
 
 .sc-player.playing .sc-controls a.sc-pause{
-	background: url('img/pause.png');
+	background: url('img/Pause-Button.png');
 }
 
 .sc-player.playing .sc-controls a.sc-pause:hover{
-	background: url('img/pause-hover.png');
+	background: url('img/Pause-Button.png');
 }  
 
 .sc-scrubber .sc-time-indicators{
