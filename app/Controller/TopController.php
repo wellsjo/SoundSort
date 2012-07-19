@@ -2,7 +2,7 @@
 
 Class TopController extends AppController {
 
-	var $uses = array('Track');
+	var $uses = array('Track', 'Favorite');
 
 	function index() {
 		$this->redirect('/top');
@@ -64,6 +64,15 @@ Class TopController extends AppController {
 				$return_list[] = $TrackList[$off_start]['Track'];
 			} else {
 				$return_list[] = $SCTracks[$off_start - $offset]['Track'];
+			}
+		}
+
+		foreach ($return_list as &$track) {
+			$favorited = $this->Favorite->findByUserIdAndTrackId($User['User']['id'], $track['id']);
+			if ($favorited) {
+				$track['favorited'] = true;
+			}else{
+				$track['favorited'] = false;
 			}
 		}
 

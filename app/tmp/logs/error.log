@@ -2587,3 +2587,78 @@ Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
 2012-07-17 08:18:11 Error: [MissingControllerException] Controller class CssController could not be found.
 #0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2012-07-17 19:45:05 Error: [MissingControllerException] Controller class FavoritesController could not be found.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-17 19:48:25 Error: [MissingControllerException] Controller class FavoritesController could not be found.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-17 19:48:31 Error: [MissingControllerException] Controller class FavoritesController could not be found.
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-18 20:04:02 Error: Fatal Error (1): Call to a member function findByUserIdAndTrackId() on a non-object in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/TopController.php, line 71]
+2012-07-18 20:04:02 Error: [FatalErrorException] Call to a member function findByUserIdAndTrackId() on a non-object
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/wellsjoh...', 71)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/wellsjoh...', 71, Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/wellsjoh...', 71, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-18 20:50:16 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FindByUserId' at line 1
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('FindByUserId', Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('FindByUserId', Array, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(613): DboSource->fetchAll('FindByUserId', Array, Array)
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(784): DboSource->query('FindByUserId', Array, Object(Favorite))
+#5 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/FavoritesController.php(8): Model->__call('FindByUserId', Array)
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/FavoritesController.php(8): Favorite->FindByUserId('9')
+#7 [internal function]: FavoritesController->index()
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(FavoritesController), Array)
+#9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(FavoritesController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-07-18 20:51:20 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FindByUserId' at line 1
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('FindByUserId', Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('FindByUserId', Array, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(613): DboSource->fetchAll('FindByUserId', Array, Array)
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(784): DboSource->query('FindByUserId', Array, Object(Favorite))
+#5 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/FavoritesController.php(8): Model->__call('FindByUserId', Array)
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/FavoritesController.php(8): Favorite->FindByUserId('9')
+#7 [internal function]: FavoritesController->index()
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(FavoritesController), Array)
+#9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(FavoritesController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-07-18 20:55:45 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'findAll' at line 1
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('findAll', Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('findAll', Array, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Datasource/DboSource.php(613): DboSource->fetchAll('findAll', Array, Array)
+#4 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Model/Model.php(784): DboSource->query('findAll', Array, Object(Favorite))
+#5 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/FavoritesController.php(10): Model->__call('findAll', Array)
+#6 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/FavoritesController.php(10): Favorite->findAll(Array)
+#7 [internal function]: FavoritesController->index()
+#8 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(FavoritesController), Array)
+#9 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(FavoritesController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-07-18 20:57:37 Error: Fatal Error (1): Call to a member function find() on a non-object in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/FavoritesController.php, line 10]
+2012-07-18 20:57:37 Error: [FatalErrorException] Call to a member function find() on a non-object
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/wellsjoh...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/wellsjoh...', 10, Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/wellsjoh...', 10, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-18 20:57:58 Error: Fatal Error (1): Call to a member function find() on a non-object in [/Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/Controller/FavoritesController.php, line 10]
+2012-07-18 20:57:58 Error: [FatalErrorException] Call to a member function find() on a non-object
+#0 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/wellsjoh...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/wellsjoh...', 10, Array)
+#2 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/wellsjoh...', 10, Array)
+#3 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

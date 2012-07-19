@@ -6,7 +6,7 @@ $(document).ready(function() {
 
 	
 	for (var track_index in tracks) {
-		$('#trend_container').append('<span class=\'track_container\' data-comment_count=\'' + tracks[track_index].comment_count +
+		$('#trend_container').append('<span class=\'track_container\' data-favorited=\''+tracks[track_index].favorited+'\' data-comment_count=\'' + tracks[track_index].comment_count +
 			'\' data-track_id=\'' + tracks[track_index].id +
 			'\' data-dl_link=\'' + tracks[track_index].permalink_url + '/download' + '\' data-vote_count=\''
 			+ (tracks[track_index].score) + '\''
@@ -30,16 +30,20 @@ function render() {
 		var track_id = $(this).parent().data('track_id');
 		var vote_count = $(this).parent().data('vote_count');
 		var comment_count = $(this).parent().data('comment_count');
+		
 		$(this)
 		.append('<div class="comment_count">'+ count + '</div><a href=\'' + $(this).parent().data('dl_link') + '/download'
-			+ '\' class=\'download_track btn btn-small\'>Download <i class=\'icon-download\'></i></a>'
+			+ '\' class=\'download_track btn btn-small\'><i class=\'icon-download-alt\'></i></a>'
+			+'<button class=\'favorite_link btn btn-small\' ><i class=\'heart-shape\'></i></button>'
 			).append(
 			'<span class=\'vote_container\'><div data-track_id=\'' + track_id + '\'class=\'arrow-up upvote\' ></div>'
 			+ '<div data-vote_count=\'' + vote_count + '\' class=\'vote_count\' >' + vote_count + '</div>'
 			+ '<div data-track_id=\'' + track_id + '\'class=\'arrow-down downvote\' ></div></span>'
 			).append(
-			'<a class = \'comment_link\' href=\'/comments/' + track_id + '\'>Comments (' + comment_count + ')</a>'
+			'<a class = \'btn btn-small comment_link\' href=\'/comments/' + track_id + '\'><i class=\'icon-comment\'></i> (' + comment_count + ')</a>'
 			);
+		var favorited = $(this).parent().data('favorited');
+		if (favorited) $(this).children('.favorite_link').children('.heart-shape').addClass('favorited');
 		count++;
 	});
 	for (var track_index in tracks) {
@@ -64,10 +68,36 @@ function afterRender() {
 	});
 	$('.sc-play').click(function(){
 		$('#play-all').addClass('playing-all');
+		$('#play-all').children('i').addClass('icon-pause');
 	})
+
+	$('.favorite_link').hover(function() {
+		$(this).children('.heart-shape').addClass('red-heart');
+	}, function() {
+		$(this).children('.heart-shape').removeClass('red-heart');
+	});
+
 	$('.sc-pause').click(function() {
 		$('#play-all').removeClass('playing-all');
-	})
+		$('#play-all').children('i').removeClass('icon-pause');
+	});
+
+	$('.favorite_link').click(function() {
+		if (readCookie('logged_in')) {
+			var track_id = $(this).parent().parent().data('track_id');
+			var favorited = $(this).children('i').hasClass('favorited');
+			if (favorited) {
+				$.post('/favorites/remove/' + track_id);
+				$(this).children('i').removeClass('favorited');
+			}else{
+				$.post('/favorites/add/' + track_id);
+				$(this).children('i').addClass('favorited');
+			}
+		}else{
+			$('#error_message').text('You must log in to vote, comment, or favorite!').removeClass('hidden');
+			window.scrollTo(0, 0);
+		}
+	});
 
 	$('.upvote').click(function(e) {
 		if (readCookie('logged_in')){
@@ -89,7 +119,7 @@ function afterRender() {
 				$.post('/votes/upvote/0/' + track);
 			}
 		}else{
-			$('#error_message').text('You must log in to vote or comment!').removeClass('hidden');
+			$('#error_message').text('You must log in to vote, comment, or favorite!').removeClass('hidden');
 			window.scrollTo(0, 0);
 		}
 	});
@@ -114,7 +144,7 @@ function afterRender() {
 				$.post('/votes/downvote/0/' + track);
 			}
 		}else{
-			$('#error_message').text('You must log in to vote or comment!').removeClass('hidden');
+			$('#error_message').text('You must log in to vote, comment, or favorite!').removeClass('hidden');
 			window.scrollTo(0, 0);
 		}
 	});

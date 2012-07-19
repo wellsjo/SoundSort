@@ -6,6 +6,16 @@
 				<li id="top_tab">
 					<a href="/top">top</a>
 				</li>
+				<?php
+				if ($auth_for_layout['User']) {
+					?>
+					<li id="favorites_tab">
+						<a href="/favorites">favorites</a>
+					</li>
+					<?php
+				}
+				?>
+
 			</ul>
 			<?php
 			if ($page_for_layout == 'top') {

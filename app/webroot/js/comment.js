@@ -25,7 +25,7 @@ $(document).ready(function() {
 				comment: comment
 			});
 		}else{
-			$('#error_message').text('You must log in to vote or comment!').removeClass('hidden');
+			$('#error_message').text('You must log in to vote, comment, or favorite!').removeClass('hidden');
 			window.scrollTo(0, 0);
 		}
 	});
@@ -65,6 +65,7 @@ function render() {
 		$(this)
 		.append('<a href=\'' + $(this).parent().data('dl_link') + '/download'
 			+ '\' class=\'download_track btn btn-small\'>Download</a>'
+			+'<a class=\'favorite_link comment_favorite_link btn btn-small\' href=\'/favorites/add/'+track_id+'\'><i class=\'icon-heart icon-red\'></i> Favorite</a>'
 			).append(
 			'<span class=\'vote_container\'><div data-track_id=\'' + track_id + '\'class=\'arrow-up upvote\' ></div>'
 			+ '<div data-vote_count=\'' + vote_count + '\' class=\'vote_count\' >' + vote_count + '</div>'
@@ -100,7 +101,7 @@ function afterRender() {
 				$.post('/votes/upvote/0/' + track);
 			}
 		}else{
-			$('#error_message').text('You must log in to vote or comment!').removeClass('hidden');
+			$('#error_message').text('You must log in to vote, comment, or favorite!').removeClass('hidden');
 			window.scrollTo(0, 0);
 		}
 	});
@@ -125,7 +126,7 @@ function afterRender() {
 				$.post('/votes/downvote/0/' + track);
 			}
 		}else{
-			$('#error_message').text('You must log in to vote or comment!').removeClass('hidden');
+			$('#error_message').text('You must log in to vote, comment, or favorite!').removeClass('hidden');
 			window.scrollTo(0, 0);
 		}
 	});
@@ -150,7 +151,7 @@ function afterRender() {
 				$.post('/cvotes/upvote/0/' + comment);
 			}
 		}else{
-			$('#error_message').text('You must log in to vote or comment!').removeClass('hidden');
+			$('#error_message').text('You must log in to vote, comment, or favorite!').removeClass('hidden');
 			window.scrollTo(0, 0);
 		}
 	});
@@ -175,7 +176,7 @@ function afterRender() {
 				$.post('/cvotes/downvote/0/' + comment);
 			}
 		}else{
-			$('#error_message').text('You must log in to vote or comment!').removeClass('hidden');
+			$('#error_message').text('You must log in to vote, comment, or favorite!').removeClass('hidden');
 			window.scrollTo(0, 0);
 		}
 	});
