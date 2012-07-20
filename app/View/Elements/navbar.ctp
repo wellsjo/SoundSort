@@ -18,7 +18,7 @@
 
 			</ul>
 			<?php
-			if ($page_for_layout == 'top') {
+			if ($page_for_layout == 'top' || $page_for_layout == 'favorites') {
 				?>
 				<div id = "play-all" class="btn">
 					<i class="icon-play icon-black"></i>
@@ -100,11 +100,11 @@
 		});
 
 		$('.top_arrow_next').click(function() {
-			$('.player-active').parent().parent().parent().next('.track_container').children('.sc-player').children('.sc-controls').children('.sc-play').click();
+			$('.player-active').parent().parent().parent().next('span').children('.sc-player').children('.sc-controls').children('.sc-play').click();
 		});
 		
 		$('.top_arrow_prev').click(function() {
-			$('.player-active').parent().parent().parent().prev('.track_container').children('.sc-player').children('.sc-controls').children('.sc-play').click();
+			$('.player-active').parent().parent().parent().prev('span').children('.sc-player').children('.sc-controls').children('.sc-play').click();
 		});
 		
 		$('#sign_in').click(function(e) {

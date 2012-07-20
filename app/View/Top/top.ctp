@@ -4,11 +4,11 @@
 	echo 'active_tab='.$active.'_tab;';
 	echo 'tracks='.$tracks.';';
 	?>
+	$(active_tab).addClass('active');
 </script>
-<script type="text/javascript">
-$(active_tab).addClass('active');
-</script>
-<script src="/js/main.js"></script>
+
+<script src="/js/my_sc_player.js"></script>
+<script src="/js/top.js"></script>
 <div class="container" id="main_container">
 	<div class="row">
 		<div id="error_message" class="span8 offset1 alert alert-error hidden">

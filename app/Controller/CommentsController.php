@@ -2,7 +2,7 @@
 
 Class CommentsController extends AppController {
 
-	var $uses = array('Track', 'Comment', 'Cvote');
+	var $uses = array('Track', 'Comment', 'Cvote', 'Favorite');
 
 	function index() {
 		$this->set('page_for_layout', 'comments');
@@ -10,8 +10,18 @@ Class CommentsController extends AppController {
 		$User = $this->auth();
 		$this->set('auth_for_layout', $User);
 		$Track = $this->Track->findById($track_id);
+
 		$score = $this->Track->getScore($Track);
 		$Track['Track']['score'] = $score;
+
+		$favorited = $this->Favorite->findByUserIdAndTrackId($User['User']['id'], $track['Track']['id']);
+
+		if ($favorited) {
+			$Track['Track']['favorited'] = true;
+		} else {
+			$Track['Track']['favorited'] = false;
+		}
+
 		foreach ($Track['Comment'] as &$comment) {
 			$comment['score'] = $this->Comment->getScore($comment);
 			$vote = $this->Cvote->findByUserIdAndCommentId($User['User']['id'], $comment['id']);
@@ -34,9 +44,8 @@ Class CommentsController extends AppController {
 			}
 		}
 
-
-
-		$this->set('Track', $Track);
+		$this->set('PHPTrackObject', $Track);
+		$this->set('Track', json_encode($Track));
 	}
 
 	function post($parent_id, $track_id) {

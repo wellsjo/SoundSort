@@ -3,18 +3,15 @@ $(document).ready(function() {
 		client_id: "4ca806233abc6f50dfbd8c124380277b",
 		redirect_uri: "http://wellsstuff.com/trending"
 	});
-	
+
 	for (var track_index in tracks) {
-		SC_Player(tracks[track_index], '#favorite_container');
+		SC_Player(tracks[track_index], '#trend_container');
 	}
-	
 	render();
 });
 
 function render() {
-
-	$('#favorite_container').children('span').first().children('.sc-player').children('.sc-controls').children('.sc-play, .sc-pause').addClass('player-active');
-
+	$('.track_container').first().children('.sc-player').children('.sc-controls').children('.sc-play, .sc-pause').addClass('player-active');
 	$('.track_container').first().children('.sc-player').addClass('player-active');
 
 	$('.sc-controls').click(function() {
@@ -22,7 +19,7 @@ function render() {
 		$(this).children('.sc-play, .sc-pause').addClass('player-active');
 		$(this).parents().addClass('player-active');
 	});
-	
+
 	$('.sc-play').click(function(){
 		$('#play-all').addClass('playing-all');
 		$('#play-all').children('i').addClass('icon-pause');
@@ -32,5 +29,4 @@ function render() {
 		$('#play-all').removeClass('playing-all');
 		$('#play-all').children('i').removeClass('icon-pause');
 	});
-
 }

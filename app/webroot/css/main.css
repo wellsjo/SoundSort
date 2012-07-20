@@ -1,5 +1,6 @@
 #main_container{
 	margin-top: 50px;
+	width:1000px;
 }
 .navbar-inner a{
 	text-decoration: none;
@@ -7,7 +8,7 @@
 .navbar-inner > .container {
 	width:800px !important;
 }
-#trend_container{
+#trend_container, #favorite_container{
 	border-top: 1px solid lightgray;
 	padding:15px;
 	padding-top:21px;
@@ -51,8 +52,8 @@ div.arrow-down {
 	left: 18px;
 }
 .comment_link{
-	top: 44px;
-	left: 183px;
+	top: 54px;
+	left: 193px;
 	position: absolute;
 	height: 14px;
 }
@@ -61,8 +62,8 @@ div.arrow-down {
 	position: absolute;
 	height: 25px;
 	width: 33px;
-	top: 44px;
-	left: 147px;
+	top: 54px;
+	left: 152px;
 }
 .comment_favorite_link{
 	left: 181px !important;
@@ -151,12 +152,12 @@ div.arrow-down {
 
 /* heart shape */
 .heart-shape {
-    position: relative;
-	width: 100px;
-	height: 90px;
+    position: absolute;
+	width: 17px;
+	height: 13px;
 	margin: 0px 0px;
-	right: 4px;
-	bottom: 6px;
+	right: 7px;
+	bottom: 5px;
 }
 .heart-shape:before,
 .heart-shape:after {
@@ -181,29 +182,9 @@ div.arrow-down {
 }
 
 .red-heart:before,.red-heart:after, .favorited:before, .favorited:after{
-/*	position: absolute;
-	content: "";
-	left: 8px;
-	width: 8px;
-	height: 13px;*/
 	background: red !important;
-/*	-moz-border-radius: 50px 50px 0 0;
-	border-radius: 50px 50px 0 0;
-	-webkit-transform: rotate(-45deg);
-	-moz-transform: rotate(-45deg);
-	-ms-transform: rotate(-45deg);
-	-o-transform: rotate(-45deg);
-	transform: rotate(-45deg);
-	-webkit-transform-origin: 0 100%;
-	-moz-transform-origin: 0 100%;
-	-ms-transform-origin: 0 100%;
-	-o-transform-origin: 0 100%;
-	transform-origin: 0 100%;*/
 }
 
-.heart-shape:hover{
-	background:red !important;
-}
 .heart-shape:after {
     left: 0;
     -webkit-transform: rotate(45deg);

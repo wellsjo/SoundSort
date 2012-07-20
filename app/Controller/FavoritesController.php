@@ -15,21 +15,42 @@ Class FavoritesController extends AppController {
 			if ($Favorites) {
 				foreach ($Favorites as $favorite) {
 					$track = $this->Track->findById($favorite['Favorite']['track_id']);
-					$favorite_tracks[] = $track['Track'];
+					$favorite_tracks[] = $track;
+				}
+			}
+		}
+		
+		foreach ($favorite_tracks as &$track) {
+			$track['Track']['comment_count'] = count($track['Comment']);
+
+			$score = $this->Track->getScore($track);
+			$track['Track']['score'] = $score;
+			
+			$favorited = $this->Favorite->findByUserIdAndTrackId($User['User']['id'], $track['Track']['id']);
+			if ($favorited) {
+				$track['Track']['favorited'] = true;
+			}else{
+				$track['Track']['favorited'] = false;
+			}
+
+			foreach ($track['Vote'] as $vote) {
+				if ($vote['user_id'] == $User['User']['id']) {
+					if ($vote['upvote'] == 1) {
+						$track['Track']['upvoted'] = true;
+					}else if ($vote['downvote'] == 1){
+						$track['Track']['downvoted'] = true;
+					}
+
 				}
 			}
 		}
 
+		$return_tracks = array();
 		foreach ($favorite_tracks as &$track) {
-			$favorited = $this->Favorite->findByUserIdAndTrackId($User['User']['id'], $track['id']);
-			if ($favorited) {
-				$track['favorited'] = true;
-			}else{
-				$track['favorited'] = false;
-			}
+			$return_tracks[] = $track['Track'];
 		}
 
-		$return_list = json_encode($return_list);
+		$return_list = json_encode($return_tracks);
 		$this->set('tracks', $return_list);
 
 		$this->set('auth_for_layout', $User);

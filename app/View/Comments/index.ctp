@@ -1,8 +1,10 @@
 <script type="text/javascript">
 <?php
-echo 'track=' . json_encode($Track) . ';';
+echo 'track=' . $Track . ';';
 ?>
 </script>
+
+<script src="/js/my_sc_player.js"></script>
 <script src="/js/comment.js"></script>
 <div class="container" id="main_container">
 	<div class="row">
@@ -20,7 +22,7 @@ echo 'track=' . json_encode($Track) . ';';
 		</div>
 		<div id="comment_container" class="span8 offset1">
 			<?php
-			print_comments($Track, 0);
+			print_comments($PHPTrackObject, 0);
 
 			function comp($a, $b) {
 				if ($a['score'] < $b['score']) {
@@ -31,9 +33,9 @@ echo 'track=' . json_encode($Track) . ';';
 					return 0;
 				}
 			}
-			function print_comments($Track, $parent_id) {
+			function print_comments($PHPTrackObject, $parent_id) {
 				$cur_level_comments = array();
-				foreach ($Track['Comment'] as $comment) {
+				foreach ($PHPTrackObject['Comment'] as $comment) {
 					if ($comment['parent_id'] == $parent_id) {
 						$cur_level_comments[] = $comment;
 					}
@@ -58,7 +60,7 @@ echo 'track=' . json_encode($Track) . ';';
 							<div data-parent_id="<?php echo $comment['id']; ?>" class="btn btn-success pull-right comment_reply_submit">post</div>
 							<div class="cancel_reply btn btn-danger pull-right">cancel</div>
 						</div>
-					<?php print_comments($Track, $comment['id']); ?>
+					<?php print_comments($PHPTrackObject, $comment['id']); ?>
 					</div>
 					<?php
 				}
