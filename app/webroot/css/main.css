@@ -198,3 +198,47 @@ div.arrow-down {
 	-o-transform-origin: 100% 100%;
 	transform-origin :100% 100%;
 }
+
+/* speech bubble */
+
+/**** Speech Bubble Icons *****/
+.spch-bub-outside {
+	position: relative;
+}
+.spch-bub-outside .point {
+	width: 0;
+	height: 0;
+	position: absolute;
+	top: 1.1em;
+	left: 0.4em;
+	display: block;
+	border-left: 0.45em solid black;
+	border-bottom: 0.45em solid #FFF; /* IE fix */
+	border-bottom: 0.45em solid rgba(0,0,0,0);
+	overflow: hidden; /* IE fix */
+}
+.spch-bub-outside {
+	padding-left: 2.0em;
+}
+.spch-bub-outside .bubble {
+	top: 0;
+	left: 0;
+	display: block;
+	position: absolute;
+	height: 1.1em;
+	width: 1.8em;
+	background: black;
+	-moz-border-radius: 0.25em;
+	-webkit-border-radius: 0.25em;
+	border-radius: 0.25em;
+}
+.comment_point_hover{
+	border-left-color: green !important;
+}
+.comment_bubble_hover{
+	background: green !important;
+}
+div.spch-bub-outside {
+	height: 1.5em;
+	width: 0;
+}

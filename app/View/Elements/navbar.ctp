@@ -35,7 +35,7 @@
 
 
 			<?php
-			if (!$auth_for_layout['User']) {
+			if (!$auth_for_layout['User'] && $page_for_layout != 'register') {
 				?>
 				<a href="/register" class="btn btn-success pull-right">Register</a>
 				<?php

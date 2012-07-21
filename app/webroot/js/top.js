@@ -11,7 +11,9 @@ $(document).ready(function() {
 });
 
 function render() {
-	$('.track_container').first().children('.sc-player').children('.sc-controls').children('.sc-play, .sc-pause').addClass('player-active');
+
+	$('#trend_container').children('span').first().children('.sc-player').children('.sc-controls').children('.sc-play, .sc-pause').addClass('player-active');
+
 	$('.track_container').first().children('.sc-player').addClass('player-active');
 
 	$('.sc-controls').click(function() {

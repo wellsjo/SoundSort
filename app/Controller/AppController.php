@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Application level Controller
  *
@@ -19,7 +20,6 @@
  * @since         CakePHP(tm) v 0.2.9
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
-
 App::uses('Controller', 'Controller');
 
 /**
@@ -44,6 +44,28 @@ class AppController extends Controller {
 		$user_id = $this->Cookie->read('user_id');
 		$User = $this->User->findById($user_id);
 		return $User;
+	}
+
+	function timeago($time) {
+		$periods = array("second", "minute", "hour", "day", "week", "month", "year", "decade");
+		$lengths = array("60", "60", "24", "7", "4.35", "12", "10");
+
+		$now = time();
+		
+		$difference = $now - $time;
+		$tense = "ago";
+
+		for ($j = 0; $difference >= $lengths[$j] && $j < count($lengths) - 1; $j++) {
+			$difference /= $lengths[$j];
+		}
+
+		$difference = round($difference);
+
+		if ($difference != 1) {
+			$periods[$j].= "s";
+		}
+
+		return "$difference $periods[$j] $tense";
 	}
 
 }

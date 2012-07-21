@@ -2,7 +2,7 @@
 
 Class CommentsController extends AppController {
 
-	var $uses = array('Track', 'Comment', 'Cvote', 'Favorite');
+	var $uses = array('Track', 'Comment', 'Cvote', 'Favorite', 'User');
 
 	function index() {
 		$this->set('page_for_layout', 'comments');
@@ -14,7 +14,7 @@ Class CommentsController extends AppController {
 		$score = $this->Track->getScore($Track);
 		$Track['Track']['score'] = $score;
 
-		$favorited = $this->Favorite->findByUserIdAndTrackId($User['User']['id'], $track['Track']['id']);
+		$favorited = $this->Favorite->findByUserIdAndTrackId($User['User']['id'], $Track['Track']['id']);
 
 		if ($favorited) {
 			$Track['Track']['favorited'] = true;
@@ -24,6 +24,9 @@ Class CommentsController extends AppController {
 
 		foreach ($Track['Comment'] as &$comment) {
 			$comment['score'] = $this->Comment->getScore($comment);
+			$User = $this->User->findById($comment['user_id']);
+			$comment['user_name'] = $User['User']['name'];
+			$comment['ago'] = $this->timeago($comment['created']);
 			$vote = $this->Cvote->findByUserIdAndCommentId($User['User']['id'], $comment['id']);
 			if ($vote) {
 				if ($vote['Cvote']['downvote'] == 1) {
@@ -55,6 +58,7 @@ Class CommentsController extends AppController {
 		$comment = array('Comment' => array(
 				'user_id' => $User['User']['id'],
 				'track_id' => $track_id,
+				'created' => time(),
 				'comment' => $_POST['comment'],
 				'parent_id' => $parent_id
 				));

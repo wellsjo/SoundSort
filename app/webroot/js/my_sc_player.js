@@ -39,8 +39,8 @@ var SC_Player = function(track, element, hide_comment_button) {
 			+'<span class=\'vote_container\'><div data-track_id=\'' + this._track.id + '\'class=\'arrow-up upvote\' ></div>'
 			+ '<div data-vote_count=\'' + this._track.score + '\' class=\'vote_count\' >' + this._track.score + '</div>'
 			+ '<div data-track_id=\'' + this._track.id + '\'class=\'arrow-down downvote\' ></div></span>'
-			+'<a class = \'btn btn-small comment_link\' href=\'/comments/'
-			+ this._track.id + '\'><i class=\'icon-comment\'></i> (' + this._track.comment_count + ')</a>'
+			+'<a class = \'btn btn-small comment_link\' href=\'/comments/' + this._track.id + '\'>'
+			+"<div class=\"spch-bub-outside\"><span class=\"point\"></span><span class=\"bubble\"></span><span class=\'icon_comment_count\'>(" + this._track.comment_count + ")</span></div></a>"
 			);
 				
 		var favorited = $(sc_player).parent().data('favorited');
@@ -64,6 +64,14 @@ var SC_Player = function(track, element, hide_comment_button) {
 			$(this).children('.heart-shape').addClass('red-heart');
 		}, function() {
 			$(this).children('.heart-shape').removeClass('red-heart');
+		});
+
+		$(sc_player).children('.comment_link').hover(function() {
+			$(this).children('.spch-bub-outside').children('.bubble').addClass('comment_bubble_hover');
+			$(this).children('.spch-bub-outside').children('.point').addClass('comment_point_hover');
+		}, function() {
+			$(this).children('.spch-bub-outside').children('.bubble').removeClass('comment_bubble_hover');
+			$(this).children('.spch-bub-outside').children('.point').removeClass('comment_point_hover');
 		});
 
 		$(sc_player).children('.sc-controls').children('.sc-play').click(function() {

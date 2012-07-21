@@ -45,6 +45,7 @@ echo 'track=' . $Track . ';';
 				foreach ($cur_level_comments as $comment) {
 					?>
 					<div class="comment" data-comment_score="<?php echo $comment['score']; ?>" data-comment_id="<?php echo $comment['id']; ?>" data-comment_parent_id="<?php echo $comment['parent_id']; ?>">
+						<div class="comment_user_name"><?php echo $comment['user_name'] . ' said ' . $comment['ago']; ?></div>
 						<div class="comment_count"><?php echo $count; $count++; ?></div>
 						<span class="vote_container">
 							<div data-comment_id="<?php echo $comment['id']; ?>" class="arrow-up cupvote <?php if($comment['upvoted']) echo "upvoted"; ?>"></div>

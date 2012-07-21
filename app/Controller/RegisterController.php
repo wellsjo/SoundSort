@@ -9,6 +9,8 @@ class RegisterController extends AppController {
 	function index() {
 		$Auth = $this->auth();
 		$this->set('auth_for_layout', $Auth);
+		$this->set('page_for_layout', 'register');
+		
 		if (!empty($_POST)) {
 			$this->redirect('/register/confirm');
 		}
