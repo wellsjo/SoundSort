@@ -16,11 +16,12 @@ echo 'tracks=' . $tracks . ';';
 		</div>
 		<?php if (!$auth_for_layout['User']) {
 			?>
-			<div id="logged_out_message" class="span8 offset1 alert alert-success">
+			<div id="logged_out_message" class="span6 offset2 alert alert-success">
 				<a class="close" data-dismiss="alert" href="#">&times;</a>
-				New songs are uploaded to SoundCloud every minute, but it's still hard to find good, new, free music.
-				<br/>
-				Welcome to SoundSort. <a target="_blank" href="/about">Learn more</a>
+				Great music is uploaded to SoundCloud every day, but it's still hard to find <b>great free music</b>.
+				<br/><br/>
+				Welcome to <b>SoundSort</b>, a social music player/aggregator which features the best recently uploaded music,
+				<b/>all of which you can download for free</b>.
 			</div>
 			<?php
 		}

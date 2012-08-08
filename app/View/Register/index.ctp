@@ -24,6 +24,7 @@
 						<label class="control-label" for="input01">Password</label>
 						<div class="controls">
 							<input type="password" class="input-large" id="pwd" name="pwd" rel="popover" data-content="6 characters or more! Be tricky" data-original-title="Password" >
+							<div id="password_errors" class="hidden"></div>
 						</div>
 					</div>
 					<div class="control-group">
@@ -35,7 +36,7 @@
 					<div class="control-group">
 						<label class="control-label" for="input01"></label>
 						<div class="controls">
-							<button id="register" class="btn btn-success" rel="tooltip" title="first tooltip">Create My Account</button>
+							<button id="register" disabled="disabled" class="btn btn-success" rel="tooltip" title="first tooltip">Create My Account</button>
 						</div>
 					</div>
 				</fieldset>

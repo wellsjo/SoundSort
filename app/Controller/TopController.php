@@ -9,6 +9,7 @@ Class TopController extends AppController {
 	}
 
 	function top() {
+
 		$User = $this->auth();
 		$this->set('auth_for_layout', $User);
 		$this->set('page_for_layout', 'top');
@@ -26,6 +27,7 @@ Class TopController extends AppController {
 		}
 
 		$tracks = $this->Track->getSoundCloudTracks($page);
+
 		$tracks = json_decode($tracks, true);
 		$SCTracks = array();
 		foreach ($tracks as &$track) {

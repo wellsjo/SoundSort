@@ -55,7 +55,7 @@ class Track extends AppModel {
 
 	function getSoundCloudTracks($page) {
 		APP::import('Vendor', 'Soundcloud');
-		$SoundCloud = new Services_Soundcloud('4ca806233abc6f50dfbd8c124380277b', 'f31a95747981711da55ab9823b54cbf9', 'http://wellsstuff.com/trending');
+		$SoundCloud = new Services_Soundcloud('4ca806233abc6f50dfbd8c124380277b', 'f31a95747981711da55ab9823b54cbf9', 'http://soundsort.com');
 
 		$offset = (--$page) * 10;
 		$track_options = array(

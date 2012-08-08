@@ -56,6 +56,7 @@ div.arrow-down {
 	left: 193px;
 	position: absolute;
 	height: 14px;
+	width:33px;
 }
 
 .favorite_link{
@@ -233,10 +234,16 @@ div.arrow-down {
 	border-radius: 0.25em;
 }
 .comment_point_hover{
-	border-left-color: green !important;
+	border-left-color: navy !important;
 }
 .comment_bubble_hover{
-	background: green !important;
+	background: navy !important;
+}
+.comment_user_name{
+	color: gray;
+	position: absolute;
+	top: 0px;
+	right: 8px;
 }
 div.spch-bub-outside {
 	height: 1.5em;

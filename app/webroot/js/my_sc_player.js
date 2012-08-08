@@ -33,7 +33,7 @@ var SC_Player = function(track, element, hide_comment_button) {
 		});
 
 		$(sc_player).append(
-			'<div class="comment_count"></div><a href=\'' + $(this).parent().data('dl_link') + '/download'
+			'<div class="comment_count"></div><a href=\'' + $(sc_player).parent().data('dl_link')
 			+ '\' class=\'download_track btn btn-small\'><i class=\'icon-download-alt\'></i></a>'
 			+'<button class=\'favorite_link btn btn-small\' ><i class=\'heart-shape\'></i></button>'
 			+'<span class=\'vote_container\'><div data-track_id=\'' + this._track.id + '\'class=\'arrow-up upvote\' ></div>'
