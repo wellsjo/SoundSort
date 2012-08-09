@@ -2901,3 +2901,17 @@ Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
 #11 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(TopController), Object(CakeRequest), Object(CakeResponse))
 #12 /Users/wellsjohnston/Desktop/Other_Dev/soundsort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #13 {main}
+2012-08-09 10:51:39 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /Users/wellsjohnston/Desktop/Other Dev/SoundSort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-08-09 10:52:20 Error: [MissingActionException] Action TopController::webroot() could not be found.
+#0 /Users/wellsjohnston/Desktop/Other Dev/SoundSort/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/wellsjohnston/Desktop/Other Dev/SoundSort/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(TopController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/wellsjohnston/Desktop/Other Dev/SoundSort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-08-09 10:52:45 Error: [MissingControllerException] Controller class WebrootController could not be found.
+#0 /Users/wellsjohnston/Desktop/Other Dev/SoundSort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-08-09 10:54:11 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /Users/wellsjohnston/Desktop/Other Dev/SoundSort/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

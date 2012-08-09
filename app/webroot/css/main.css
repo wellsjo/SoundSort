@@ -79,18 +79,18 @@ div.arrow-down {
 }
 #play-all{
 	position: absolute;
-	top: 5px;
-	left: 386px;
+	top: 3px;
+	left: 266px;
 }
 #play-next{
 	position: absolute;
-	left: 430px;
-	top: 5px;
+	left: 310px;
+	top: 3px;
 }
 #play-prev{
 	position:absolute;
-	left: 341px;
-	top: 5px;
+	left: 221px;
+	top: 3px;
 }
 .playing-all{
 	/*	background: url('/img/pause.png') !important;*/

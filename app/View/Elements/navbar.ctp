@@ -59,8 +59,8 @@
 				<?php
 				if (!$auth_for_layout['User'] && $page_for_layout != 'register') {
 					?>
-				<a href="/register" class="btn btn-small">Create Account</a>
-				<a href='#' id="teh_fb" class="btn btn-small">Log this shit in</a>
+				<a href='#' id="teh_fb"><img src="/img/facebook-connect-button.png" style="width:160px" /></a>
+				<a href="/register" class="btn btn-small btn-success" style="margin-top: 6px; margin-right:80px;">Create Account</a>
 					<?php
 				}
 				?>
@@ -89,9 +89,9 @@
 
 					</li>
 					<?php
-				} else {
+				} else if($page_for_layout != 'register') {
 					?>
-					<li id = "login_dropdown" class = "dropdown">
+					<li id = "login_dropdown" class = "dropdown top_dropdown">
 						<a class = "dropdown-toggle" href = "#" data-toggle = "dropdown" data-bypass>
 							Sign In
 							<b class = "caret"></b>
