@@ -78,8 +78,8 @@ Class TopController extends AppController {
 			}
 		}
 
-		$return_list = json_encode($return_list);
-		$this->set('tracks', $return_list);
+		$JSON_return_list = json_encode($return_list);
+		$this->set('tracks', $JSON_return_list);
 		$this->set('active', 'top');
 	}
 

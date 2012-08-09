@@ -19,15 +19,21 @@ class RegisterController extends AppController {
 	function confirm() {
 		$Auth = $this->auth();
 		$this->set('auth_for_layout', $Auth);
-		if (!empty($_POST)) {
+		$name = @$_POST['user_name'];
+		$email = @$_POST['user_email'];
+		$password = md5(@$_POST['pwd']);
+		$User_With_Name = $this->User->findByName($name);
+		$User_With_Email = $this->User->findByEmail($email);
+
+		if (!empty($_POST) && !$User_With_Email && !$User_With_Name) {
 			$NewUser = array('User' => array(
-					'name' => @$_POST['user_name'],
-					'email' => @$_POST['user_email'],
-					'password' => md5(@$_POST['pwd'])
+					'name' => $name,
+					'email' => $email,
+					'password' => $password
 					));
 			$result = $this->User->register($NewUser);
 			$this->set('user', $result);
-			$this->sendEmailConfirmation($result['User']['id'], $NewUser['User']['email']);
+			$email_result = $this->sendEmailConfirmation($result['User']['id'], $NewUser['User']['email']);
 		}
 	}
 

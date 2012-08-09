@@ -21,9 +21,7 @@ $(document).ready(function() {
 			$('#user_email').css('border', '2px solid red');
 		}else{
 			$('#user_email').css('border', '2px solid lightgreen');
-			if (all_checked()) {
-				$('#register').removeAttr('disabled')
-			}
+			$(this).addClass('checked');
 		}
 	});
 	
@@ -55,54 +53,4 @@ $(document).ready(function() {
 		
 	});
 
-	function all_checked() {
-		if ($('#user_name').css('border') == '2px solid lightgreen' &&
-		$('#user_email').css('border') == '2px solid lightgreen' &&
-		$('#pwd').css('border') == '2px solid lightgreen' &&
-		$('#cpwd').css('border') == '2px solid lightgreen') {
-			return true;
-		}else{
-			return false;
-		}
-
-	}
 });
-
-
-/*
-$(document).ready(function() {
-	var form = {
-		username : "",
-		email : "",
-		password : "",
-		confirm_password : "",
-
-		update : function() {
-			this.username = $('#user_name').val();
-			this.email = $('#user_email').val();
-			this.password = $('#pwd').val();
-			this.confirm_password = $('#cpwd').val();
-		},
-
-		validate : function() {
-			if (this.username == "") return false;
-			if (this.email == "") return false;
-			return true;
-		},
-
-		submit : function () {
-			$('#registerHere').submit();
-		}
-	};
-
-
-	$('#register').click(function(e) {
-		e.preventDefault();
-		form.update();
-		if (form.validate()) {
-			form.submit();
-		}
-	});
-
-});
-*/

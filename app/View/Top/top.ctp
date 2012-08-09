@@ -28,7 +28,7 @@ echo 'tracks=' . $tracks . ';';
 		?>
 
 		<div class="span8 offset1" style="height:45px;position:relative;">
-			<h3 style="margin-top:7px;"><?php echo $display; ?></h3>
+			<h5 style="color:gray; margin-top:7px;"><?php echo $display; ?></h5>
 		</div>
 		<div id="trend_container" class="span8 offset1">
 

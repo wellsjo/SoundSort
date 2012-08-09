@@ -8,6 +8,11 @@
 .navbar-inner > .container {
 	width:800px !important;
 }
+.top_dropdown{
+	position: absolute;
+	top:0px;
+	right:0px;
+}
 #trend_container, #favorite_container{
 	border-top: 1px solid lightgray;
 	padding:15px;
