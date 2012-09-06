@@ -15,6 +15,7 @@
 		echo $this->Html->css('main');
 		echo $this->Html->css('sc-player-artwork');
 		echo $this->Html->script('jquery');
+		echo $this->Html->script('main'); // my pre-defined functions
 		echo $this->Html->script('bootstrap');
 		echo $this->Html->script('soundcloud');
 		echo $this->Html->script('sc-player');

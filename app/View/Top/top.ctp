@@ -16,7 +16,7 @@ echo 'tracks=' . $tracks . ';';
 		</div>
 		<?php if (!$auth_for_layout['User']) {
 			?>
-			<div id="logged_out_message" class="span6 offset2 alert alert-success">
+			<div id="logged_out_message" class="span6 offset2 alert alert-success" style="font-size:18px;">
 				<a class="close" data-dismiss="alert" href="#">&times;</a>
 				Great music is uploaded to SoundCloud every day, but it's still hard to find <b>great free music</b>.
 				<br/><br/>

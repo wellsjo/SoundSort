@@ -2,6 +2,15 @@
 	margin-top: 50px;
 	width:1000px;
 }
+.row{
+	position:relative !important;
+}
+.spinner{
+	position: absolute;
+	top: 354px;
+	left: 380px;
+	width: 90px;
+}
 .navbar-inner a{
 	text-decoration: none;
 }

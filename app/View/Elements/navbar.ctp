@@ -21,16 +21,17 @@
 <div class="navbar navbar-fixed-top">
 	<div class="navbar-inner">
 		<div class="container" style="position:relative;">
+			<img src='/img/spinner.gif' class='spinner' style="display:none;"  />
 			<div class="brand pull-left"><a href="/">SoundSort</a></div>
 			<ul class="nav">
 				<li id="top_tab">
-					<a href="/top">top</a>
+					<a class="top_link" href="/top">top</a>
 				</li>
 				<?php
 				if ($auth_for_layout['User']) {
 					?>
 					<li id="favorites_tab">
-						<a href="/favorites">favorites</a>
+						<a class="top_link" href="/favorites">favorites</a>
 					</li>
 					<?php
 				}
@@ -57,10 +58,11 @@
 				<li class="alert alert-error hidden" style="margin-bottom: 0px;margin-top: 2px;">
 				</li>
 				<?php
-				if (!$auth_for_layout['User'] && $page_for_layout != 'register') {
+				//if (!$auth_for_layout['User'] && $page_for_layout != 'register') {
+				if (!$auth_for_layout['User']) {
 					?>
-				<a href='#' id="teh_fb"><img src="/img/facebook-connect-button.png" style="width:160px" /></a>
-				<a href="/register" class="btn btn-small btn-success" style="margin-top: 6px; margin-right:80px;">Create Account</a>
+				<a href='#' id="teh_fb"><img src="/img/facebook-connect-button.png" style="width:160px; margin-top:5px;" /></a>
+				<!--<a href="/register" class="btn btn-small btn-success" style="margin-top: 6px; margin-right:80px;">Create Account</a>-->
 					<?php
 				}
 				?>
@@ -89,9 +91,9 @@
 
 					</li>
 					<?php
-				} else if($page_for_layout != 'register') {
+				} //else if($page_for_layout != 'register') {
 					?>
-					<li id = "login_dropdown" class = "dropdown top_dropdown">
+<!--					<li id = "login_dropdown" class = "dropdown top_dropdown">
 						<a class = "dropdown-toggle" href = "#" data-toggle = "dropdown" data-bypass>
 							Sign In
 							<b class = "caret"></b>
@@ -101,9 +103,9 @@
 							<input type = "password" name = "user[password]" placeholder = "********" id = "login_user_password" value = "password" />
 							<button id ="sign_in" class = "btn btn-primary span3" style = "width: 100px;float: right;" name = "commit" value = "Sign In">Sign In</button>
 						</div>
-					</li>
+					</li>-->
 					<?php
-				}
+				//}
 				?>
 			</ul>
 		</div>
@@ -115,11 +117,15 @@
 <script type="text/javascript">
 	$(document).ready(function() {
 
+		$('.top_link').click(function() {
+			spinner();
+		})
+
 		$('#teh_fb').click(function() {
+			spinner();
 			FB.login(function(response) {
 				if (response.authResponse) {
 					FB.api('/me', function(response) {
-						console.log(response);
 						$.post('/users/fblogin', {
 							name: response.name,
 							fb_id: response.id
@@ -136,7 +142,6 @@
 								window.location.reload(true);
 							}
 						});
-						console.log('Good to see you, ' + response.name + '.');
 					});
 				} else {
 					console.log('User cancelled login or did not fully authorize.');
@@ -145,6 +150,7 @@
 		});
 
 		$('#fb_logout').click(function() {
+			spinner();
 			FB.logout(function(response) {
 				console.log(response);
 				window.location.reload(true);
