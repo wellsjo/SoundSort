@@ -24,22 +24,31 @@
 			<img src='/img/spinner.gif' class='spinner' style="display:none;"  />
 			<div class="brand pull-left"><a href="/">SoundSort</a></div>
 			<ul class="nav">
-				<li id="top_tab">
-					<a class="top_link" href="/top">top</a>
+				<li id="all_tab">
+					<a class="top_link" href="/all">All</a>
 				</li>
+				<li id="dubstep_tab">
+					<a class="top_link" href="/dubstep">Dubstep</a>
+				</li>
+				<li id="rap_tab">
+					<a class="top_link" href="/rap">Rap</a>
+				</li>
+				<li id="electronic_tab">
+					<a class="top_link" href="/electronic">Electronic</a>
+				</li>
+
 				<?php
 				if ($auth_for_layout['User']) {
 					?>
 					<li id="favorites_tab">
-						<a class="top_link" href="/favorites">favorites</a>
+						<a class="top_link" style="color: lightCoral;" href="/favorites">Favorites</a>
 					</li>
 					<?php
 				}
 				?>
-
 			</ul>
 			<?php
-			if ($page_for_layout == 'top' || $page_for_layout == 'favorites') {
+			if ($page_for_layout == 'all' || $page_for_layout == 'favorites') {
 				?>
 				<div id = "play-all" class="btn">
 					<i class="icon-play icon-black"></i>
@@ -61,8 +70,8 @@
 				//if (!$auth_for_layout['User'] && $page_for_layout != 'register') {
 				if (!$auth_for_layout['User']) {
 					?>
-				<a href='#' id="teh_fb"><img src="/img/facebook-connect-button.png" style="width:160px; margin-top:5px;" /></a>
-				<!--<a href="/register" class="btn btn-small btn-success" style="margin-top: 6px; margin-right:80px;">Create Account</a>-->
+					<a href='#' id="teh_fb"><img src="/img/facebook-connect-button.png" style="width:160px; margin-top:8px;" /></a>
+					<!--<a href="/register" class="btn btn-small btn-success" style="margin-top: 6px; margin-right:80px;">Create Account</a>-->
 					<?php
 				}
 				?>
@@ -92,19 +101,19 @@
 					</li>
 					<?php
 				} //else if($page_for_layout != 'register') {
-					?>
-<!--					<li id = "login_dropdown" class = "dropdown top_dropdown">
-						<a class = "dropdown-toggle" href = "#" data-toggle = "dropdown" data-bypass>
-							Sign In
-							<b class = "caret"></b>
-						</a>
-						<div class = "dropdown-menu" style = "width:221px;padding: 5px;">
-							<input type = "text" name = "user[email]" placeholder = "Email" id = "login_user_name" value = "wellsjohnston@gmail.com" />
-							<input type = "password" name = "user[password]" placeholder = "********" id = "login_user_password" value = "password" />
-							<button id ="sign_in" class = "btn btn-primary span3" style = "width: 100px;float: right;" name = "commit" value = "Sign In">Sign In</button>
-						</div>
-					</li>-->
-					<?php
+				?>
+				<!--					<li id = "login_dropdown" class = "dropdown top_dropdown">
+										<a class = "dropdown-toggle" href = "#" data-toggle = "dropdown" data-bypass>
+											Sign In
+											<b class = "caret"></b>
+										</a>
+										<div class = "dropdown-menu" style = "width:221px;padding: 5px;">
+											<input type = "text" name = "user[email]" placeholder = "Email" id = "login_user_name" value = "wellsjohnston@gmail.com" />
+											<input type = "password" name = "user[password]" placeholder = "********" id = "login_user_password" value = "password" />
+											<button id ="sign_in" class = "btn btn-primary span3" style = "width: 100px;float: right;" name = "commit" value = "Sign In">Sign In</button>
+										</div>
+									</li>-->
+				<?php
 				//}
 				?>
 			</ul>

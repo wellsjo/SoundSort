@@ -18,7 +18,10 @@ var SC_Player = function(track, element, hide_comment_button) {
 			links: [{
 				url: this._track.uri,
 				title: this._track.title
-			}]
+			}],
+			beforeRender: function(track_data) {
+				// put code to check for bad track info here
+			}
 		});
 
 		this.afterLoad();
@@ -32,6 +35,10 @@ var SC_Player = function(track, element, hide_comment_button) {
 			$(this).parent().children('.sc-pause').removeClass('hidden');
 		});
 
+		var artist_string = $(sc_player).children('.sc-info').children('h4').text();
+		artist_string = artist_string.substring(3, artist_string.length);
+		$(sc_player).children('.sc-info').children('h4').html(artist_string);
+
 		$(sc_player).append(
 			'<div class="comment_count"></div><a href=\'' + $(sc_player).parent().data('dl_link')
 			+ '\' class=\'download_track btn btn-small\'><i class=\'icon-download-alt\'></i></a>'
@@ -42,7 +49,7 @@ var SC_Player = function(track, element, hide_comment_button) {
 			+'<a class = \'btn btn-small comment_link\' href=\'/comments/' + this._track.id + '\'>'
 			+"<div class=\"spch-bub-outside\"><span class=\"point\"></span><span class=\"bubble\"></span><span class=\'icon_comment_count\'>(" + this._track.comment_count + ")</span></div></a>"
 			);
-				
+
 		var favorited = $(sc_player).parent().data('favorited');
 		if (favorited) $(sc_player).children('.favorite_link').children('.heart-shape').addClass('favorited');
 
@@ -90,7 +97,7 @@ var SC_Player = function(track, element, hide_comment_button) {
 					$(this).children('i').addClass('favorited');
 				}
 			}else{
-				$('#error_message').text('You must log in to vote, comment, or favorite!').removeClass('hidden');
+				$('#error_message').text('You must log in to vote, comment, or favorite any tracks!').removeClass('hidden');
 				window.scrollTo(0, 0);
 			}
 		});
@@ -115,7 +122,7 @@ var SC_Player = function(track, element, hide_comment_button) {
 					$.post('/votes/upvote/0/' + track);
 				}
 			}else{
-				$('#error_message').text('You must log in to vote, comment, or favorite!').removeClass('hidden');
+				$('#error_message').text('You must log in to vote, comment, or favorite any tracks!').removeClass('hidden');
 				window.scrollTo(0, 0);
 			}
 		});
@@ -140,7 +147,7 @@ var SC_Player = function(track, element, hide_comment_button) {
 					$.post('/votes/downvote/0/' + track);
 				}
 			}else{
-				$('#error_message').text('You must log in to vote, comment, or favorite!').removeClass('hidden');
+				$('#error_message').text('You must log in to vote, comment, or favorite any tracks!').removeClass('hidden');
 				window.scrollTo(0, 0);
 			}
 		});

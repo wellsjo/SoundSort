@@ -6,6 +6,12 @@ $(document).ready(function() {
 
 	var player = track.Track;
 	SC_Player(player, '#track_container', true);
+
+	$(document).bind('onPlayerInit.scPlayer', function(event){
+		$('h3').children('a').click(function(e){
+			e.preventDefault();
+		})
+	});
 	
 	$('.comment_reply_submit').click(function() {
 		var self = this;
@@ -18,7 +24,7 @@ $(document).ready(function() {
 				comment: comment
 			});
 		}else{
-			$('#error_message').text('You must log in to vote, comment, or favorite!').removeClass('hidden');
+			$('#error_message').text('You must log in to vote, comment, or favorite any tracks!').removeClass('hidden');
 			window.scrollTo(0, 0);
 		}
 	});
@@ -54,6 +60,21 @@ $(document).ready(function() {
 });
 
 function render() {
+
+	// show modal when navigating while music playing
+	$('a').click(function(e) {
+		if ($('#play-all').hasClass('playing-all')) {
+			if ($(e.currentTarget).attr('id') == 'play-all' || $(e.currentTarget).hasClass('sc-play') || $(e.currentTarget).hasClass('sc-pause')
+		|| $(e.currentTarget).hasClass('close')) {
+				console.log('exception caught and handled');
+			}else{
+				e.preventDefault();
+				$('#MusicWarning').modal('toggle');
+				$('#continue_link').data('link', e.currentTarget.href);
+			}
+		}
+	});
+
 	// comment votes
 	$('.cupvote').click(function(e) {
 		if (readCookie('logged_in')){
@@ -75,7 +96,7 @@ function render() {
 				$.post('/cvotes/upvote/0/' + comment);
 			}
 		}else{
-			$('#error_message').text('You must log in to vote, comment, or favorite!').removeClass('hidden');
+			$('#error_message').text('You must log in to vote, comment, or favorite any tracks!').removeClass('hidden');
 			window.scrollTo(0, 0);
 		}
 	});
@@ -100,7 +121,7 @@ function render() {
 				$.post('/cvotes/downvote/0/' + comment);
 			}
 		}else{
-			$('#error_message').text('You must log in to vote, comment, or favorite!').removeClass('hidden');
+			$('#error_message').text('You must log in to vote, comment, or favorite any tracks!').removeClass('hidden');
 			window.scrollTo(0, 0);
 		}
 	});

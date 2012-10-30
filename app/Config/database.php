@@ -61,13 +61,25 @@
  */
 class DATABASE_CONFIG {
 
+	// TESTING
+//	public $default = array(
+//		'datasource' => 'Database/Mysql',
+//		'persistent' => false,
+//		'host' => 'mysql.wellsjohnston.com',
+//		'login' => 'wellsj',
+//		'password' => 'squirrels',
+//		'database' => 'wellsstuff',
+//		'prefix' => '',
+//		'encoding' => 'utf8',
+//	);
+
 	public $default = array(
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
-		'host' => 'mysql.wellsjohnston.com',
-		'login' => 'wellsj',
-		'password' => 'squirrels',
-		'database' => 'wellsstuff',
+		'host' => 'tunnel.pagodabox.com',
+		'login' => 'gisela',
+		'password' => '2x6Md9sT',
+		'database' => 'SS_DB',
 		'prefix' => '',
 		'encoding' => 'utf8',
 	);

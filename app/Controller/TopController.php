@@ -5,37 +5,21 @@ Class TopController extends AppController {
 	var $uses = array('Track', 'Favorite');
 
 	function index() {
-		$this->redirect('/top');
+		$this->redirect('/all');
 	}
 
-	function top() {
+	function all() {
 
 		$User = $this->auth();
 		$this->set('auth_for_layout', $User);
-		$this->set('page_for_layout', 'top');
+		$this->set('page_for_layout', 'all');
 
 		$page = @$this->params['id'];
 		if (!empty($page)) {
 			$this->set('page', $page);
-			if ($page == 1) {
-				$this->set('display', 'Front Page');
-			} else {
-				$this->set('display', 'Page ' . $page);
-			}
+			$this->set('display', $page);
 		} else {
-			$this->redirect('/top/1');
-		}
-
-		$tracks = $this->Track->getSoundCloudTracks($page);
-
-		$tracks = json_decode($tracks, true);
-		$SCTracks = array();
-		foreach ($tracks as &$track) {
-			$response = $this->Track->findById($track['id']);
-			if (empty($response)) {
-				$response = $this->Track->syncTrack($track);
-			}
-			$SCTracks[] = $response;
+			$this->redirect('/all/1');
 		}
 
 		$TrackList = $this->Track->find('all', array(
@@ -51,10 +35,9 @@ Class TopController extends AppController {
 				if ($vote['user_id'] == $User['User']['id']) {
 					if ($vote['upvote'] == 1) {
 						$track['Track']['upvoted'] = true;
-					}else if ($vote['downvote'] == 1){
+					} else if ($vote['downvote'] == 1) {
 						$track['Track']['downvoted'] = true;
 					}
-
 				}
 			}
 		}
@@ -62,25 +45,21 @@ Class TopController extends AppController {
 		$return_list = array();
 		$offset = (--$page) * 10;
 		for ($off_start = $offset; $off_start < ($offset + 10); $off_start++) {
-			if (isset($TrackList[$off_start])) {
-				$return_list[] = $TrackList[$off_start]['Track'];
-			} else {
-				$return_list[] = $SCTracks[$off_start - $offset]['Track'];
-			}
+			$return_list[] = $TrackList[$off_start]['Track'];
 		}
 
 		foreach ($return_list as &$track) {
 			$favorited = $this->Favorite->findByUserIdAndTrackId($User['User']['id'], $track['id']);
 			if ($favorited) {
 				$track['favorited'] = true;
-			}else{
+			} else {
 				$track['favorited'] = false;
 			}
 		}
 
 		$JSON_return_list = json_encode($return_list);
 		$this->set('tracks', $JSON_return_list);
-		$this->set('active', 'top');
+		$this->set('active', 'all');
 	}
 
 	function topSort($tracks) {
@@ -112,6 +91,66 @@ Class TopController extends AppController {
 
 		usort($tracks, "cmp");
 		return $tracks;
+	}
+
+	function genre() {
+		$User = $this->auth();
+		$this->set('auth_for_layout', $User);
+
+		$page = @$this->params['id'];
+		$genre = @$this->params['genre'];
+		$this->set('page_for_layout', 'all');
+
+		if (!empty($page)) {
+			$this->set('page', $page);
+			$this->set('display', $page);
+		} else {
+			$this->redirect("/$genre/1");
+		}
+
+		$genre = ucwords($genre);
+
+		$TrackList = $this->Track->find('all', array(
+			'conditions' => array(
+				'genre' => $genre
+			),
+			'limit' => 200,
+			'order' => array(
+				'created_at' => 'DESC'
+				)));
+		$TrackList = $this->topSort($TrackList);
+
+		foreach ($TrackList as &$track) {
+			$track['Track']['comment_count'] = count($track['Comment']);
+			foreach ($track['Vote'] as $vote) {
+				if ($vote['user_id'] == $User['User']['id']) {
+					if ($vote['upvote'] == 1) {
+						$track['Track']['upvoted'] = true;
+					} else if ($vote['downvote'] == 1) {
+						$track['Track']['downvoted'] = true;
+					}
+				}
+			}
+		}
+
+		$return_list = array();
+		$offset = (--$page) * 10;
+		for ($off_start = $offset; $off_start < ($offset + 10); $off_start++) {
+			$return_list[] = $TrackList[$off_start]['Track'];
+		}
+
+		foreach ($return_list as &$track) {
+			$favorited = $this->Favorite->findByUserIdAndTrackId($User['User']['id'], $track['id']);
+			if ($favorited) {
+				$track['favorited'] = true;
+			} else {
+				$track['favorited'] = false;
+			}
+		}
+
+		$JSON_return_list = json_encode($return_list);
+		$this->set('tracks', $JSON_return_list);
+		$this->set('active', lcfirst($genre));
 	}
 
 }

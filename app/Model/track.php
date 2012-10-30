@@ -53,7 +53,8 @@ class Track extends AppModel {
 		return $data;
 	}
 
-	function getSoundCloudTracks($page) {
+	// not really used anymore
+	function retrieveSoundCloudTracks($page, $genre) {
 		APP::import('Vendor', 'Soundcloud');
 		$SoundCloud = new Services_Soundcloud('4ca806233abc6f50dfbd8c124380277b', 'f31a95747981711da55ab9823b54cbf9', 'http://soundsort.com');
 
@@ -63,6 +64,7 @@ class Track extends AppModel {
 			'offset' => $offset,
 			'order' => 'hotness',
 			'filter' => 'downloadable',
+			'genre' => $genre
 		);
 
 		try {

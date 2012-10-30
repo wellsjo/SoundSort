@@ -173,8 +173,8 @@
  *
  */
 	Configure::write('Session', array(
-//		'defaults' => 'php'
-		'defaults' => 'cache'
+		'defaults' => 'php'
+//		'defaults' => 'cache'
 	));
 
 /**

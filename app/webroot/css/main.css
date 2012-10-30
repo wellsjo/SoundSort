@@ -1,3 +1,7 @@
+body {
+	background-image: url('/img/background.jpeg') !important;
+	background-size:3000px;
+}
 #main_container{
 	margin-top: 50px;
 	width:1000px;
@@ -7,9 +11,21 @@
 }
 .spinner{
 	position: absolute;
-	top: 354px;
-	left: 380px;
+	top: 80px;
+	left: 348px;
 	width: 90px;
+}
+#error_message{
+	margin-top: 42px;
+}
+.icon_comment_count{
+	color:black !important;
+}
+.bottom_footer{
+	width:1000px;
+	text-align: center;
+	color:white;
+	position:relative;
 }
 .navbar-inner a{
 	text-decoration: none;
@@ -23,8 +39,6 @@
 	right:0px;
 }
 #trend_container, #favorite_container{
-	border-top: 1px solid lightgray;
-	padding:15px;
 	padding-top:21px;
 }
 div.arrow-up {
@@ -37,10 +51,10 @@ div.arrow-up {
 	line-height:0px;
 }
 .upvoted{
-	border-bottom-color:#57A85D !important;
+	border-bottom-color:#3F3 !important;
 }
 .downvoted{
-	border-top-color:red !important;
+	border-top-color:#FF6667 !important;
 }
 div.arrow-down {
 	width:0px;
@@ -88,18 +102,18 @@ div.arrow-down {
 }
 #play-all{
 	position: absolute;
-	top: 3px;
-	left: 266px;
+	top: 50px;
+	left: 370px;
 }
 #play-next{
 	position: absolute;
-	left: 310px;
-	top: 3px;
+	left: 414px;
+	top: 50px;
 }
 #play-prev{
 	position:absolute;
-	left: 221px;
-	top: 3px;
+	left: 325px;
+	top: 50px;
 }
 .playing-all{
 	/*	background: url('/img/pause.png') !important;*/
@@ -157,8 +171,6 @@ div.arrow-down {
 	position:absolute;
 	top:0px;
 	left:0px;
-	border-right: 1px solid lightgray;
-	border-bottom: 1px solid lightgray;
 	padding: 2px;
 }
 #trend_container > .track_container > .sc-player > .comment_count {

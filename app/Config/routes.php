@@ -27,8 +27,18 @@
  */
 	Router::connect('/', array('controller' => 'top', 'action' => 'index'));
 	
-	Router::connect('/top', array('controller' => 'top', 'action' => 'top'));
-	Router::connect('/top/:id', array('controller' => 'top', 'action' => 'top'), array('id' => '[0-9]+'));
+	Router::connect('/all', array('controller' => 'top', 'action' => 'all'));
+	Router::connect('/all/:id', array('controller' => 'top', 'action' => 'all'), array('id' => '[0-9]+'));
+
+	Router::connect('/:genre', array('controller' => 'top', 'action' => 'genre'),
+			array(
+				'genre' => '(HipHop|hiphop|Dubstep|dubstep|Electronic|electronic|Dance|dance|Rock|rock|Rap|rap)',
+				));
+	Router::connect('/:genre/:id', array('controller' => 'top', 'action' => 'genre'),
+			array(
+				'genre' => '(HipHop|hiphop|Dubstep|dubstep|Electronic|electronic|Dance|dance|Rock|rock|Rap|rap)',
+				'id' => '[0-9]+'
+				));
 
 	Router::connect('/comments/:id', array('controller' => 'comments', 'action' => 'index'), array('id' => '[0-9]+'));
 

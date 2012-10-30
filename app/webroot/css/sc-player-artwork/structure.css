@@ -3,7 +3,7 @@
 	height: 90px;
 	position: relative;
 	margin-bottom: 20px;
-	border-bottom: 1px solid lightgray;
+	/*border-bottom: 1px solid lightgray;*/
 	left: -15px;
 }
 
@@ -144,6 +144,7 @@
 }
 
 .sc-info h3{
+	color:white;
 	white-space:nowrap;
 	text-overflow: ellipsis;
 	overflow:hidden;
@@ -161,7 +162,8 @@
 }
 
 .sc-info h4 a{
-	color: navy;
+	color: white;
+	font-size:13px;
 }
 
 .sc-player .sc-info-toggle{

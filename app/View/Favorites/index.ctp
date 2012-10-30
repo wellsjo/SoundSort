@@ -1,7 +1,11 @@
 <script type="text/javascript">
 	<?php
+	if ($tracks_exist) {
+		echo 'tracks=' . $tracks . ';';
+	}else{
+		echo 'tracks=\'none\';';
+	}
 	echo 'active_tab='.$active.'_tab;';
-	echo 'tracks=' . $tracks . ';';
 	?>
 	$(active_tab).addClass('active');
 </script>

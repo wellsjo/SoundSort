@@ -1,6 +1,6 @@
 .sc-player {
 	font: 12px Arial, sans-serif;
-	color: #000;
+	color: white;
 	font-size: 0.8em;
 	font-weight: bold;
 	line-height: 1.6em;
@@ -8,7 +8,7 @@
 
 .sc-player a {
 	text-decoration: none;
-	color: #000;
+	color: white;
 }
 
 /* scrubber */
@@ -33,7 +33,7 @@
 }
 
 .sc-scrubber .sc-played {
-	background-color:navy;
+	background-color:orange;
 	opacity: 0.4;
 }
 
@@ -42,30 +42,16 @@
 .sc-player .sc-controls a {
 	color: transparent;
 	background: url('img/play.png');
-}
-
-.sc-player .sc-controls a:hover {
-	background: url('img/play-hover.png');
-}
-
-.sc-player .sc-controls a.sc-pause {
-	background: url('img/play.png');
-}
-
-.sc-player .sc-controls a.sc-pause:hover{
-	background: url('img/play-hover.png');
+	background-size:40px;
 }
 
 .sc-player.playing .sc-controls a.sc-pause{
-	background: url('img/Pause-Button.png');
+	background: url('img/pause.png');
+	background-size:40px;
 }
 
-.sc-player.playing .sc-controls a.sc-pause:hover{
-	background: url('img/Pause-Button.png');
-}  
-
 .sc-scrubber .sc-time-indicators{
-	color: #000;
+	color: white;
 	font-size: 1.2em;
 }
 
@@ -97,7 +83,7 @@
 }
 
 .sc-duration{
-	color:darkred;
+	color:yellow;
 }
 
 /* Track info*/
